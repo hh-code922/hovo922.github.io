@@ -575,6 +575,16 @@ body{
 }
 
 
+.contetn_text_part_section_3 {
+  @media only screen and (max-width: 1600px) {
+    margin-top: 53px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 22px;
+  }
+}
+
 .content_text_part_section_3{
   p{
     @include fontsStyle($font_3, 18px,#626262);

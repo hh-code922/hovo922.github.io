@@ -172,7 +172,7 @@ header {
 
 #headMenu {
   margin-left: 3%;
-  margin-top: 18px; }
+  margin-top: 0; }
   #headMenu li a {
     margin: 0;
     padding: 0;
@@ -188,15 +188,15 @@ header {
 #navbarNav_2 {
   width: 261px;
   position: absolute;
-  right: 0; }
+  right: 5%; }
   @media only screen and (max-width: 991px) {
     #navbarNav_2 {
       position: inherit; } }
   #navbarNav_2 li a {
     margin: 0;
     padding: 0;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 11px;
+    padding-right: 11px;
     font-family: "kariaReguliar";
     font-size: 16px;
     color: #262a2c;
@@ -283,34 +283,6 @@ header {
     left: 6%;
     top: 71px; }
 
-/*"top_slid_main*/
-/*#top_slid_main{
-  position: relative;
-
-  #bnuttons_topSlider{
-    position: absolute;
-    top: 70px;
-    right: 0;
-
-    @media only screen and (max-width: 991px) {
-      right: -4%;
-    }
-
-    @media only screen and (max-width: 576px) {
-     
-      grid-template-columns: 23px 23px 23px 23px;
-      grid-column-gap: 5%;
-      top: 180%;
-      left: 37%;
-     }
-
-   
-
-    @extend .grid;
-    grid-template-columns: auto;
-    grid-row-gap: 13px;
-  }
-}*/
 .top_slid_text_content {
   animation: animationFramesW linear 1s;
   animation-iteration-count: 1;
@@ -664,9 +636,15 @@ footer {
     margin-top: 63px;
     text-align: right;
     padding: 0; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block h3:nth-child(3) {
+        text-align: left; } }
   footer #instagram_block a:nth-child(4) {
     display: block;
     text-align: right; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block a:nth-child(4) {
+        text-align: left; } }
   footer .instagram_img {
     grid-template-columns: auto auto auto;
     grid-column-gap: 0.6vw;

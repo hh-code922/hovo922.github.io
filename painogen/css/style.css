@@ -413,6 +413,13 @@ header {
       width: 52%;
       min-width: 300px; } }
 
+@media only screen and (max-width: 1600px) {
+  .contetn_text_part_section_3 {
+    margin-top: 53px; } }
+@media only screen and (max-width: 992px) {
+  .contetn_text_part_section_3 {
+    margin-top: 22px; } }
+
 .content_text_part_section_3 p {
   font-family: "poppinsRegular";
   font-size: 18px;
@@ -1143,4 +1150,5 @@ footer {
 
 .partner_img {
   padding-top: 14px; }
+
 /*# sourceMappingURL=style.css.map */
