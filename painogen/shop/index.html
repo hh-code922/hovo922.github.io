@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shop-Painogen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+<link rel="stylesheet" href="css//animate.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+<body>
+
+    <header>
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg" id="headNav">
+              <a class="navbar-brand" href="../index.html"><img src="img/logo.png" alt="logo"width='179' height="54"></a>
+              <button id="nav-icon1" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <!-- <span class="navbar-toggler-icon"></span>-->
+               
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  
+              </button>
+             
+       
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="headMenu">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../about/index.html">About  <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../products/index.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="../privat/index.html">Accessories</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="../contact/index.html">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="nav justify-content-end" id="navbarNav_2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <div class="headerIconeDiv">
+                                <img src="img/headerIcon_1.png" alt="img">
+                          </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                            <div class="headerIconeDiv">
+                                    <img src="img/headerIcon_2.png" alt="img">
+                            </div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                            <div class="headerIconeDiv">
+                                    <img src="img/headerIcon_3.png" alt="img">
+                            </div>
+                      </a>
+                    </li>
+                    
+                  </ul>
+              </div>
+             
+            </nav>
+      </div>
+        
+    </header>
+
+      
+      <!--.................... Slider.......................-->
+
+
+<!--<div class="slider_content">
+    <div class="img_slider_div">
+        <img src="img/slider/bottle-1.png" alt="img">
+    
+    </div>
+    <div class="text_slider_div">
+        <h2>Painogen Natural</h2>
+        <h2>Pain Relief – Almond Blend</h2>
+        <p>Inc. Tax 220 -230</p>
+        <button type="button" class="btn btn-success">SHOP</button>
+    </div>
+</div>
+
+-->
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+        
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                <div class="slider_content wow fadeIn" data-wow-duration="2s">
+                        <div class="img_slider_div">
+                            <img src="img/slider/bottle-1.png" alt="img">
+                        
+                        </div>
+                        <div class="text_slider_div">
+                            <h2>Painogen Natural</h2>
+                            <h2>Pain Relief – Almond Blend</h2>
+                            <p>Inc. Tax 220 -230</p>
+                            <button type="button" class="btn btn-success">SHOP</button>
+                        </div>
+                    </div>
+                    
+          </div>
+          <div class="carousel-item wow fadeIn" data-wow-duration="2s">
+                <div class="slider_content">
+                        <div class="img_slider_div">
+                            <img src="img/slider/bottle-1.png" alt="img">
+                        
+                        </div>
+                        <div class="text_slider_div">
+                            <h2>Painogen Natural</h2>
+                            <h2>Pain Relief – Almond Blend</h2>
+                            <p>Inc. Tax 220 -230</p>
+                            <button type="button" class="btn btn-success">SHOP</button>
+                        </div>
+                    </div>
+                    
+          </div>
+          <div class="carousel-item wow fadeIn" data-wow-duration="2s">
+                <div class="slider_content">
+                        <div class="img_slider_div">
+                            <img src="img/slider/bottle-1.png" alt="img">
+                        
+                        </div>
+                        <div class="text_slider_div">
+                            <h2>Painogen Natural</h2>
+                            <h2>Pain Relief – Almond Blend</h2>
+                            <p>Inc. Tax 220 -230</p>
+                            <button type="button" class="btn btn-success">SHOP</button>
+                        </div>
+                    </div>
+                    
+          </div>
+        </div>
+        <div  id="slider_buttons_block">
+            
+                 <!-- Left and right controls -->
+        <a class="carousel-control-prev slider_btn slider_btn_left" href="#demo" data-slide="prev">
+                <i class="fa fa-arrow-left custom" ></i>		        </a>
+        <a class="carousel-control-next slider_btn slider_btn_right" href="#demo" data-slide="next">
+                <i class="fa fa-arrow-right custom" ></i>			        </a>
+           
+        </div>
+       
+      </div>
+
+           
+                        <!--................................................ C O N T E N T ...........................................-->
+<div id="shopContainer">
+
+        <div id="shoping_block">
+                
+                    <div >
+                        <div id="sidebar">
+            
+                            <div class="category">
+                                    <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Deals</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Accessories</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Merchandize</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Relief Patches</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Energy Boost</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Herbal Tablets</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Multivitamins</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Pain Relief</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Creams</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Kids</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Mens</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Oils</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Sprays</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Women</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Others</a>
+                                            </li>
+                                    </ul>
+                            </div>
+            
+                            <div class="price">
+                                <h2>PRICE</h2>
+                                
+                                <input id="ex2" 
+                                type="text" 
+                                class="span2" 
+                                value="" 
+                                data-slider-min="0" 
+                                data-slider-max="220" 
+                                data-slider-step="5" 
+                                data-slider-id="GC"
+                                data-slider-value="[10,180]"/> 
+                                <!--<p id="pric_min_and_max">
+                                    <span id="minPrice">10$</span>
+                                    <span id="maxPrice">220$</span>
+                                </p>-->
+                             </div>
+
+
+                             <!--.......... Filter by size..........-->
+                             
+                             <div id="filtr_by_size">
+                                    <h2>FILTER BY SIZES</h2>
+                                    <form action="/action_page.php">
+                                        <label class="containerInputCeck">
+                                                0.33 fl. oz.(10ML)
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    2 fl. oz.(60ML)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    3.3 fl. oz.(100ML)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    5.4 fl. oz.(160ML)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    7.6 fl. oz.(225ML)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    16 fl. oz.(473ML)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    34 fl. oz.(1Litre)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                              <label class="containerInputCeck">
+                                                    1 Gal. oz.(3.78L)
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                              </label>
+
+
+                                      </form>
+
+                             </div>
+
+                    </div>
+
+                </div>
+
+                  
+                    <!-- ..........All  Oils...........-->
+
+                    <div >
+                            <div id="all_oils">
+                                <h2>Showing all 2 results</h2>
+                                <div id="oilsBlock">
+
+                                        <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                <div class="imgBlock_tab">
+                                                        <img src="img/nav-tabs/nav-tab-1.png"  class="img-fluid">
+                                                        <div class="overlay">
+                                                                <div>
+                                                                        <a href="#"><i class="far fa-eye"></i></a>
+                                                                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                    
+                                                <div class="more">
+            
+                                                        <div class="box">
+                                                                <p class="text text1">
+                                                                        <a href="">Painogen Natural
+                                                                                Pain Relief  Almond Blend
+                                                                        </a><br>
+                                                                        <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                      
+                                                                    </p>
+                                                                <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                            <div></div>
+                                                        </div>
+                                                   
+                                                </div>
+                                        </div>
+                    
+                                        <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                <div class="imgBlock_tab">
+                                                        <img src="img/nav-tabs/nav-tab-1.png"  class="img-fluid">
+                                                        <div class="overlay">
+                                                                <div>
+                                                                        <a href="#"><i class="far fa-eye"></i></a>
+                                                                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="more">
+            
+                                                        <div class="box">
+                                                                <p class="text text1">
+                                                                        <a href="">Painogen Natural
+                                                                                Pain Relief  Almond Blend
+                                                                        </a><br>
+                                                                        <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                      
+                                                                    </p>
+                                                                <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                            <div></div>
+                                                        </div>
+                                                   
+                                                </div>
+                                        </div>
+                    
+                                       
+                    
+                                        <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                            <div class="imgBlock_tab">
+                                                    <img src="img/nav-tabs/nav-tab-2.png"  class="img-fluid">
+                                                    <div class="overlay">
+                                                            <div>
+                                                                    <a href="#"><i class="far fa-eye"></i></a>
+                                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                            <div class="more">
+            
+                                                    <div class="box">
+                                                            <p class="text text1">
+                                                                    <a href="">Painogen Natural
+                                                                            Pain Relief  Almond Blend
+                                                                    </a><br>
+                                                                    <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                  
+                                                             </p>
+                                                             <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                        <div></div>
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+                    
+                                        <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                <div class="imgBlock_tab">
+                                                        <img src="img/nav-tabs/nav-tab-1.png"  class="img-fluid">
+                                                        <div class="overlay">
+                                                                <div>
+                                                                        <a href="#"><i class="far fa-eye"></i></a>
+                                                                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                </div>
+                                                    </div>
+                                                </div>
+                                                <div class="more">
+                
+                                                        <div class="box">
+                                                                <p class="text text1">
+                                                                        <a href="">Painogen Natural
+                                                                                Pain Relief  Almond Blend
+                                                                        </a><br>
+                                                                        <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                      
+                                                                </p>
+                                                                    <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                            <div></div>
+                                                        </div>
+                                                   
+                                                </div>
+                                            </div>
+
+                                            <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                    <div class="imgBlock_tab">
+                                                            <img src="img/nav-tabs/nav-tab-4.png"  class="img-fluid">
+                                                            <div class="overlay">
+                                                                    <div>
+                                                                            <a href="#"><i class="far fa-eye"></i></a>
+                                                                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="more">
+                    
+                                                            <div class="box">
+                                                                    <p class="text text1">
+                                                                            <a href="">Painogen Natural
+                                                                                    Pain Relief  Almond Blend
+                                                                            </a><br>
+                                                                            <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                          
+                                                                        </p>
+                                                                        <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                                <div></div>
+                                                            </div>
+                                                       
+                                                    </div>
+                                                </div>
+
+                                                <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                        <div class="imgBlock_tab">
+                                                                <img src="img/nav-tabs/nav-tab-2.png"  class="img-fluid">
+                                                                <div class="overlay">
+                                                                        <div>
+                                                                                <a href="#"><i class="far fa-eye"></i></a>
+                                                                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                        </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="more">
+                        
+                                                                <div class="box">
+                                                                        <p class="text text1">
+                                                                                <a href="">Painogen Natural
+                                                                                        Pain Relief  Almond Blend
+                                                                                </a><br>
+                                                                                <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                              
+                                                                         </p>
+                                                                            <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                                    <div></div>
+                                                                </div>
+                                                           
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100" >
+                                                            <div class="imgBlock_tab">
+                                                                    <img src="img/nav-tabs/nav-tab-4.png"  class="img-fluid">
+                                                                    <div class="overlay">
+                                                                            <div>
+                                                                                    <a href="#"><i class="far fa-eye"></i></a>
+                                                                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                            </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="more">
+                            
+                                                                    <div class="box">
+                                                                            <p class="text text1">
+                                                                                <a href="">Painogen Natural
+                                                                                        Pain Relief  Almond Blend
+                                                                                </a><br>
+                                                                                <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                              
+                                                                            </p>
+                                                                            <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                                        <div></div>
+                                                                    </div>
+                                                               
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                                <div class="imgBlock_tab">
+                                                                        <img src="img/nav-tabs/nav-tab-2.png"  class="img-fluid">
+                                                                        <div class="overlay">
+                                                                                <div>
+                                                                                        <a href="#"><i class="far fa-eye"></i></a>
+                                                                                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                                </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="more">
+                                
+                                                                        <div class="box">
+                                                                                <p class="text text1">
+                                                                                        <a href="">Painogen Natural
+                                                                                                Pain Relief  Almond Blend
+                                                                                        </a><br>
+                                                                                        <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                                      
+                                                                                    </p>
+                                                                                    <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                                            <div></div>
+                                                                        </div>
+                                                                   
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="img-container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="100">
+                                                                    <div class="imgBlock_tab">
+                                                                            <img src="img/nav-tabs/nav-tab-1.png"  class="img-fluid">
+                                                                            <div class="overlay">
+                                                                                    <div>
+                                                                                            <a href="#"><i class="far fa-eye"></i></a>
+                                                                                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="more">
+                                    
+                                                                            <div class="box">
+                                                                                    <p class="text text1">
+                                                                                            <a href="">Painogen Natural
+                                                                                                    Pain Relief  Almond Blend
+                                                                                            </a><br>
+                                                                                            <a href="">Origin: USA <br> Price: $200(inc.tax)</a>
+                                                                                          
+                                                                                        </p>
+                                                                                        <p class="text text2"><a href="">VIEW MORE</a></p>
+                                                                                <div></div>
+                                                                            </div>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                       
+            
+                                </div>
+
+                            </div>
+
+                          
+
+
+                    </div>
+    
+
+            
+            
+
+</div>
+
+
+
+
+    <!-- ...... Out background IMG 3 ......-->
+
+    <div class="bgCoIMG">
+        <img src="img/bg_1.png" alt="img">
+        <img src="img/bg_2.png" alt="img">
+</div>
+
+
+
+
+   
+
+
+          
+
+
+   
+
+
+ <!--....................... Subscribe ...........................-->
+
+
+ 
+        <div id="subscribe_section">
+            
+            <div>
+
+                    <div>
+
+                            <h2>Connect with Us</h2>
+   
+                           <div class="socIcons">
+   
+                                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                   <a href="#"><i class="fab fa-twitter"></i></i></a>
+                                   <a href="#"><i class="fab fa-instagram"></i></a>
+                                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                   <a href="#"><i class="fab fa-youtube"></i></i></a>
+                                   <a href="#"><i class="fab fa-skype"></i></i></a>
+                            </div>
+                   </div>
+   
+                   <div>
+                           <div id="subscribe">
+                               <h2>
+                                    Subscribe to our newsletter & get latest updates
+                               </h2>
+                               <form action="#" id="subscribeHover">
+                                   <input type="text" placeholder="Your Email" id="yourMail">
+                                   <button type="button" class="btn btn-success"id="join_btn">JOIN</button>
+
+                               </form>
+                           </div>
+                   </div>
+
+            </div>
+                
+
+            
+        </div>
+        
+
+
+<!-- ...............F O O T E R ....................-->
+
+<footer>
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="container">
+                    <div class="row par_1_row">
+                        <div class="col-lg-3">
+                            <div class="logoFooterCont">
+                                <img src="img/footerIMG/footer_log.png" alt="logo" class="img-fluid">
+                            </div>
+            
+                            <div class="textfooterCont">
+                                <p>Painogen™ – USA based 
+                                    company dedicated to bring 
+                                    effective health improvement
+                                     products in combinations 
+                                     with natural & organic 
+                                     sources.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 nav_cotent_footer">
+                            <div>
+                                <h3 class="style_h3">QUESTIONS</h3>
+                                    <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">How It Works</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">FAQs</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Shipping</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Returns</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Track Order</a>
+                                             </li>
+                                    </ul>
+                            </div>
+            
+                            <div>
+                                <h3 class="style_h3">ABOUT US</h3>
+                                    <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                 <a class="nav-link" href="#">About Us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                 <a class="nav-link" href="#">Careers</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                 <a class="nav-link" href="#">Testimonials</a>
+                                             </li>
+                                            <li class="nav-item">
+                                                 <a class="nav-link" href="#">Our Network</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Resellers</a>
+                                            </li>
+                                    </ul>
+                            </div>
+            
+                            <div>
+                                <h3 class="style_h3">QUICK LINKS</h3>
+                                    <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">My Account</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Wishlist</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Shop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Blogs & News</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                    <a class="nav-link" href="#">Press & Media</a>
+                                             </li>
+                                    </ul>
+                            </div>
+            
+                        </div>
+                        <div class="col-lg-2" id="instagram_block">
+                            <h3 class="style_h3">Instagram</h3>
+                            <div class="instagram_img">
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_1.png" alt="imf"></a>
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_2.png" alt="imf"></a>
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_3.png" alt="imf"></a>
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_4.png" alt="imf"></a>
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_5.png" alt="imf"></a>
+                                <a href="#"><img class="img-fluid" src="img/footerIMG/imgfoot_6.png" alt="imf"></a>
+                            </div>
+                            <h3 class="style_h3">We're on:</h3>
+                            <a href ="#"><img class="img-fluid" src="img/footerIMG/amazon.png" alt="logoAmazon"></a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+
+    
+   
+</div>
+   
+<div class="container-fluid" id="bottom_footer_block">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="#" class="footerlastLink">Disclaimer</a><span>  /</span>   <a class="footerlastLink" href="#">Privacy Policy</a> <span>   /</span>   <a class="footerlastLink" href="#">Terms & Conditions</a></p>
+                        <p>©2018 Painogen.com. All Rights Reserved. Clear Business Company</p>
+                    </div>
+                    <div class="col-md-6" id="bankCarts">
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                        <a href="#"><i class="fab fa-cc-amex"></i></a>
+                        <a href="#"><i class="fab fa-amazon"></i></a>
+                        <a href="#"><i class="fab fa-cc-diners-club"></i></a>
+                        <a href="#"><i class="fab fa-cc-discover"></i></a>
+                        <a href="#"><i class="fab fa-cc-jcb"></i></a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+   <!-- Optional JavaScript -->
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+   <script>
+       new WOW().init();
+
+   </script>
+  </body>
+</html>

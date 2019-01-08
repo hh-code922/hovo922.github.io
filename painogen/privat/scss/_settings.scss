@@ -1,0 +1,68 @@
+ @import 'fonts';
+ /*...Fonts...*/
+
+$font_1: 'kariaReguliar';
+$font_5: 'kariaBold';
+$font_6: 'kariaitali';
+$font_2: 'poppinsSemiBold';
+$font_3: 'poppinsRegular';
+$font_4: 'poppinsMedium';
+
+$font_7: 'montserratRegular';
+
+
+/*...Colors...*/
+
+$color_1: #58595b;
+$color_2: #262a2c;
+$color_3: #2b9100;
+$color_4: #7c7c7c;
+$color_5: #c8c8c8;
+$color_6: #ffffff;
+
+/*...sizes...*/
+
+$size_1: 20px;
+$size_2 :119.61px;
+$size_3: 25px;
+$size_4: 24px;
+$size_5: 30px;
+$size_6: 18px;
+$size_7: 16px;
+
+
+
+
+/*EXTEND */
+
+.grid {
+    display: grid;
+}
+
+.m_auto{
+    margin: 0 auto;
+}
+
+.t-align{
+    text-align: center;
+}
+
+/*btn*/
+.sameBTN {
+    width: 11rem;
+  height: 3.5rem;
+  }
+
+/*mixin*/
+
+@mixin fontsStyle($family, $size,$color){
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
+
+/*class*/
+
+.margin_auto{
+    margin: 0 auto;
+}

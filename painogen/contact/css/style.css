@@ -1,0 +1,514 @@
+@font-face {
+  font-family: kariaReguliar;
+  src: url("../fonts/karia/Karla-Regular.ttf"); }
+@font-face {
+  font-family: kariaBold;
+  src: url("../fonts/karia/Karla-Bold.ttf"); }
+@font-face {
+  font-family: kariaitali;
+  src: url("../fonts/karia/Karla-Italic.ttf"); }
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url("../fonts/poppins/Poppins-SemiBold.otf"); }
+@font-face {
+  font-family: poppinsRegular;
+  src: url("../fonts/poppins/Poppins-Regular.otf"); }
+@font-face {
+  font-family: poppinsMedium;
+  src: url("../fonts/poppins/Poppins-Medium.otf"); }
+/*...Fonts...*/
+/*...Colors...*/
+/*...sizes...*/
+/*EXTEND */
+.grid, #subscribe_section > div, #subscribe_section > div .socIcons, footer .nav_cotent_footer, footer .instagram_img {
+  display: grid; }
+
+.m_auto {
+  margin: 0 auto; }
+
+.t-align {
+  text-align: center; }
+
+/*btn*/
+.sameBTN {
+  width: 11rem;
+  height: 3.5rem; }
+
+/*mixin*/
+/*class*/
+.margin_auto {
+  margin: 0 auto; }
+
+body {
+  background: #f8f8f8; }
+  body a {
+    text-decoration: none; }
+  body ul li {
+    list-style: none; }
+
+.aac {
+  width: 150%; }
+  @media only screen and (max-width: 1650px) {
+    .aac {
+      width: 120%; } }
+  @media only screen and (max-width: 1300px) {
+    .aac {
+      width: 100%; } }
+
+/*class for parallax off*/
+/*..........header............*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Icon 1 */
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  border: none;
+  width: 43px;
+  outline: none;
+  height: 25px;
+  /* margin: 50px auto;*/
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 59%;
+  background: #5f5a58;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+#nav-icon1 span:nth-child(1) {
+  top: 7px; }
+
+#nav-icon1 span:nth-child(2) {
+  top: 13px; }
+
+#nav-icon1 span:nth-child(3) {
+  top: 20px; }
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px; }
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+/*my styles head*/
+header {
+  border-bottom: solid 1px #c8c8c8; }
+  header nav {
+    background: #fafafa; }
+
+#headNav {
+  padding-bottom: 34px;
+  padding-top: 28px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
+#headMenu {
+  margin-left: 3%;
+  margin-top: 18px; }
+  #headMenu li a {
+    margin: 0;
+    padding: 0;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: "kariaReguliar";
+    font-size: 16px;
+    color: #262a2c;
+    font-weight: 400; }
+  #headMenu li a:hover {
+    color: #2b9100; }
+
+#navbarNav_2 {
+  width: 261px;
+  position: absolute;
+  right: 0; }
+  @media only screen and (max-width: 991px) {
+    #navbarNav_2 {
+      position: inherit; } }
+  #navbarNav_2 li a {
+    margin: 0;
+    padding: 0;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: "kariaReguliar";
+    font-size: 16px;
+    color: #262a2c;
+    font-weight: 400; }
+  #navbarNav_2 li a:hover {
+    color: #2b9100; }
+
+.headerIconeDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: auto;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear; }
+  .headerIconeDiv img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30%; }
+  .headerIconeDiv:hover {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 11px -2px #686161;
+            box-shadow: 0px 0px 11px -2px #686161; }
+
+/*.............. Content ...................*/
+/* .... Map....*/
+/*#map_block {
+max-width: 1920px;
+#map {
+  width: 82.65625%;
+  height: 726px;
+ 
+  margin: 0 auto;
+}
+}
+*/
+/*#cc {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/BG-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map_block{
+  img{
+    width: 100%;
+  }
+
+  position: relative;
+}
+#map {
+  width:100%;
+  height: 408px;
+  background: red;
+  margin: 0 auto;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"]{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter:grayscale(100%);
+}
+
+.ymaps-2-1-72-map {
+position: absolute;
+z-index: 0;
+display: block;
+margin: 0!important;
+padding: 0!important;
+text-align: left!important;
+text-decoration: none!important;
+color: #000;
+font-weight: 400!important;
+font-style: normal!important;
+line-height: normal;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-print-color-adjust: exact;
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+top: 0;
+}*/
+#map {
+  width: 80%;
+  margin: 30px auto 30px auto; }
+  #map img {
+    width: 100%; }
+
+/*contacts*/
+.bockAddress {
+  margin-top: 30px; }
+
+.address_h2 {
+  font-family: "kariaReguliar";
+  font-size: 18px;
+  color: #a8a8a8;
+  margin-top: 15px;
+  padding-left: 4px; }
+
+.address_p {
+  font-family: "kariaReguliar";
+  font-size: 16px;
+  color: #a8a8a8;
+  line-height: 13.99px; }
+
+/*contacts style*/
+.inputs_style {
+  margin-top: 63px; }
+
+#formBlock {
+  border-left: 0.5px solid #c4c2c2;
+  padding-left: 25px;
+  padding-bottom: 147px;
+  padding-top: 80px; }
+  #formBlock .contact_h2 {
+    font-family: "poppinsRegular";
+    font-size: 24px;
+    color: #262a2c; }
+  #formBlock .form_header_bllock_underLine {
+    width: 80px;
+    height: 4px;
+    background: #2b9100;
+    margin-left: 4px; }
+  #formBlock form {
+    margin-top: 80px; }
+    #formBlock form input {
+      display: block;
+      font-family: "kariaReguliar";
+      font-size: 20px;
+      color: #a8a8a8;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #a8a8a8;
+      background: none;
+      width: 100%;
+      padding-left: 11px;
+      padding-right: 11px; }
+    #formBlock form button {
+      display: block;
+      margin-top: 21px;
+      float: right; }
+    #formBlock form textarea {
+      display: block;
+      font-family: "kariaReguliar";
+      font-size: 20px;
+      color: #a8a8a8;
+      background: none;
+      outline: none;
+      width: 100%;
+      height: 233px;
+      padding-left: 11px;
+      padding-right: 11px; }
+
+.icon_img img {
+  width: 6%; }
+
+.locationImg img {
+  width: 4%; }
+
+.massage {
+  margin-top: 85px; }
+
+/*.............subscribe_block....................*/
+#subscribe_section {
+  background: #2b9100;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-top: 170px; }
+
+#subscribe_section > div {
+  max-width: 1140px;
+  margin: 0 auto;
+  grid-template-columns: 521px auto; }
+  @media only screen and (max-width: 1211px) {
+    #subscribe_section > div {
+      max-width: 505px; } }
+  @media only screen and (max-width: 1200px) {
+    #subscribe_section > div {
+      padding-bottom: 100px; } }
+  @media only screen and (max-width: 520px) {
+    #subscribe_section > div {
+      max-width: 400px; } }
+  @media only screen and (max-width: 450px) {
+    #subscribe_section > div {
+      max-width: 277px; } }
+  @media only screen and (max-width: 1440px) {
+    #subscribe_section > div {
+      grid-template-columns: 524px auto; } }
+  @media only screen and (max-width: 1211px) {
+    #subscribe_section > div {
+      grid-template-columns: auto;
+      grid-row-gap: 40px; } }
+  #subscribe_section > div h2 {
+    font-family: "poppinsRegular";
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 27px;
+    font-weight: 100;
+    letter-spacing: 2px; }
+    @media only screen and (max-width: 1440px) {
+      #subscribe_section > div h2 {
+        font-size: 17px; } }
+  #subscribe_section > div .socIcons {
+    grid-template-columns: 30px 30px 30px 30px 30px 30px;
+    grid-column-gap: 5%; }
+    @media only screen and (max-width: 1440px) {
+      #subscribe_section > div .socIcons {
+        grid-column-gap: 5%; } }
+    #subscribe_section > div .socIcons a {
+      display: block;
+      font-size: 25px;
+      color: #ffffff;
+      moz-transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      transition: all .3s linear; }
+    #subscribe_section > div .socIcons a:hover {
+      color: #58595b; }
+
+#subscribeHover {
+  position: relative; }
+
+#yourMail {
+  position: absolute;
+  right: 26%;
+  width: 437px;
+  height: 57px;
+  border-radius: .50rem;
+  font-family: "poppinsRegular";
+  font-size: 22px;
+  color: #7c7c7c;
+  padding-left: 5%;
+  border: none; }
+  @media only screen and (max-width: 1440px) {
+    #yourMail {
+      width: 57%;
+      height: 45px;
+      font-size: 18px;
+      left: 17.9%; } }
+  @media only screen and (max-width: 1200px) {
+    #yourMail {
+      width: 75%;
+      height: 45px;
+      font-size: 18px;
+      left: 0; } }
+
+#join_btn {
+  width: 173px;
+  height: 57px;
+  border-radius: .50rem;
+  position: absolute;
+  right: 0%;
+  -webkit-box-shadow: 0px 0px 13px 0px #1b1919;
+          box-shadow: 0px 0px 13px 0px #1b1919;
+  font-family: "kariaitali";
+  font-size: 24.11px;
+  color: #ffffff;
+  background-color: #2b9100; }
+  @media only screen and (max-width: 1440px) {
+    #join_btn {
+      width: 26%;
+      height: 45px;
+      font-size: 19px;
+      right: 0; } }
+  @media only screen and (max-width: 1200px) {
+    #join_btn {
+      width: 27%;
+      height: 45px;
+      font-size: 19px;
+      right: 0%; } }
+
+#subscribe > h2:nth-child(1) {
+  text-align: right; }
+
+/*...........F O O T E R ...............*/
+footer {
+  padding-top: 70px;
+  background: #f7f9fb;
+  /* Nav footer*/
+  /*instagram footer*/ }
+  footer .container {
+    max-width: 1172px; }
+  @media only screen and (max-width: 563px) {
+    footer {
+      padding-left: 5%; } }
+  footer .textfooterCont {
+    margin-top: 25px;
+    font-family: "kariaReguliar";
+    font-size: 14px;
+    color: #626262;
+    line-height: 30px;
+    letter-spacing: 1px; }
+  footer .par_1_row {
+    padding-bottom: 60px; }
+  footer .style_h3 {
+    font-family: "kariaReguliar";
+    font-size: 22px;
+    color: #3f4345;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 0; }
+  footer .nav_cotent_footer {
+    grid-template-columns: auto auto auto; }
+    @media only screen and (max-width: 563px) {
+      footer .nav_cotent_footer {
+        grid-template-columns: auto auto; } }
+    footer .nav_cotent_footer ul > li > a {
+      font-family: "kariaReguliar";
+      font-size: 20px;
+      color: #9ca9b1;
+      -webkit-transition: all .3s linear;
+      transition: all .3s linear;
+      padding: .5rem 1rem;
+      padding-left: 0.1rem; }
+      footer .nav_cotent_footer ul > li > a:hover {
+        color: #58595b; }
+  footer #instagram_block h3:nth-child(3) {
+    margin-top: 63px;
+    text-align: right;
+    padding: 0; }
+  footer #instagram_block a:nth-child(4) {
+    display: block;
+    text-align: right; }
+  footer .instagram_img {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0.6vw;
+    grid-row-gap: 1vh; }
+
+/* botton footer part*/
+#bottom_footer_block {
+  background: #8b99a3;
+  padding-top: 40px;
+  background-color: #ffffff;
+  padding-bottom: 30px; }
+  #bottom_footer_block p a {
+    font-family: "kariaReguliar";
+    font-size: 16px;
+    color: #727f88;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    text-decoration: none; }
+    #bottom_footer_block p a:hover {
+      color: #2c9146; }
+  #bottom_footer_block p > span {
+    margin: 0 2%; }
+
+/*  bank pay carts*/
+#bankCarts {
+  padding-left: 8.51vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto; }
+  #bankCarts a {
+    font-family: "kariaReguliar";
+    font-size: 2rem;
+    color: #727f88;
+    margin: 0 2%;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    display: block;
+    text-align: right; }
+    #bankCarts a:hover {
+      color: #2b9100; }
+
+/*# sourceMappingURL=style.css.map */
