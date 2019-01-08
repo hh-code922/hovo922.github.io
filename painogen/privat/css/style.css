@@ -1064,9 +1064,15 @@ footer {
     margin-top: 63px;
     text-align: right;
     padding: 0; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block h3:nth-child(3) {
+        text-align: left; } }
   footer #instagram_block a:nth-child(4) {
     display: block;
     text-align: right; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block a:nth-child(4) {
+        text-align: left; } }
   footer .instagram_img {
     grid-template-columns: auto auto auto;
     grid-column-gap: 0.6vw;

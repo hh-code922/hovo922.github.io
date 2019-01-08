@@ -56,6 +56,10 @@ body {
       width: 100%; } }
 
 /*class for parallax off*/
+@media only screen and (max-width: 1300px) {
+  .parallax_non {
+    display: none; } }
+
 /*..........header............*/
 * {
   margin: 0;
@@ -176,6 +180,10 @@ header {
 /*Slider*/
 #section_1 {
   margin-top: 140px; }
+  @media only screen and (max-width: 600px) {
+    #section_1 {
+      width: 4%;
+      min-width: 300px; } }
 
 #blockSlid .logoSlider {
   min-width: 58px;
@@ -239,7 +247,7 @@ header {
     grid-column-gap: 13px;
     top: 152%;
     right: 0%; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 992px) {
       #top_slid_main #bnuttons_topSlider {
         right: 0; } }
     @media only screen and (max-width: 576px) {
@@ -248,6 +256,9 @@ header {
         grid-column-gap: 5%;
         top: 180%;
         left: 37%; } }
+    @media only screen and (max-width: 320px) {
+      #top_slid_main #bnuttons_topSlider {
+        left: 29%; } }
 
 .top_slid_text_content {
   -webkit-animation: animationFramesW linear 1s;
@@ -297,12 +308,31 @@ header {
 /*..............section_2.............*/
 #section_2 {
   margin-top: 235px; }
+  @media only screen and (max-width: 1600px) {
+    #section_2 {
+      width: 825px; } }
+  @media only screen and (max-width: 992px) {
+    #section_2 {
+      width: 600px; } }
+  @media only screen and (max-width: 767px) {
+    #section_2 {
+      width: 52%;
+      min-width: 300px; } }
 
 .content_img_part_section_2 {
   position: relative; }
   .content_img_part_section_2 img {
     position: absolute;
     left: -36%; }
+    @media only screen and (max-width: 1600px) {
+      .content_img_part_section_2 img {
+        width: 180%;
+        left: -60%;
+        top: 68px; } }
+    @media only screen and (max-width: 767px) {
+      .content_img_part_section_2 img {
+        position: static;
+        width: 100%; } }
 
 .content_textHeader_part_section_2 {
   width: 59%; }
@@ -314,6 +344,13 @@ header {
   grid-row-gap: 45px; }
   .infoIcon img {
     max-width: 95px; }
+    @media only screen and (max-width: 1600px) {
+      .infoIcon img {
+        max-width: 73%; } }
+  @media only screen and (max-width: 1600px) {
+    .infoIcon {
+      grid-row-gap: 6px;
+      margin-top: 10px; } }
 
 .section2_part1 {
   position: relative; }
@@ -327,6 +364,9 @@ header {
   font-family: "kariaBold";
   font-size: 21px;
   color: #c8c8c8; }
+  @media only screen and (max-width: 1600px) {
+    .blocksInfoIcon div:nth-child(2) {
+      font-size: 14px; } }
 
 #shopBTN {
   font-family: "kariaBold";
@@ -345,6 +385,18 @@ header {
 /*text cotent style*/
 #section_3 {
   margin-top: 70px; }
+  @media only screen and (max-width: 1600px) {
+    #section_3 {
+      width: 825px;
+      margin-top: 140px; } }
+  @media only screen and (max-width: 992px) {
+    #section_3 {
+      width: 600px;
+      margin-top: 70px; } }
+  @media only screen and (max-width: 767px) {
+    #section_3 {
+      width: 52%;
+      min-width: 300px; } }
 
 .content_textHeader_part_section_3 {
   width: 48%; }
@@ -356,6 +408,10 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 42px; }
+  @media only screen and (max-width: 992px) {
+    .content_textHeader_part_section_3 {
+      width: 52%;
+      min-width: 300px; } }
 
 .content_text_part_section_3 p {
   font-family: "poppinsRegular";
@@ -411,6 +467,19 @@ header {
       display: none; } }
 
 /*............... ........section 4........................*/
+@media only screen and (max-width: 1600px) {
+  #section_4_block {
+    width: 825px;
+    margin-top: 70px; } }
+@media only screen and (max-width: 992px) {
+  #section_4_block {
+    width: 600px;
+    margin-top: 70px; } }
+@media only screen and (max-width: 767px) {
+  #section_4_block {
+    width: 52%;
+    min-width: 300px; } }
+
 .content_textHeader_part h2 {
   font-family: "poppinsRegular";
   font-size: 30px;
@@ -419,6 +488,14 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 42px; }
+  @media only screen and (max-width: 1600px) {
+    .content_textHeader_part h2 {
+      font-size: 20px;
+      line-height: 33px; } }
+  @media only screen and (max-width: 992px) {
+    .content_textHeader_part h2 {
+      font-size: 16px;
+      line-height: 28px; } }
 
 .content_text_part p {
   font-family: "poppinsRegular";
@@ -426,6 +503,17 @@ header {
   color: #626262;
   letter-spacing: 1px;
   line-height: 36px; }
+  @media only screen and (max-width: 1600px) {
+    .content_text_part p {
+      font-family: "poppinsRegular";
+      font-size: 15px;
+      color: #626262;
+      letter-spacing: 1px;
+      line-height: 26px; } }
+  @media only screen and (max-width: 922px) {
+    .content_text_part p {
+      font-size: 13px;
+      line-height: 23px; } }
 
 .greenLine {
   width: 80px;
@@ -433,8 +521,16 @@ header {
   background-color: #2b9100;
   margin-top: 29px;
   margin-bottom: 29px; }
+  @media only screen and (max-width: 1600px) {
+    .greenLine {
+      margin-top: 16px;
+      margin-bottom: 16px; } }
+  @media only screen and (max-width: 922px) {
+    .greenLine {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
-.button_part {
+.btnStyle {
   width: 11rem;
   height: 3.5rem;
   font-family: "kariaBold";
@@ -442,10 +538,26 @@ header {
   color: #ffffff;
   margin-top: 21px;
   display: block; }
+  @media only screen and (max-width: 1600px) {
+    .btnStyle {
+      width: 9rem;
+      height: 3rem; } }
+  @media only screen and (max-width: 992px) {
+    .btnStyle {
+      width: 6rem;
+      height: 2rem;
+      font-size: 14px; } }
 
 .content_textHeader_part_1 {
   width: 61.48282097649186%;
   margin-top: 103px; }
+  @media only screen and (max-width: 1600px) {
+    .content_textHeader_part_1 {
+      width: 93.482821%;
+      margin-top: 74px; } }
+  @media only screen and (max-width: 992px) {
+    .content_textHeader_part_1 {
+      margin-top: 0; } }
 
 /*............paralax 3 img ..........*/
 .parallax_3 {
@@ -466,12 +578,29 @@ header {
     .parallax_3 {
       display: none; } }
 
+@media only screen and (max-width: 1600px) {
+  #part_1_ection_5 {
+    margin-top: 70px; } }
 .content_textHeader_part_2 {
   margin-top: 175px;
   width: 43%; }
+  @media only screen and (max-width: 1600px) {
+    .content_textHeader_part_2 {
+      margin-top: 117px;
+      width: 43%; } }
+  @media only screen and (max-width: 992px) {
+    .content_textHeader_part_2 {
+      margin-top: 60px;
+      width: 48%; } }
 
 .contetn_text_part_3 {
   padding-top: 95px; }
+  @media only screen and (max-width: 1600px) {
+    .contetn_text_part_3 {
+      padding-top: 168px; } }
+  @media only screen and (max-width: 992px) {
+    .contetn_text_part_3 {
+      padding-top: 17px; } }
 
 /*..........seting out BG..............*/
 .blockOutimg_3 {
@@ -482,16 +611,55 @@ header {
 /*...... Section 6 ......*/
 #section_6 {
   margin-top: 70px; }
+  @media only screen and (max-width: 1600px) {
+    #section_6 {
+      width: 825px; } }
+  @media only screen and (max-width: 992px) {
+    #section_6 {
+      width: 600px;
+      margin-top: 70px; } }
+  @media only screen and (max-width: 767px) {
+    #section_6 {
+      width: 52%;
+      min-width: 300px; } }
 
 /*...... Section 7 ......*/
+@media only screen and (max-width: 1600px) {
+  #section_7 {
+    width: 825px; } }
+@media only screen and (max-width: 992px) {
+  #section_7 {
+    width: 600px;
+    margin-top: 70px; } }
+@media only screen and (max-width: 767px) {
+  #section_7 {
+    width: 52%;
+    min-width: 300px; } }
+
 .contetn_text_part_4 {
   margin-top: 163px; }
+  @media only screen and (max-width: 1600px) {
+    .contetn_text_part_4 {
+      padding-top: 0px; } }
+  @media only screen and (max-width: 992px) {
+    .contetn_text_part_4 {
+      margin-top: 93px; } }
+
+@media only screen and (max-width: 1600px) {
+  .content_img_part_4 {
+    margin-top: 50px; } }
 
 .content_textHeader_part_4 {
   width: 43%; }
+  @media only screen and (max-width: 992px) {
+    .content_textHeader_part_4 {
+      width: 48%; } }
 
 .content_text_part_4 {
   width: 83%; }
+  @media only screen and (max-width: 992px) {
+    .content_text_part_4 {
+      width: 100%; } }
 
 /*...... <!-- ...... paralax end out bg image ......--> ......*/
 #outIMG_4 {
@@ -523,6 +691,12 @@ header {
 
 #navTabBlock {
   width: 39%; }
+  @media only screen and (max-width: 767px) {
+    #navTabBlock {
+      width: 100%; } }
+  @media only screen and (max-width: 992px) {
+    #navTabBlock {
+      width: 50%; } }
   @media only screen and (max-width: 767px) {
     #navTabBlock {
       width: 100%; } }
@@ -902,9 +1076,15 @@ footer {
     margin-top: 63px;
     text-align: right;
     padding: 0; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block h3:nth-child(3) {
+        text-align: left; } }
   footer #instagram_block a:nth-child(4) {
     display: block;
     text-align: right; }
+    @media only screen and (max-width: 992px) {
+      footer #instagram_block a:nth-child(4) {
+        text-align: left; } }
   footer .instagram_img {
     grid-template-columns: auto auto auto;
     grid-column-gap: 0.6vw;
@@ -963,5 +1143,4 @@ footer {
 
 .partner_img {
   padding-top: 14px; }
-
 /*# sourceMappingURL=style.css.map */

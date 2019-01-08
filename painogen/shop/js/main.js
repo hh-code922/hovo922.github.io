@@ -13,11 +13,11 @@ $(document).ready(function(){
 
 $(window).scroll(function() {    // this will work when your window scrolled.
     var height = $(window).scrollTop();  //getting the scrolling height of window
-    if(height  > 300){
+    if(height  > 500){
         $('#headNav').css('padding-bottom','0px');
         $('#headNav').css('opacity','0');
     }
-    if(height  > 500) {
+    if(height  > 700) {
 
       $('header').css('display','none');
       $('header').css('display','block');

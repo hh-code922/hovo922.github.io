@@ -40,6 +40,16 @@ body{
 
 
 
+  .parallax_non{
+
+
+    @media only screen and (max-width: 1300px) {
+      display: none;
+       
+     }
+  }
+   
+
 
  /*..........header............*/
 
@@ -238,6 +248,11 @@ body{
 
 #section_1 {
   margin-top: 140px;
+  
+  @media only screen and (max-width: 600px) {
+    width: 4%;
+    min-width: 300px;;
+   }
 }
 
 #blockSlid{
@@ -296,6 +311,7 @@ body{
       font-size: 50px;
      }
   }
+
   
 }
 
@@ -325,7 +341,7 @@ body{
     position: absolute;
    
 
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 992px) {
       right: 0;
     }
 
@@ -337,6 +353,13 @@ body{
       left: 37%;
      }
 
+
+     @media only screen and (max-width: 320px) {
+     
+      
+      left: 29%;
+     }
+
    
 
     @extend .grid;
@@ -345,6 +368,7 @@ body{
     top: 152%;
     right:0%;
   }
+
 }
 
 
@@ -402,6 +426,16 @@ body{
 
 #section_2{
   margin-top: 235px;
+  @media only screen and (max-width: 1600px) {
+    width: 825px;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 600px;
+  }
+  @media only screen and (max-width: 767px) {
+    width: 52%;
+    min-width: 300px;
+  }
 }
 
 
@@ -410,6 +444,17 @@ body{
   img{
     position: absolute;
     left: -36%;
+    @media only screen and (max-width: 1600px) {
+      width: 180%;
+      left: -60%;
+      top: 68px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      
+      position: static;
+      width: 100%;
+    }
   }
 }
 
@@ -429,6 +474,14 @@ body{
   grid-row-gap: 45px;
   img{
     max-width: 95px;
+    @media only screen and (max-width: 1600px) {
+      max-width: 73%;
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    grid-row-gap: 6px;
+    margin-top: 10px;
   }
 }
 
@@ -450,6 +503,9 @@ body{
   div:nth-child(2){
     @include fontsStyle($font_5,21px,$color_5);
     @extend .t-align;
+    @media only screen and (max-width: 1600px) {
+     font-size: 14px;
+    }
 
   }
 }
@@ -484,6 +540,20 @@ body{
 
 #section_3 {
   margin-top: 70px;
+
+  @media only screen and (max-width: 1600px) {
+    width: 825px;
+    margin-top: 140px;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 600px;
+    margin-top: 70px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 52%;
+    min-width: 300px;
+  }
 }
 
 
@@ -496,6 +566,12 @@ body{
     font-weight: bold;
     line-height: 42px;
   }
+
+  @media only screen and (max-width: 992px) {
+    width:52%;
+    min-width: 300px;
+  }
+
 }
 
 
@@ -572,6 +648,24 @@ body{
 
 /*............... ........section 4........................*/
 
+
+#section_4_block{
+  @media only screen and (max-width: 1600px) {
+    width: 825px;
+    margin-top: 70px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    width: 600px;
+    margin-top: 70px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 52%;
+    min-width: 300px;
+  }
+}
+
 //...........section 4 global style 
 
 // text part
@@ -583,8 +677,23 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     line-height: 42px;
+
+    @media only screen and (max-width: 1600px) {
+     
+      font-size: 20px;
+      line-height: 33px;
+    }
+
+
+    @media only screen and (max-width: 992px) {
+      
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
   
+ 
+
 }
 
 
@@ -594,7 +703,23 @@ body{
     @include fontsStyle($font_3, 18px,#626262);
     letter-spacing: 1px;
    line-height: 36px;
+
+    @media only screen and (max-width: 1600px){
+      font-family: "poppinsRegular";
+      font-size: 15px;
+      color: #626262;
+      letter-spacing: 1px;
+      line-height: 26px;
+    }
+
+    @media only screen and (max-width: 922px){
+      
+      font-size: 13px;
+      line-height: 23px;
+    }
   }
+
+  
 }
 
 
@@ -604,13 +729,22 @@ body{
   background-color: #2b9100;
   margin-top: 29px;
   margin-bottom:29px;
+  @media only screen and (max-width: 1600px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: 922px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 
 // button part
 
 
-.button_part {
+.btnStyle {
   width: 11rem;
   height: 3.5rem;
   font-family: "kariaBold";
@@ -618,6 +752,18 @@ body{
   color: #ffffff;
   margin-top: 21px;
   display: block;
+
+  @media only screen and (max-width: 1600px) {
+    
+    width: 9rem;
+     height: 3rem;
+  }
+  @media only screen and (max-width: 992px) {
+    
+    width: 6rem;
+    height: 2rem;
+    font-size: 14px;
+  }
 }
 
 
@@ -633,6 +779,16 @@ body{
 .content_textHeader_part_1 {
   width: 61.48282097649186%;
   margin-top: 103px;
+
+  @media only screen and (max-width: 1600px) {
+    width: 93.482821%;
+    margin-top: 74px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    
+    margin-top: 0;
+  }
 }
 
 
@@ -692,11 +848,25 @@ body{
 
 //...........section 4 part 2.......
 
+@media only screen and (max-width: 1600px) {
+  #part_1_ection_5{
+    margin-top: 70px;
+  }
+}
 
 
 .content_textHeader_part_2 {
   margin-top: 175px;
   width: 43%;
+  @media only screen and (max-width: 1600px) {
+    margin-top: 117px;
+    width: 43%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 60px;
+    width: 48%;
+  }
 }
 
 
@@ -708,6 +878,13 @@ body{
 
 .contetn_text_part_3 {
   padding-top:95px;
+  @media only screen and (max-width: 1600px) {
+    padding-top:168px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding-top: 17px;
+  }
 }
 
 
@@ -735,6 +912,19 @@ body{
 
 #section_6{
   margin-top: 70px;
+
+  @media only screen and (max-width: 1600px) {
+   width: 825px;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 600px;
+    margin-top: 70px;
+   }
+
+   @media only screen and (max-width: 767px) {
+    width: 52%;
+    min-width: 300px;
+   }
 }
 
 
@@ -745,19 +935,55 @@ body{
 
 /*...... Section 7 ......*/
 
-.contetn_text_part_4 {
-  margin-top: 163px;
+#section_7 {
+  
+  @media only screen and (max-width: 1600px) {
+    width: 825px;
+   }
+
+   @media only screen and (max-width: 992px) {
+    width: 600px;
+    margin-top: 70px;
+   }
+
+   @media only screen and (max-width: 767px) {
+    width: 52%;
+    min-width: 300px;
+   }
 }
 
+.contetn_text_part_4 {
+  margin-top: 163px;
+  @media only screen and (max-width: 1600px) {
+    padding-top:0px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 93px;
+  }
+}
+
+
+.content_img_part_4{
+  @media only screen and (max-width: 1600px) {
+    margin-top: 50px;
+  }
+}
 
 
 .content_textHeader_part_4 {
   width: 43%;
+  @media only screen and (max-width: 992px) {
+   width: 48%;
+  }
 }
 
 
 .content_text_part_4 {
   width: 83%;
+  @media only screen and (max-width: 992px) {
+   width: 100%;
+   }
 }
 
 
@@ -817,6 +1043,14 @@ body{
   @media only screen and (max-width: 767px) {
    width: 100%;
    }
+
+   @media only screen and (max-width: 992px) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
 
    @media only screen and (max-width: 998px) {
     ul{
@@ -1382,11 +1616,22 @@ margin-top: 60px;
         margin-top: 63px;
         text-align: right;
         padding: 0;
+
+        @media only screen and (max-width: 992px) {
+          text-align: left;
+         
+        }
       }
       a:nth-child(4){
         display: block;
         text-align: right;
+
+        @media only screen and (max-width: 992px) {
+          text-align: left;
+         
+        }
       }
+      
     }
 
   .instagram_img {
