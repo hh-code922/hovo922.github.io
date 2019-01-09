@@ -26,13 +26,13 @@ $(window).scroll(function() {    // this will work when your window scrolled.
      
         $('#headNav').css('box-shadow','#d6cccc 1px 1px 15px 0px');
        // $('#headNav').css('padding-bottom','34px');
-        $("#headNav").addClass('fixed-top opacitYStyle');
+        $("#headNav").addClass('xxxx opacitYStyle');
         $('#headNav').css('opacity','1');
        // $('#headNav').css('padding-left','32px');
         $('#navbarNav_2').css('right','6.1%');
 
     } else if(height == 0){
-        $("#headNav").removeClass( "fixed-top opacitYStyle" );
+        $("#headNav").removeClass( "xxxx opacitYStyle" );
         $('#headNav').css('box-shadow','none');
         $('#headNav').css('opacity','1');
        // $('#headNav').css('padding-bottom','34px');

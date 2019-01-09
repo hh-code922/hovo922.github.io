@@ -148,12 +148,12 @@ body{
   }
 
  #headNav{
-   // padding-bottom: 34px;
-   // padding-top: 28px;
-  height: 100px;
+    padding-bottom: 34px;
+   padding-top: 28px;
+  //height: 100px;
     
    
-  transition: opacity 3s;
+  transition: opacity 1s;
  
 
 }
@@ -161,9 +161,13 @@ body{
 
 
 
-.fixed-top{
+.xxxx{
  
   padding-left: 32px;
+  margin-left: -15px;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
 }
 
 

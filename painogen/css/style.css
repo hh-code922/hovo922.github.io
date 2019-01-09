@@ -122,12 +122,17 @@ header {
     background: #fafafa; }
 
 #headNav {
-  height: 100px;
-  -webkit-transition: opacity 3s;
-  transition: opacity 3s; }
+  padding-bottom: 34px;
+  padding-top: 28px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
 
-.fixed-top {
-  padding-left: 32px; }
+.xxxx {
+  padding-left: 32px;
+  margin-left: -15px;
+  width: 100%;
+  position: fixed;
+  z-index: 99999; }
 
 #headMenu {
   margin-left: 3%;
@@ -1166,4 +1171,5 @@ footer {
 
 .partner_img {
   padding-top: 14px; }
+
 /*# sourceMappingURL=style.css.map */
