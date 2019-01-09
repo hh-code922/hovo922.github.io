@@ -122,10 +122,12 @@ header {
     background: #fafafa; }
 
 #headNav {
-  padding-bottom: 34px;
-  padding-top: 28px;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear; }
+  height: 100px;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s; }
+
+.fixed-top {
+  padding-left: 32px; }
 
 #headMenu {
   margin-left: 3%;
@@ -139,7 +141,6 @@ header {
     font-style: normal;
     letter-spacing: 0px;
     line-height: 20px;
-    text-align: center;
     text-transform: none;
     color: #262a2c;
     padding: 0 15px; }
@@ -183,7 +184,7 @@ header {
 
 /*Slider*/
 #section_1 {
-  margin-top: 140px; }
+  margin-top: 50px; }
   @media only screen and (max-width: 1200px) {
     #section_1 {
       margin-top: 50px;
@@ -259,20 +260,21 @@ header {
     position: absolute;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 13px;
-    top: 152%;
+    top: 123%;
     right: 0%; }
     @media only screen and (max-width: 1200px) {
       #top_slid_main #bnuttons_topSlider {
-        top: 170%; } }
+        top: 127%; } }
     @media only screen and (max-width: 992px) {
       #top_slid_main #bnuttons_topSlider {
         right: 0;
-        top: 190%; } }
+        top: 136%; } }
     @media only screen and (max-width: 600px) {
       #top_slid_main #bnuttons_topSlider {
         width: 169px;
         left: 59px;
-        grid-column-gap: 13px; } }
+        grid-column-gap: 13px;
+        top: 170%; } }
 
 .top_slid_text_content {
   -webkit-animation: animationFramesW linear 1s;

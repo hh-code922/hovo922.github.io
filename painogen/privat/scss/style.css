@@ -156,12 +156,15 @@ header {
   #headMenu li a {
     margin: 0;
     padding: 0;
-    padding-left: 23px;
-    padding-right: 23px;
-    font-family: "kariaReguliar";
+    font-family: Karla, Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-transform: none;
     color: #262a2c;
-    font-weight: 400; }
+    padding: 0 15px; }
   #headMenu li a:hover {
     color: #2b9100; }
 
@@ -189,10 +192,10 @@ header {
   height: 40px;
   border-radius: 50%;
   overflow: auto;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear; }
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
   .headerIconeDiv img {
     display: block;
     margin: 0 auto;

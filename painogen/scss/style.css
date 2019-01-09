@@ -73,12 +73,8 @@ body {
   height: 25px;
   /* margin: 50px auto;*/
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer; }
 
@@ -92,12 +88,8 @@ body {
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out; }
 
 #nav-icon1 span:nth-child(1) {
@@ -112,8 +104,6 @@ body {
 #nav-icon1.open span:nth-child(1) {
   top: 18px;
   -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
   transform: rotate(135deg); }
 
 #nav-icon1.open span:nth-child(2) {
@@ -123,8 +113,6 @@ body {
 #nav-icon1.open span:nth-child(3) {
   top: 18px;
   -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
   transform: rotate(-135deg); }
 
 /*my styles head*/
@@ -136,6 +124,7 @@ header {
 #headNav {
   padding-bottom: 34px;
   padding-top: 28px;
+  -webkit-transition: all 1s linear;
   transition: all 1s linear; }
 
 #headMenu {
@@ -144,12 +133,15 @@ header {
   #headMenu li a {
     margin: 0;
     padding: 0;
-    padding-left: 23px;
-    padding-right: 23px;
-    font-family: "kariaReguliar";
+    font-family: Karla, Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-transform: none;
     color: #262a2c;
-    font-weight: 400; }
+    padding: 0 15px; }
   #headMenu li a:hover {
     color: #2b9100; }
 
@@ -177,21 +169,30 @@ header {
   height: 40px;
   border-radius: 50%;
   overflow: auto;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear; }
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
   .headerIconeDiv img {
     display: block;
     margin: 0 auto;
     margin-top: 30%; }
   .headerIconeDiv:hover {
     background: #ffffff;
-    box-shadow: 0px 0px 11px -2px #686161; }
+    -webkit-box-shadow: 0px 0px 11px -2px #686161;
+            box-shadow: 0px 0px 11px -2px #686161; }
 
 /*Slider*/
 #section_1 {
   margin-top: 140px; }
+  @media only screen and (max-width: 1200px) {
+    #section_1 {
+      margin-top: 50px;
+      width: 825px; } }
+  @media only screen and (max-width: 992px) {
+    #section_1 {
+      width: 600px; } }
+  @media only screen and (max-width: 600px) {
+    #section_1 {
+      width: 300px; } }
   @media only screen and (max-width: 600px) {
     #section_1 {
       width: 4%;
@@ -226,13 +227,13 @@ header {
   font-family: "poppinsSemiBold";
   font-size: 95px;
   color: #262a2c; }
+  @media only screen and (max-width: 1200px) {
+    #blockSlid h1 {
+      font-size: 70px; } }
   @media only screen and (max-width: 992px) {
     #blockSlid h1 {
-      font-size: 80px; } }
-  @media only screen and (max-width: 449px) {
-    #blockSlid h1 {
-      font-size: 50px; } }
-  @media only screen and (max-width: 449px) {
+      font-size: 60px; } }
+  @media only screen and (max-width: 992px) {
     #blockSlid h1 {
       font-size: 50px; } }
 
@@ -259,31 +260,46 @@ header {
     grid-column-gap: 13px;
     top: 152%;
     right: 0%; }
+    @media only screen and (max-width: 1200px) {
+      #top_slid_main #bnuttons_topSlider {
+        top: 170%; } }
     @media only screen and (max-width: 992px) {
       #top_slid_main #bnuttons_topSlider {
-        right: 0; } }
-    @media only screen and (max-width: 576px) {
+        right: 0;
+        top: 190%; } }
+    @media only screen and (max-width: 600px) {
       #top_slid_main #bnuttons_topSlider {
-        grid-template-columns: 23px 23px 23px 23px;
-        grid-column-gap: 5%;
-        top: 180%;
-        left: 37%; } }
-    @media only screen and (max-width: 320px) {
-      #top_slid_main #bnuttons_topSlider {
-        left: 29%; } }
+        width: 169px;
+        left: 59px;
+        grid-column-gap: 13px; } }
 
 .top_slid_text_content {
-  animation: animationFramesW linear 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%; }
+  -webkit-animation: animationFramesW linear 1s;
+          animation: animationFramesW linear 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+@-webkit-keyframes animationFramesW {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-49px, 0px);
+            transform: translate(-49px, 0px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
 
 @keyframes animationFramesW {
   0% {
     opacity: 0;
-    transform: translate(-49px, 0px); }
+    -webkit-transform: translate(-49px, 0px);
+            transform: translate(-49px, 0px); }
   100% {
     opacity: 1;
-    transform: translate(0px, 0px); } }
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
 /*...... Out backgroun IMG 1......*/
 .bgCoIMG img {
   position: absolute; }
@@ -441,6 +457,7 @@ header {
   outline: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s; }
   #btnPlay img {
     width: 29.46428571428571%;
@@ -450,10 +467,12 @@ header {
     margin-left: 40%; }
 
 #btnPlay:hover {
-  box-shadow: 0px 0px 40px -4px #8a8d8b; }
+  -webkit-box-shadow: 0px 0px 40px -4px #8a8d8b;
+          box-shadow: 0px 0px 40px -4px #8a8d8b; }
 
 #btnPlay:active {
-  box-shadow: 0px 1px 4px -1px;
+  -webkit-box-shadow: 0px 1px 4px -1px;
+          box-shadow: 0px 1px 4px -1px;
   background: #fff9f9e0; }
   #btnPlay:active img {
     width: 29%; }
@@ -730,6 +749,7 @@ header {
   height: 100%;
   background: #45b115b5;
   opacity: 0;
+  -webkit-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out; }
 
 .img-container:hover .imgBlock_tab .overlay {
@@ -742,6 +762,7 @@ header {
     font-family: "kariaReguliar";
     font-size: 24px;
     color: #ffffff;
+    -webkit-transition: 0.5s;
     transition: 0.5s; }
   .overlay div a:nth-child(2) {
     margin-left: 9%; }
@@ -752,7 +773,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #fff; }
 
 /* Style the tab */
@@ -777,7 +799,6 @@ header {
   margin: 0;
   width: 100%;
   moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
   -webkit-transition: all .3s linear;
   transition: all .3s linear; }
   .box p {
@@ -804,7 +825,6 @@ header {
     height: 2px;
     background: #2b9100;
     moz-transition: all .3s linear;
-    -o-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear; }
   .box:hover p > a {
@@ -835,9 +855,12 @@ header {
     margin-top: 145px;
     grid-template-columns: auto auto;
     grid-column-gap: 52px;
-    animation: animationFrames linear 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%; }
+    -webkit-animation: animationFrames linear 1s;
+            animation: animationFrames linear 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%; }
     @media only screen and (max-width: 1650px) {
       #testimonialBlock .block_testimonial_main {
         margin-top: 5%; } }
@@ -850,6 +873,11 @@ header {
     @media only screen and (max-width: 754px) {
       #testimonialBlock .block_testimonial_main {
         grid-template-columns: auto; } }
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes animationFrames {
   0% {
     opacity: 0; }
@@ -906,6 +934,7 @@ header {
       height: 64px;
       border: 4px solid #ffffff;
       border-radius: 50%;
+      -webkit-transition: all .3s linear;
       transition: all .3s linear;
       cursor: pointer; }
 
@@ -960,7 +989,6 @@ header {
       font-size: 25px;
       color: #ffffff;
       moz-transition: all .3s linear;
-      -o-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear; }
     #subscribe_section > div .socIcons a:hover {
@@ -999,7 +1027,8 @@ header {
   border-radius: .50rem;
   position: absolute;
   right: 0%;
-  box-shadow: 0px 0px 13px 0px #1b1919;
+  -webkit-box-shadow: 0px 0px 13px 0px #1b1919;
+          box-shadow: 0px 0px 13px 0px #1b1919;
   font-family: "kariaitali";
   font-size: 24.11px;
   color: #ffffff;
@@ -1057,6 +1086,7 @@ footer {
       font-family: "kariaReguliar";
       font-size: 20px;
       color: #9ca9b1;
+      -webkit-transition: all .3s linear;
       transition: all .3s linear;
       padding: .5rem 1rem;
       padding-left: 0.1rem; }
@@ -1090,8 +1120,6 @@ footer {
     font-family: "kariaReguliar";
     font-size: 16px;
     color: #727f88;
-    -moz-transition: all .3s linear;
-    -o-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     text-decoration: none; }
@@ -1110,6 +1138,7 @@ footer {
     font-size: 2rem;
     color: #727f88;
     margin: 0 2%;
+    -webkit-transition: all .3s linear;
     transition: all .3s linear;
     display: block;
     text-align: right; }

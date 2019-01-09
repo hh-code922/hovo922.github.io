@@ -148,11 +148,26 @@ body{
   }
 
  #headNav{
-    padding-bottom: 34px;
-    padding-top: 28px;
+   // padding-bottom: 34px;
+   // padding-top: 28px;
+  height: 100px;
+    
    
-   transition: all 1s linear;
+  transition: opacity 3s;
+ 
+
 }
+
+
+
+
+.fixed-top{
+ 
+  padding-left: 32px;
+}
+
+
+
   
   #headMenu{
       
@@ -244,7 +259,7 @@ body{
 /*Slider*/
 
 #section_1 {
-  margin-top: 140px;
+  margin-top: 50px;
   
   @media only screen and (max-width: 1200px) {
     margin-top: 50px;
@@ -358,7 +373,7 @@ body{
     @extend .grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 13px;
-    top: 152%;
+    top: 123%;
     right:0%;
 
    
@@ -369,19 +384,20 @@ body{
      
     @media only screen and (max-width: 1200px) {
      
-      top: 170%;
+      top: 127%;
      
      }
 
      @media only screen and (max-width: 992px) {
       right: 0;
-      top: 190%;
+      top: 136%;
     }
 
     @media only screen and (max-width: 600px) {
       width: 169px;
       left: 59px;
       grid-column-gap: 13px;
+      top: 170%;
     }
 
 
