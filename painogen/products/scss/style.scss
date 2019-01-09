@@ -132,20 +132,6 @@ body{
 /*..........header............*/
 
 
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
@@ -255,10 +241,21 @@ header {
       a{
           margin: 0;
           padding:0;
-          padding-left: 23px;
-          padding-right: 23px;
-          @include fontsStyle($font_1,16px,#262a2c);
+         // padding-left: 23px;
+         // padding-right: 23px;
+         // @include fontsStyle($font_1,16px,#262a2c);
+         // font-weight: 400;
+
+          font-family: Karla, Helvetica, Arial, sans-serif;
+          font-size: 16px;
           font-weight: 400;
+          font-style: normal;
+          letter-spacing: 0px;
+          line-height: 20px;
+          
+          text-transform: none;
+          color: #262a2c;
+          padding: 0 15px;
       }
       a:hover {
           color:#2b9100;
@@ -308,10 +305,10 @@ header {
 
   }
 
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
- -webkit-transition: all .3s linear;
- transition: all .3s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+ -webkit-transition: all 0.5s linear;
+ transition: all 0.5s linear;
 
   &:hover{
     background:$color_6;
@@ -319,14 +316,39 @@ header {
   }
 
 }
-
-
   
+
+
+
 
 /*Slider*/
 
 #section_1 {
   margin-top: 140px;
+  
+  @media only screen and (max-width: 1200px) {
+    margin-top: 50px;
+    width: 825px;
+   }
+
+   @media only screen and (max-width: 992px) {
+   
+    width: 600px;
+   }
+   
+
+   
+   @media only screen and (max-width: 600px) {
+   
+    width: 300px;
+   }
+   
+
+
+  @media only screen and (max-width: 600px) {
+    width: 4%;
+    min-width: 300px;;
+   }
 }
 
 #blockSlid{
@@ -368,23 +390,24 @@ header {
    text-align: center;
     @include fontsStyle($font_2,95px,$color_2);
 
+    @media only screen and (max-width: 1200px) {
+      font-size: 70px;
+     }
+
     @media only screen and (max-width: 992px) {
-      font-size: 80px;
+      font-size: 60px;
      }
 
     
-
-    @media only screen and (max-width: 449px) {
-      font-size: 50px;
-     
-  }
-
- 
-
-     @media only screen and (max-width: 449px) {
+     @media only screen and (max-width: 992px) {
       font-size: 50px;
      }
+
+   
+ 
+
   }
+
   
 }
 
@@ -412,29 +435,48 @@ header {
 
   #bnuttons_topSlider{
     position: absolute;
-    top: 180%;
-    right: 0;
+    @extend .grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 13px;
+    top: 152%;
+    right:0%;
 
-    @media only screen and (max-width: 991px) {
+   
+
+    
+
+
+     
+    @media only screen and (max-width: 1200px) {
+     
+      top: 170%;
+     
+     }
+
+     @media only screen and (max-width: 992px) {
       right: 0;
+      top: 190%;
     }
+
+    @media only screen and (max-width: 600px) {
+      width: 169px;
+      left: 59px;
+      grid-column-gap: 13px;
+    }
+
 
     @media only screen and (max-width: 576px) {
      
-      grid-template-columns: 23px 23px 23px 23px;
-      grid-column-gap: 5%;
-      top: 180%;
-      left: 37%;
+      
+      
+     
      }
 
    
 
-     @extend .grid;
-     grid-template-columns: auto auto auto auto;
-     grid-column-gap: 13px;
-     top: 152%;
-     right:0%;
+    
   }
+
 }
 
 
@@ -456,12 +498,7 @@ header {
       transform:  translate(0px,0px);
     }
   }
-
-
-
-
-
-
+  
 
 
 

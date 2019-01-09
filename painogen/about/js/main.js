@@ -13,30 +13,32 @@ $(document).ready(function(){
 
 $(window).scroll(function() {    // this will work when your window scrolled.
     var height = $(window).scrollTop();  //getting the scrolling height of window
-    if(height  > 300){
+    if(height  > 500){
         $('#headNav').css('padding-bottom','0px');
         $('#headNav').css('opacity','0');
     }
-    if(height  > 500) {
+    if(height  > 700) {
 
       $('header').css('display','none');
       $('header').css('display','block');
 
 
         $('#headNav').css('box-shadow','#d6cccc 1px 1px 15px 0px');
-        $('#headNav').css('padding-top','20px');
-        $('#headNav').css('padding-bottom','20px');
+        $('#headNav').css('padding-bottom','34px');
         $("#headNav").addClass('fixed-top');
         $('#headNav').css('opacity','1');
+        $('#headNav').css('padding-left','32px');
+        $('#navbarNav_2').css('right','6.1%');
 
     } else if(height == 0){
         $("#headNav").removeClass( "fixed-top" );
         $('#headNav').css('box-shadow','none');
         $('#headNav').css('opacity','1');
         $('#headNav').css('padding-bottom','34px');
+        $('#headNav').css('padding-left','16px');
+        $('#navbarNav_2').css('right','5%');
     }
 });
-
 
 
 

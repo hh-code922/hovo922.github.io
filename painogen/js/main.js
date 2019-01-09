@@ -27,12 +27,16 @@ $(window).scroll(function() {    // this will work when your window scrolled.
         $('#headNav').css('padding-bottom','34px');
         $("#headNav").addClass('fixed-top');
         $('#headNav').css('opacity','1');
+        $('#headNav').css('padding-left','32px');
+        $('#navbarNav_2').css('right','6.1%');
 
     } else if(height == 0){
         $("#headNav").removeClass( "fixed-top" );
         $('#headNav').css('box-shadow','none');
         $('#headNav').css('opacity','1');
         $('#headNav').css('padding-bottom','34px');
+        $('#headNav').css('padding-left','16px');
+        $('#navbarNav_2').css('right','5%');
     }
 });
 

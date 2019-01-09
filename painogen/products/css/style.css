@@ -190,12 +190,15 @@ header {
   #headMenu li a {
     margin: 0;
     padding: 0;
-    padding-left: 23px;
-    padding-right: 23px;
-    font-family: "kariaReguliar";
+    font-family: Karla, Helvetica, Arial, sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-transform: none;
     color: #262a2c;
-    font-weight: 400; }
+    padding: 0 15px; }
   #headMenu li a:hover {
     color: #2b9100; }
 
@@ -223,8 +226,8 @@ header {
   height: 40px;
   border-radius: 50%;
   overflow: auto;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear; }
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
   .headerIconeDiv img {
     display: block;
     margin: 0 auto;
@@ -237,6 +240,20 @@ header {
 /*Slider*/
 #section_1 {
   margin-top: 140px; }
+  @media only screen and (max-width: 1200px) {
+    #section_1 {
+      margin-top: 50px;
+      width: 825px; } }
+  @media only screen and (max-width: 992px) {
+    #section_1 {
+      width: 600px; } }
+  @media only screen and (max-width: 600px) {
+    #section_1 {
+      width: 300px; } }
+  @media only screen and (max-width: 600px) {
+    #section_1 {
+      width: 4%;
+      min-width: 300px; } }
 
 #blockSlid .logoSlider {
   min-width: 58px;
@@ -267,13 +284,13 @@ header {
   font-family: "poppinsSemiBold";
   font-size: 95px;
   color: #262a2c; }
+  @media only screen and (max-width: 1200px) {
+    #blockSlid h1 {
+      font-size: 70px; } }
   @media only screen and (max-width: 992px) {
     #blockSlid h1 {
-      font-size: 80px; } }
-  @media only screen and (max-width: 449px) {
-    #blockSlid h1 {
-      font-size: 50px; } }
-  @media only screen and (max-width: 449px) {
+      font-size: 60px; } }
+  @media only screen and (max-width: 992px) {
     #blockSlid h1 {
       font-size: 50px; } }
 
@@ -296,21 +313,22 @@ header {
   position: relative; }
   #top_slid_main #bnuttons_topSlider {
     position: absolute;
-    top: 180%;
-    right: 0;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 13px;
     top: 152%;
     right: 0%; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1200px) {
       #top_slid_main #bnuttons_topSlider {
-        right: 0; } }
-    @media only screen and (max-width: 576px) {
+        top: 170%; } }
+    @media only screen and (max-width: 992px) {
       #top_slid_main #bnuttons_topSlider {
-        grid-template-columns: 23px 23px 23px 23px;
-        grid-column-gap: 5%;
-        top: 180%;
-        left: 37%; } }
+        right: 0;
+        top: 190%; } }
+    @media only screen and (max-width: 600px) {
+      #top_slid_main #bnuttons_topSlider {
+        width: 169px;
+        left: 59px;
+        grid-column-gap: 13px; } }
 
 .top_slid_text_content {
   -webkit-animation: animationFramesW linear 1s;
