@@ -27,7 +27,7 @@ $(window).scroll(function() {    // this will work when your window scrolled.
         $("header").css('top','0%');
 
         $('#headNav').css('padding-left','0px');
-
+        $('#navbarNav_2').css('right','9.8%');
     /*  $('header').css('display','none');
       $('header').css('display','block');
 
@@ -44,7 +44,7 @@ $(window).scroll(function() {    // this will work when your window scrolled.
         $("header").removeClass( "positionFix opacitYStyle" );
         $('#headNav').css('padding-left','16px');
         $("header").css('width','100%');
-        
+        $('#navbarNav_2').css('right','5%');
       /*  $("#headNav").removeClass( "positionFix opacitYStyle" );
         $('#headNav').css('box-shadow','none');
         $('#headNav').css('opacity','1');

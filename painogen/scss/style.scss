@@ -1360,10 +1360,10 @@ margin-top: 221px;
    width: 51%;
    }
 
-   /*@media only screen and (max-width: 992px) {
-      width: 50%;
+   @media only screen and (max-width: 992px) {
+      width: 381px;
     }
-
+/*
     @media only screen and (max-width: 767px) {
       width: 100%;
     }
@@ -2060,6 +2060,18 @@ margin-top: 221px;
  
 
 
+   @media only screen and (max-width:992px) {
+    .logoFooter{
+      width: 15%;
+    }
+  
+    .textfooterCont {
+      margin-top: 25px;
+      width: 40%;
+      
+    }
+   
+   }
 
 
 
