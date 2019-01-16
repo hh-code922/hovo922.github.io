@@ -465,7 +465,7 @@ body{
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 13px;
     //top: 123%;
-    top: 156%;
+    top: 170%;
     right:-20%;
 
    
@@ -485,16 +485,12 @@ body{
      
      }
 
-     @media only screen and (max-width: 1300px) {
-     
-      right: 2%;
-     
-     }
+    
 
      
     @media only screen and (max-width: 1300px) {
-     
-      top: 170%;
+      right: 2%;
+      top: 218%;
      
      }
 

@@ -320,7 +320,7 @@ header {
     position: absolute;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 13px;
-    top: 156%;
+    top: 170%;
     right: -20%; }
     @media only screen and (max-width: 1650px) {
       #top_slid_main #bnuttons_topSlider {
@@ -330,10 +330,8 @@ header {
         right: 0%; } }
     @media only screen and (max-width: 1300px) {
       #top_slid_main #bnuttons_topSlider {
-        right: 2%; } }
-    @media only screen and (max-width: 1300px) {
-      #top_slid_main #bnuttons_topSlider {
-        top: 170%; } }
+        right: 2%;
+        top: 218%; } }
     @media only screen and (max-width: 767px) {
       #top_slid_main #bnuttons_topSlider {
         width: 145px;
