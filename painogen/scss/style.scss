@@ -168,7 +168,7 @@ body{
 
     position: absolute;
     width: 100%;
-    z-index: 999;
+    z-index: 20;
     top: 0;
 
   }
@@ -559,7 +559,7 @@ body{
     position: absolute;
   }
   img:nth-child(1){
-    width: 21%;
+    width: 13%;
     left: 0;
     top: 150px;
     @media only screen and (max-width: 991px) {
@@ -568,9 +568,10 @@ body{
   }
 
   img:nth-child(2){
-   width: 9%;
+   width: 7%;
     top: 80px;
     right:0;
+    z-index: 50;
     @media only screen and (max-width: 991px) {
       width: 6%;
     }
