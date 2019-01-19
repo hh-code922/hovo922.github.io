@@ -41,14 +41,15 @@ body{
 
 
 
-/*..........header............*/
+
+ /*..........header............*/
 
 
   
   
   
   
-* {
+ * {
   margin: 0;
   padding: 0; 
 }
@@ -125,24 +126,69 @@ body{
 }
 
 
+.nav-icon_1 {
+  position: relative;
+  right: -2%;
+}
+
 
 /*my styles head*/
 
 header {
   border-bottom: solid 1px $color_5;
-
+ //width: 105%;
   nav{
     
-    background: #fafafa;
+    //background: #fafafa;
   }
+
+  background: #fafafa;
+
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+
 }
 
+
+
+
+
+
+
 #headNav{
-  padding-bottom: 34px;
-  padding-top: 28px;
+//  padding-bottom: 34px;
+// padding-top: 28px;
+//height: 100px;
+padding-bottom: 25px;
+ padding-top: 25px;
  
- transition: all 1s linear;
+transition: opacity 1s;
+
+@media only screen and (max-width: 991px) {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+}
+
+
+
+
+.positionFix{
+
+padding-left: 32px;
+margin-left: -15px;
+width: 100%;
+position: fixed;
+z-index: 99999;
+
+
+}
+
+
+
 
 #headMenu{
     
@@ -178,9 +224,9 @@ header {
 
 
 #navbarNav_2{
-    width: 261px;
+    width: 186px;
     position: absolute;
-    right: 5%;
+    right: -2px;
     @media only screen and (max-width: 1147px) {
       
     }
@@ -514,11 +560,11 @@ header {
   grid-template-columns: 1fr 3fr;
   margin: 0 auto;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1300px) {
     width: 991px;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1190px) {
     width: 768px;
   }
 
@@ -748,6 +794,11 @@ header {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+
+  @media only screen and (max-width: 806px) {
+    left: 5px;
+    top: 2px;
+  }
 }
 
 
@@ -812,10 +863,18 @@ h2{
       @include fontsStyle($font_1, $size_4,$color_6);
       transition: 0.5s;
 
+      @media only screen and (max-width: 600px) {
+        font-size:15px;
+      }
+
     }
 
     a:nth-child(2){
       margin-left: 9%;
+      
+      @media only screen and (max-width: 600px) {
+       margin-left: 36%;
+      }
     }
 
     a:hover {
@@ -889,6 +948,11 @@ h2{
   p{
     padding: 0;
     margin: 0;
+
+    @media only screen and (max-width: 600px) {
+     line-height: 10px;
+      
+     }
     a{
       @include fontsStyle($font_3, 13px, #747373);
 
@@ -897,6 +961,11 @@ h2{
       @media only screen and (max-width: 805px) {
         font-size: 12px;
         line-height: 18px;
+       }
+
+       @media only screen and (max-width: 600px) {
+        font-size: 8px;
+        
        }
 
       
@@ -988,7 +1057,6 @@ h2{
 
 
 
-
 /*.............subscribe_block....................*/
 
 
@@ -996,28 +1064,38 @@ h2{
   background: #2b9100;
   padding-top: 40px;
   padding-bottom: 50px;
-  margin-top: 170px;
+  margin-top: 219px;
+  @media only screen and (max-width: 767px) {
+   padding-bottom: 70px;
+   margin-top: 350px;
+   }
 }
 
 #subscribe_section>div {
   max-width:1140px;
-  @media only screen and (max-width: 1211px) {
-    max-width:505px;
+
+  @media only screen and (max-width: 1650px) {
+    width: 1094px;
+  
+   }
+  
+  @media only screen and (max-width: 1300px) {
+    width: 937px;
   
    }
 
-   @media only screen and (max-width: 1200px) {
-    padding-bottom: 100px;
+  @media only screen and (max-width: 1190px) {
+    width:715px;
   
    }
 
-   @media only screen and (max-width: 520px) {
-    max-width:400px;
+   @media only screen and (max-width: 767px) {
+    width: 400px;
   
    }
 
-   @media only screen and (max-width: 450px) {
-    max-width:277px;
+   @media only screen and (max-width: 420px) {
+    max-width: 250px;
   
    }
 
@@ -1025,18 +1103,27 @@ h2{
   margin:0 auto;
   @extend .grid;
   grid-template-columns: 521px auto;
+
   @media only screen and (max-width: 1440px) {
     grid-template-columns: 524px auto;
  }
+
+ /*@media only screen and (max-width: 1200px) {
+    padding-bottom: 100px;
+ }*/
 
  @media only screen and (max-width: 1211px) {
   grid-template-columns: auto;
   grid-row-gap: 40px;
  }
 
- @media only screen and (max-width: 679px) {
-  
+ @media only screen and (max-width: 1300px) {
+  grid-template-columns: auto auto;
 
+ }
+
+ @media only screen and (max-width: 767px) {
+  grid-template-columns: auto;
 
  }
 
@@ -1046,9 +1133,23 @@ h2{
     font-weight: 100;
     letter-spacing: 2px;
 
-    @media only screen and (max-width: 1440px) {
-     font-size: 17px;
+    @media only screen and (max-width: 1650px) {
+      font-size: 19px;
+    
+     }
+
+    @media only screen and (max-width: 1300px) {
+     font-size: 18px;
   }
+
+  @media only screen and (max-width: 1190px) {
+    font-size: 12px;
+ }
+
+ @media only screen and (max-width: 767px) {
+  text-align: left;
+  font-size: 10.6px;
+ }
 
   }
 
@@ -1058,9 +1159,11 @@ h2{
 
     grid-column-gap: 5%;
 
-    @media only screen and (max-width: 1440px) {
-      grid-column-gap: 5%;
+    @media only screen and (max-width: 1300px) {
+      grid-column-gap: 3%;
     }
+
+    
   
     
     a{
@@ -1072,6 +1175,19 @@ h2{
        -o-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear;
+
+      @media only screen and (max-width: 1300px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 1190px) {
+        font-size: 15px;
+      }
+
+      @media only screen and (max-width: 420px) {
+        font-size: 12px;
+      }
+    
     }
 
     a:hover {
@@ -1094,19 +1210,41 @@ h2{
   padding-left: 5%;
   border: none;
 
-  @media only screen and (max-width: 1440px) {
-    width: 57%;
-    height: 45px;
-    font-size: 18px;
-    left: 17.9%;
+
+  @media only screen and (max-width: 1650px) {
+    width: 411px;
+    right: 24%;
+    font-size: 16px;
+    height: 46px;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    width: 60%;
+     height: 45px;
+     font-size: 18px;
+      left: 18.5%;
 
   }
 
-  @media only screen and (max-width: 1200px) {
-    width: 75%;
-  height: 45px;
-  font-size: 18px;
-  left: 0;
+  @media only screen and (max-width: 1190px) {
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+   
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    left:0;
+   
+
+  }
+
+  @media only screen and (max-width: 420px) {
+    width: 74%;
+    height: 34px;
+    font-size: 11px;
+   
 
   }
 
@@ -1122,27 +1260,50 @@ h2{
   @include fontsStyle($font_6,24.11px,$color_6);
   background-color: #2b9100;
 
-  @media only screen and (max-width: 1440px) {
-    width: 26%;
-  height: 45px;
-  font-size: 19px;
-  right: 0;
+  @media only screen and (max-width: 1650px) {
+    width: 173px;
+    height: 47px;
   }
 
-  @media only screen and (max-width: 1200px) {
-    width: 27%;
-  height: 45px;
-  font-size: 19px;
-  right: 0%;
+  @media only screen and (max-width: 1300px) {
+    width:145px;
+    height: 45px;
+  font-size: 18px;
+  }
+
+  @media only screen and (max-width: 1190px) {
+    width: 115px;
+  height: 40px;
+  font-size: 16px;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    right: 13%;
+
+  }
+
+  @media only screen and (max-width: 420px) {
+    width: 82px;
+    height: 34px;
+    font-size: 11px;
+    right: 0;;
+
   }
 
 }
 
 
 
-
 #subscribe>h2:nth-child(1){
   text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  #subscribe>h2:nth-child(1){
+    text-align: left;
+  }
+
 }
 
   /*...........F O O T E R ...............*/
@@ -1152,8 +1313,38 @@ h2{
 
   .container{
     max-width: 1172px;
+    padding-bottom: 60px;
+    @media only screen and (max-width: 1650px) {
+      width: 1124px;
+     
+     }
+
+     @media only screen and (max-width: 1300px) {
+      width: 967px;
+     
+     }
+
+
+     @media only screen and (max-width: 1190px) {
+      width: 750px;
+     
+     }
+
+
+     @media only screen and (max-width: 767px) {
+      width: 430px;
+     
+     }
+
+     @media only screen and (max-width: 420px) {
+     padding-left: 11%;
+     
+     }
+
+
+
   }
-    @media only screen and (max-width: 563px) {
+   /* @media only screen and (max-width: 563px) {
      padding-left: 5%;
     
     }
@@ -1166,9 +1357,95 @@ h2{
 
     }
 
+
+
     .par_1_row{
       padding-bottom: 60px;
     }
+
+
+
+  */
+
+
+  @media only screen and (max-width: 1920px) {
+    .logoFooter{
+      width: 60%;
+    }
+  
+    .textfooterCont {
+      margin-top: 17px;
+      width: 72%;
+      p{
+    
+        @include fontsStyle($font_1,14px,#626262);
+        line-height: 28px;
+      }
+    }
+   
+   }
+
+
+   @media only screen and (max-width: 1300px) {
+    .logoFooter{
+      width: 73%;
+    }
+  
+    .textfooterCont {
+      margin-top: 15px;
+      width: 100%;
+      p{
+    
+        @include fontsStyle($font_1,14px,#626262);
+        line-height: 28px;
+      }
+    }
+   
+   }
+
+
+  @media only screen and (max-width: 1190px) {
+    .logoFooter{
+      width: 79%;
+    }
+  
+    .textfooterCont {
+      margin-top: 40px;
+      width: 96%;
+      p{
+        font-size: 12px;
+        @include fontsStyle($font_1,12px,#626262);
+        line-height: 25px;
+      }
+    }
+   
+   }
+ 
+
+
+   @media only screen and (max-width:992px) {
+    .logoFooter{
+      width: 15%;
+    }
+  
+    .textfooterCont {
+      margin-top: 25px;
+      width: 40%;
+      
+    }
+   
+   }
+
+
+   @media only screen and (max-width:767px) {
+    .logoFooter{
+      width: 28%;
+    }
+  
+    
+   
+   }
+
 
     /* Nav footer*/
 
@@ -1180,6 +1457,12 @@ h2{
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-left: 0;
+padding-top: 40px;
+  
+  @media only screen and (max-width: 1190px) {
+    font-size: 16px;
+   padding-top: 35px;
+   }
 
 }
 
@@ -1203,6 +1486,12 @@ h2{
         &:hover{
           color: #58595b;
         }
+
+        @media only screen and (max-width: 1190px) {
+          font-size: 14px;
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem;
+         }
       }
 
     }
@@ -1267,7 +1556,25 @@ h2{
       &:hover{
         color: #2c9146;
       }
+
+      @media only screen and (max-width: 1190px) {
+        font-size: 14px;
+        
+       }
+       
+
+       @media only screen and (max-width: 420px) {
+        font-size: 10px;
+        
+       }
     }
+
+    @media only screen and (max-width: 420px) {
+      span{
+        font-size: 10px;
+      }
+     }
+
   }
   p>span{
     margin: 0 2%;
@@ -1276,6 +1583,34 @@ h2{
   padding-bottom: 30px;
 
 }
+
+
+
+@media only screen and (max-width: 1300px) {
+  
+  #last_text_footer {
+    font-size: 13.4px;
+  }
+  
+ }
+
+
+@media only screen and (max-width: 1190px) {
+  
+  #last_text_footer {
+    font-size: 11px;
+  }
+  
+ }
+
+
+ @media only screen and (max-width: 420px) {
+  
+  #last_text_footer {
+    font-size: 9px;
+  }
+ }
+
 /*  bank pay carts*/
 
 #bankCarts {
@@ -1283,6 +1618,15 @@ h2{
   padding-left: 8.51vw;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
+
+
+  @media only screen and (max-width: 767px) {
+    
+    padding-left: 4%;
+  }
+ 
+
+
   a{
     @include fontsStyle($font_1,2rem,#727f88);
     margin: 0 2%;
@@ -1292,7 +1636,18 @@ h2{
     &:hover{
       color: #2b9100;
     }
+
+
+    @media only screen and (max-width: 1190px) {
+     font-size: 1.5rem;
+     
+    }
+
+    @media only screen and (max-width: 767px) {
+      text-align: left;
+     
+    }
+   
+
   }
 }
-
-

@@ -355,15 +355,16 @@ header {
     opacity: 1;
     transform: translate(0px, 0px); } }
 /*.............. P R O D U C T ................*/
-@media only screen and (max-width: 1366px) {
-  #products {
-    width: 992px; } }
-@media only screen and (max-width: 1200px) {
-  #products {
-    width: 768px; } }
-@media only screen and (max-width: 767px) {
-  #products {
-    width: 100%; } }
+#products {
+  /*@media only screen and (max-width: 1366px) {
+    width: 992px;
+  }*/ }
+  @media only screen and (max-width: 1300px) {
+    #products {
+      width: 768px; } }
+  @media only screen and (max-width: 767px) {
+    #products {
+      width: 100%; } }
 
 .toHome_link {
   left: -10%;
