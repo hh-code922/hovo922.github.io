@@ -125,17 +125,35 @@ body {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg); }
 
+.nav-icon_1 {
+  position: relative;
+  right: -2%; }
+
 /*my styles head*/
 header {
-  border-bottom: solid 1px #c8c8c8; }
-  header nav {
-    background: #fafafa; }
+  border-bottom: solid 1px #c8c8c8;
+  background: #fafafa;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  top: 0; }
 
 #headNav {
-  padding-bottom: 34px;
-  padding-top: 28px;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear; }
+  padding-bottom: 25px;
+  padding-top: 25px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
+  @media only screen and (max-width: 991px) {
+    #headNav {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+
+.positionFix {
+  padding-left: 32px;
+  margin-left: -15px;
+  width: 100%;
+  position: fixed;
+  z-index: 99999; }
 
 #headMenu {
   margin-left: 3%;
@@ -156,9 +174,9 @@ header {
     color: #2b9100; }
 
 #navbarNav_2 {
-  width: 261px;
+  width: 186px;
   position: absolute;
-  right: 5%; }
+  right: -2px; }
   @media only screen and (max-width: 991px) {
     #navbarNav_2 {
       position: inherit; } }
@@ -196,7 +214,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: 750px 375px;
-  grid-column-gap: 5%; }
+  grid-column-gap: 5%;
+  margin-top: 166px; }
   @media only screen and (max-width: 1200px) {
     #slider_top {
       max-width: 768px;
@@ -915,30 +934,45 @@ input#number {
   padding-top: 40px;
   padding-bottom: 50px;
   margin-top: 70px; }
+  @media only screen and (max-width: 767px) {
+    #subscribe_section {
+      padding-bottom: 70px; } }
 
 #subscribe_section > div {
   max-width: 1140px;
   margin: 0 auto;
-  grid-template-columns: 521px auto; }
-  @media only screen and (max-width: 1211px) {
+  grid-template-columns: 521px auto;
+  /*@media only screen and (max-width: 1200px) {
+     padding-bottom: 100px;
+  }*/ }
+  @media only screen and (max-width: 1650px) {
     #subscribe_section > div {
-      max-width: 505px; } }
-  @media only screen and (max-width: 520px) {
+      width: 1094px; } }
+  @media only screen and (max-width: 1300px) {
     #subscribe_section > div {
-      max-width: 400px; } }
-  @media only screen and (max-width: 450px) {
+      width: 937px; } }
+  @media only screen and (max-width: 1190px) {
     #subscribe_section > div {
-      max-width: 277px; } }
+      width: 715px; } }
+  @media only screen and (max-width: 767px) {
+    #subscribe_section > div {
+      width: 400px; } }
+  @media only screen and (max-width: 420px) {
+    #subscribe_section > div {
+      max-width: 250px; } }
   @media only screen and (max-width: 1440px) {
     #subscribe_section > div {
       grid-template-columns: 524px auto; } }
-  @media only screen and (max-width: 1200px) {
-    #subscribe_section > div {
-      padding-bottom: 100px; } }
   @media only screen and (max-width: 1211px) {
     #subscribe_section > div {
       grid-template-columns: auto;
       grid-row-gap: 40px; } }
+  @media only screen and (max-width: 1300px) {
+    #subscribe_section > div {
+      grid-template-columns: auto auto; } }
+  @media only screen and (max-width: 767px) {
+    #subscribe_section > div {
+      grid-template-columns: auto; } }
   #subscribe_section > div h2 {
     font-family: "poppinsRegular";
     font-size: 21px;
@@ -946,15 +980,25 @@ input#number {
     margin-bottom: 27px;
     font-weight: 100;
     letter-spacing: 2px; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1650px) {
       #subscribe_section > div h2 {
-        font-size: 17px; } }
+        font-size: 19px; } }
+    @media only screen and (max-width: 1300px) {
+      #subscribe_section > div h2 {
+        font-size: 18px; } }
+    @media only screen and (max-width: 1190px) {
+      #subscribe_section > div h2 {
+        font-size: 12px; } }
+    @media only screen and (max-width: 767px) {
+      #subscribe_section > div h2 {
+        text-align: left;
+        font-size: 10.6px; } }
   #subscribe_section > div .socIcons {
     grid-template-columns: 30px 30px 30px 30px 30px 30px;
     grid-column-gap: 5%; }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1300px) {
       #subscribe_section > div .socIcons {
-        grid-column-gap: 5%; } }
+        grid-column-gap: 3%; } }
     #subscribe_section > div .socIcons a {
       display: block;
       font-size: 25px;
@@ -962,6 +1006,15 @@ input#number {
       moz-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear; }
+      @media only screen and (max-width: 1300px) {
+        #subscribe_section > div .socIcons a {
+          font-size: 20px; } }
+      @media only screen and (max-width: 1190px) {
+        #subscribe_section > div .socIcons a {
+          font-size: 15px; } }
+      @media only screen and (max-width: 420px) {
+        #subscribe_section > div .socIcons a {
+          font-size: 12px; } }
     #subscribe_section > div .socIcons a:hover {
       color: #58595b; }
 
@@ -979,18 +1032,31 @@ input#number {
   color: #7c7c7c;
   padding-left: 5%;
   border: none; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1650px) {
     #yourMail {
-      width: 57%;
+      width: 411px;
+      right: 24%;
+      font-size: 16px;
+      height: 46px; } }
+  @media only screen and (max-width: 1300px) {
+    #yourMail {
+      width: 60%;
       height: 45px;
       font-size: 18px;
-      left: 17.9%; } }
-  @media only screen and (max-width: 1200px) {
+      left: 18.5%; } }
+  @media only screen and (max-width: 1190px) {
     #yourMail {
-      width: 75%;
-      height: 45px;
-      font-size: 18px;
+      width: 60%;
+      height: 40px;
+      font-size: 16px; } }
+  @media only screen and (max-width: 767px) {
+    #yourMail {
       left: 0; } }
+  @media only screen and (max-width: 420px) {
+    #yourMail {
+      width: 74%;
+      height: 34px;
+      font-size: 11px; } }
 
 #join_btn {
   width: 173px;
@@ -1004,42 +1070,124 @@ input#number {
   font-size: 24.11px;
   color: #ffffff;
   background-color: #2b9100; }
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1650px) {
     #join_btn {
-      width: 26%;
+      width: 173px;
+      height: 47px; } }
+  @media only screen and (max-width: 1300px) {
+    #join_btn {
+      width: 145px;
       height: 45px;
-      font-size: 19px;
+      font-size: 18px; } }
+  @media only screen and (max-width: 1190px) {
+    #join_btn {
+      width: 115px;
+      height: 40px;
+      font-size: 16px; } }
+  @media only screen and (max-width: 767px) {
+    #join_btn {
+      right: 13%; } }
+  @media only screen and (max-width: 420px) {
+    #join_btn {
+      width: 82px;
+      height: 34px;
+      font-size: 11px;
       right: 0; } }
-  @media only screen and (max-width: 1200px) {
-    #join_btn {
-      width: 27%;
-      height: 45px;
-      font-size: 19px;
-      right: 0%; } }
 
 #subscribe > h2:nth-child(1) {
   text-align: right; }
 
+@media only screen and (max-width: 767px) {
+  #subscribe > h2:nth-child(1) {
+    text-align: left; } }
 /*...........F O O T E R ...............*/
 footer {
   padding-top: 70px;
-  background: #f7f9fb;
+   /* @media only screen and (max-width: 563px) {
+     padding-left: 5%;
+    
+    }
+    background: #f7f9fb;
+    .textfooterCont{
+      margin-top: 25px;
+      @include fontsStyle($font_1,14px,#626262);
+      line-height: 30px;
+      letter-spacing: 1px;
+
+    }
+
+
+
+    .par_1_row{
+      padding-bottom: 60px;
+    }
+
+
+
+  */
   /* Nav footer*/
   /*instagram footer*/ }
   footer .container {
-    max-width: 1172px; }
-  @media only screen and (max-width: 563px) {
-    footer {
-      padding-left: 5%; } }
-  footer .textfooterCont {
-    margin-top: 25px;
-    font-family: "kariaReguliar";
-    font-size: 14px;
-    color: #626262;
-    line-height: 30px;
-    letter-spacing: 1px; }
-  footer .par_1_row {
+    max-width: 1172px;
     padding-bottom: 60px; }
+    @media only screen and (max-width: 1650px) {
+      footer .container {
+        width: 1124px; } }
+    @media only screen and (max-width: 1300px) {
+      footer .container {
+        width: 967px; } }
+    @media only screen and (max-width: 1190px) {
+      footer .container {
+        width: 750px; } }
+    @media only screen and (max-width: 767px) {
+      footer .container {
+        width: 430px; } }
+    @media only screen and (max-width: 420px) {
+      footer .container {
+        padding-left: 11%; } }
+  @media only screen and (max-width: 1920px) {
+    footer .logoFooter {
+      width: 60%; }
+    footer .textfooterCont {
+      margin-top: 17px;
+      width: 72%; }
+      footer .textfooterCont p {
+        font-family: "kariaReguliar";
+        font-size: 14px;
+        color: #626262;
+        line-height: 28px; } }
+  @media only screen and (max-width: 1300px) {
+    footer .logoFooter {
+      width: 73%; }
+    footer .textfooterCont {
+      margin-top: 15px;
+      width: 100%; }
+      footer .textfooterCont p {
+        font-family: "kariaReguliar";
+        font-size: 14px;
+        color: #626262;
+        line-height: 28px; } }
+  @media only screen and (max-width: 1190px) {
+    footer .logoFooter {
+      width: 79%; }
+    footer .textfooterCont {
+      margin-top: 40px;
+      width: 96%; }
+      footer .textfooterCont p {
+        font-size: 12px;
+        font-family: "kariaReguliar";
+        font-size: 12px;
+        color: #626262;
+        line-height: 25px; } }
+  @media only screen and (max-width: 992px) {
+    footer .logoFooter {
+      width: 15%; }
+    footer .textfooterCont {
+      margin-top: 25px;
+      width: 40%; } }
+  @media only screen and (max-width: 767px) {
+    footer .logoFooter {
+      width: 28%; } }
   footer .style_h3 {
     font-family: "kariaReguliar";
     font-size: 22px;
@@ -1047,7 +1195,12 @@ footer {
     padding: .5rem 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-top: 40px; }
+    @media only screen and (max-width: 1190px) {
+      footer .style_h3 {
+        font-size: 16px;
+        padding-top: 35px; } }
   footer .nav_cotent_footer {
     grid-template-columns: auto auto auto; }
     @media only screen and (max-width: 563px) {
@@ -1063,6 +1216,11 @@ footer {
       padding-left: 0.1rem; }
       footer .nav_cotent_footer ul > li > a:hover {
         color: #58595b; }
+      @media only screen and (max-width: 1190px) {
+        footer .nav_cotent_footer ul > li > a {
+          font-size: 14px;
+          padding-bottom: 0.5rem;
+          padding-top: 0.5rem; } }
   footer #instagram_block h3:nth-child(3) {
     margin-top: 63px;
     text-align: right;
@@ -1096,14 +1254,35 @@ footer {
     text-decoration: none; }
     #bottom_footer_block p a:hover {
       color: #2c9146; }
+    @media only screen and (max-width: 1190px) {
+      #bottom_footer_block p a {
+        font-size: 14px; } }
+    @media only screen and (max-width: 420px) {
+      #bottom_footer_block p a {
+        font-size: 10px; } }
+  @media only screen and (max-width: 420px) {
+    #bottom_footer_block p span {
+      font-size: 10px; } }
   #bottom_footer_block p > span {
     margin: 0 2%; }
 
+@media only screen and (max-width: 1300px) {
+  #last_text_footer {
+    font-size: 13.4px; } }
+@media only screen and (max-width: 1190px) {
+  #last_text_footer {
+    font-size: 11px; } }
+@media only screen and (max-width: 420px) {
+  #last_text_footer {
+    font-size: 9px; } }
 /*  bank pay carts*/
 #bankCarts {
   padding-left: 8.51vw;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto; }
+  @media only screen and (max-width: 767px) {
+    #bankCarts {
+      padding-left: 4%; } }
   #bankCarts a {
     font-family: "kariaReguliar";
     font-size: 2rem;
@@ -1115,5 +1294,10 @@ footer {
     text-align: right; }
     #bankCarts a:hover {
       color: #2b9100; }
-
+    @media only screen and (max-width: 1190px) {
+      #bankCarts a {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 767px) {
+      #bankCarts a {
+        text-align: left; } }
 /*# sourceMappingURL=style.css.map */

@@ -64,7 +64,6 @@ $(window).scroll(function() {    // this will work when your window scrolled.
 
 
 
-
  
  
 
