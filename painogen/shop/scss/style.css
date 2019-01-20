@@ -719,11 +719,10 @@ header {
   background: #2b9100;
   padding-top: 40px;
   padding-bottom: 50px;
-  margin-top: 219px; }
+  margin-top: 70px; }
   @media only screen and (max-width: 767px) {
     #subscribe_section {
-      padding-bottom: 70px;
-      margin-top: 350px; } }
+      padding-bottom: 70px; } }
 
 #subscribe_section > div {
   max-width: 1140px;

@@ -481,7 +481,8 @@ header {
   @media only screen and (max-width: 1366px) {
     .toHome_link {
       left: 0;
-      top: -162px; } }
+      top: -162px;
+      font-size: 11px; } }
 
 /*product img global style */
 .img_product_content {
@@ -1279,4 +1280,5 @@ footer {
     @media only screen and (max-width: 767px) {
       #bankCarts a {
         text-align: left; } }
+
 /*# sourceMappingURL=style.css.map */

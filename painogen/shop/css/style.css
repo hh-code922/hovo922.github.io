@@ -702,7 +702,7 @@ header {
   background: #2b9100;
   padding-top: 40px;
   padding-bottom: 50px;
-  margin-top: 70px; }
+  margin-top: 200px; }
   @media only screen and (max-width: 767px) {
     #subscribe_section {
       padding-bottom: 70px; } }
@@ -1069,5 +1069,4 @@ footer {
     @media only screen and (max-width: 767px) {
       #bankCarts a {
         text-align: left; } }
-
 /*# sourceMappingURL=style.css.map */

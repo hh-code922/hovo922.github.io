@@ -656,6 +656,7 @@ img:nth-child(2){
 
   @media only screen and (max-width: 1366px) {
     width: 768px;
+    
   }
 
   @media only screen and (max-width: 767px) {
@@ -692,7 +693,10 @@ img:nth-child(2){
   @media only screen and (max-width: 1366px) {
     left: 0;
     top: -162px;
+    font-size:11px;
   }
+
+
 
 
 }
