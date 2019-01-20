@@ -299,15 +299,15 @@ z-index: 99999;
 /*.........Slider top...........*/
 
 #slider_top {
-  max-width: 1140px;
+  width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  @extend .grid;
-  grid-template-columns: 750px 375px;
-  grid-column-gap: 5%;
-  margin-top: 166px;
+  display:grid;
+  grid-template-columns: 656px 375px;
+  grid-column-gap: 3%;
+  margin-top: 90px;
 
-
+/*
   @media only screen and (max-width: 1200px){
     max-width: 768px;
     display: block;
@@ -321,7 +321,7 @@ z-index: 99999;
   @media only screen and (max-width: 600px){
     max-width: 300px;
     display: block;
-  }
+  }*/
 
 }
 
@@ -336,9 +336,9 @@ z-index: 99999;
     width: 50px;
     height: 75px;
     background-color: #ababab;
-    top: 327px;
+    top: 249px;
 
-    @media only screen and (max-width: 1440px) {
+   /* @media only screen and (max-width: 1440px) {
       top: 244px;
     }
     
@@ -352,7 +352,7 @@ z-index: 99999;
     width: 20px;
     height: 35px;
     top: 116px;
-}
+}*/
   
     p{
       font-size: 20px;
@@ -360,10 +360,10 @@ z-index: 99999;
       text-align: center;
       padding-top: 39%;
 
-      @media only screen and (max-width: 600px){
+     /* @media only screen and (max-width: 600px){
         font-size: 16px;
         padding-top: 26%;
-      }
+      }*/
       
     }
 
@@ -374,7 +374,7 @@ z-index: 99999;
 
 
     #lastImg {
-      right: -1%;
+      right: 0%;
       -moz-transition: all .3s linear;
       -o-transition: all .3s linear;
      -webkit-transition: all .3s linear;
@@ -384,7 +384,7 @@ z-index: 99999;
         background: #2c9146;
         cursor: pointer;
       }
-      @media only screen and (max-width: 1440px) {
+      /*@media only screen and (max-width: 1440px) {
         left:88.5%
       }
 
@@ -399,7 +399,7 @@ z-index: 99999;
 
        @media only screen and (max-width: 600px){
         left: 93%;
-       }
+       }*/
 
      
 
@@ -409,7 +409,7 @@ z-index: 99999;
 
 
     #nextImg {
-      left: 27%;
+      left: 25%;
       -moz-transition: all .3s linear;
       -o-transition: all .3s linear;
      -webkit-transition: all .3s linear;
@@ -420,7 +420,7 @@ z-index: 99999;
         cursor: pointer;
       }
 
-      @media only screen and (max-width: 1440px) {
+     /* @media only screen and (max-width: 1440px) {
         left:21.5%
       }
 
@@ -436,7 +436,7 @@ z-index: 99999;
 
     @media only screen and (max-width: 800px){
       left: 22%;
-     }
+     }*/
 
 
     }
@@ -452,12 +452,12 @@ z-index: 99999;
   @extend .grid;
   grid-template-columns: 22.35772357723577% 75.20325203252033%;
 
-  @media only screen and (max-width: 1200px) {
+  /*@media only screen and (max-width: 1200px) {
 
     grid-template-columns: 13% 70%;
     grid-column-gap: 2%;
   }
-
+*/
   
 }
 
@@ -474,9 +474,9 @@ z-index: 99999;
 
 .main_content_top_slider {
   display: grid;
-  grid-template-columns: 165px 555px;
+  grid-template-columns: 130px 490px;
   grid-column-gap: 5%;
-
+/*
   @media only screen and (max-width: 1440px) {
     grid-template-columns: 120px 555px;
 
@@ -491,14 +491,14 @@ z-index: 99999;
     grid-template-columns: 50px 234px;
 
   }
-
+*/
 }
 
 
 #buttons_img_sliderTop {
   display: grid;
   grid-template: auto;
-  grid-row-gap: 24px;
+  grid-row-gap: 10px;
   
  /* div:nth-child(1){
     background-image: url('../img/top_slider/button_img/slide_3.png');
@@ -517,8 +517,8 @@ z-index: 99999;
     
   }*/
   .btn_img_sliderTop{
-    width: 165px;
-    height: 165px;
+    width: 100%;
+    height: 130px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #f5f4f4;
@@ -526,7 +526,7 @@ z-index: 99999;
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media only screen and (max-width: 1440px) {
+  /*@media only screen and (max-width: 1440px) {
     width: 120px;
     height: 120px;
 
@@ -542,7 +542,7 @@ z-index: 99999;
     width: 50px;
     height: 50px;
 
-  }
+  }*/
     
    /* img{
       max-width: 34px;
@@ -767,16 +767,16 @@ z-index: 99999;
     }
 
     p:nth-child(2){
-      margin-top:6px;
+      margin-top:2px;
     }
 
     p:nth-child(3){
-      margin-top:12px;
+      margin-top:7px;
       font-size: 18px;
     }
 
     p:nth-child(4){
-      margin-top:18px;
+      margin-top:6px;
      .spanPrice {
        margin-left: 7%;
        margin-right: 7%;
@@ -786,7 +786,7 @@ z-index: 99999;
     
 
     p:nth-child(5){
-      margin-top: 15px;
+      margin-top: 5px;
       text-transform: uppercase;
       button{
         width: 101px;
@@ -948,7 +948,7 @@ z-index: 99999;
 
 #qty{
   p{
-    margin-top: 29px;
+    margin-top: 13px;
     margin-bottom: 11px;
     @include fontsStyle($font_7,13px, #575153);
     text-indent: 5px;
@@ -1016,7 +1016,7 @@ input#number {
 
 
 .deivery_p {
-  margin-top: 29px;
+    margin-top: 13px;
     margin-bottom: 11px;
 }
 
@@ -1033,7 +1033,7 @@ input#number {
 
 
 #purchase_block {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .purchase_input  {
@@ -1085,7 +1085,7 @@ input#number {
   @extend .grid;
   grid-template-columns: 124px 165px;
   grid-column-gap: 8%;
-  margin-top: 30px;
+  margin-top: 11px;
   button{
     background: #e8e8e8;
     border-color: #a8a8a8;
@@ -1153,7 +1153,7 @@ input#number {
 
 
 #soc_icons_form {
-  margin-top: 52px;
+  margin-top: 33px;
   @extend .grid;
   grid-template-columns:20px 20px 20px 20px 20px 20px;
   grid-column-gap: 3%;
@@ -1179,10 +1179,10 @@ input#number {
 
 #text_mexico {
   width: 311px;
-  margin-top: 30px;
+  margin-top: 0px;
   p{
     @include fontsStyle($font_1,12px,#a8a8a8);
-    line-height: 20px;
+    line-height: 8px;
   }
 }
 
