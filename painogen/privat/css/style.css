@@ -809,7 +809,7 @@ input#number {
 
 /*........... product_content ...........*/
 #feature {
-  margin-top: 30px; }
+  margin-top: 140px; }
   @media only screen and (max-width: 1200px) {
     #feature {
       max-width: 803px; } }
