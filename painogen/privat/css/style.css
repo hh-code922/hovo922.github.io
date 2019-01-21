@@ -59,6 +59,9 @@ body {
       width: 100%; } }
 
 /*class for  texts*/
+.text_decoration_line_through {
+  text-decoration: line-through; }
+
 .text_style_1 {
   font-family: "kariaReguliar";
   font-size: 16px;
@@ -220,19 +223,19 @@ header {
   grid-template-columns: 656px 375px;
   grid-column-gap: 3%;
   margin-top: 90px;
-  /*
-    @media only screen and (max-width: 600px){
-      max-width: 300px;
-      display: block;
-    }*/ }
+  /* @media only screen and (max-width: 600px){
+     max-width: 300px;
+     display: block;
+   }*/ }
   @media only screen and (max-width: 1366px) {
     #slider_top {
       width: 856px;
       grid-template-columns: 453px 375px; } }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     #slider_top {
-      grid-template-columns: 1fr;
-      width: 493px; } }
+      margin-top: 47px;
+      grid-template-columns: auto;
+      width: 451px; } }
 
 .part_left {
   position: relative; }
@@ -322,9 +325,6 @@ header {
   @media only screen and (max-width: 1366px) {
     .main_content_top_slider {
       grid-template-columns: 80px 350px; } }
-  @media only screen and (max-width: 992px) {
-    .main_content_top_slider {
-      grid-template-columns: 90px 380px; } }
 
 .topSlider_header_link {
   padding-top: 66px;
@@ -350,9 +350,6 @@ header {
   @media only screen and (max-width: 1366px) {
     .main_content_top_slider {
       grid-template-columns: 80px 350px; } }
-  @media only screen and (max-width: 992px) {
-    .main_content_top_slider {
-      grid-template-columns: 90px 380px; } }
 
 #buttons_img_sliderTop {
   display: grid;
@@ -404,9 +401,6 @@ header {
     @media only screen and (max-width: 1366px) {
       #buttons_img_sliderTop .btn_img_sliderTop {
         height: 80px; } }
-    @media only screen and (max-width: 992px) {
-      #buttons_img_sliderTop .btn_img_sliderTop {
-        height: 90px; } }
 
 #img_sliderTop_block {
   grid-template-columns: 1fr; }
@@ -520,6 +514,9 @@ header {
 #add_to_cart_block {
   width: 100%;
   padding-top: 118px; }
+  @media only screen and (max-width: 992px) {
+    #add_to_cart_block {
+      padding-top: 70px; } }
   #add_to_cart_block .top_infoPart_add_to_cart p {
     margin: 0; }
   #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(1) {
@@ -814,19 +811,24 @@ input#number {
     font-size: 12px;
     color: #a8a8a8;
     line-height: 14px; }
+    @media only screen and (max-width: 1366px) {
+      #text_mexico p {
+        font-size: 11px;
+        margin-top: 5px; } }
 
 /*........... product_content ...........*/
 #feature {
-  margin-top: 140px; }
-  @media only screen and (max-width: 1200px) {
+  margin-top: 40px;
+  /*
+    @media only screen and (max-width: 600px){
+      max-width: 327px;
+    }*/ }
+  @media only screen and (max-width: 1366px) {
     #feature {
-      max-width: 803px; } }
-  @media only screen and (max-width: 800px) {
+      max-width: 862px; } }
+  @media only screen and (max-width: 992px) {
     #feature {
-      max-width: 610px; } }
-  @media only screen and (max-width: 600px) {
-    #feature {
-      max-width: 327px; } }
+      width: 483px; } }
 
 .product_content {
   border: solid 1px #e2e2e2; }
@@ -838,9 +840,9 @@ input#number {
     font-size: 18px;
     color: #919091;
     padding: 18px 35px; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 991px) {
     .product_content {
-      margin-top: 30px; } }
+      margin-bottom: 30px; } }
 
 .img_product {
   position: relative;
@@ -850,6 +852,9 @@ input#number {
   padding-right: 35px; }
   .img_product img {
     display: block; }
+    @media only screen and (max-width: 1366px) {
+      .img_product img {
+        width: 50%; } }
 
 .text_product {
   padding-top: 120px;
@@ -863,26 +868,24 @@ input#number {
     line-height: 28px;
     margin: 0;
     padding: 0; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1366px) {
       .text_product p {
         font-size: 12px;
         line-height: 23px; } }
   .text_product p:nth-child(3) {
     color: #2c9146;
     font-size: 19.63px; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1366px) {
       .text_product p:nth-child(3) {
         font-size: 16px; } }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1366px) {
     .text_product {
-      top: 1%;
-      left: 54%; } }
-
-#relarid_products .text_product {
-  left: 34%; }
-  @media only screen and (max-width: 1200px) {
-    #relarid_products .text_product {
-      left: 54%; } }
+      position: static;
+      padding-top: 0px; } }
+  @media only screen and (max-width: 992px) {
+    .text_product {
+      position: absolute;
+      top: 105px; } }
 
 #upplementFacts, #description, #reviews {
   background: #f8f7f7;
@@ -903,16 +906,16 @@ input#number {
 
 /*-................   Supplement Facts   description  reviews ....................*/
 #SupplementFacts_description_reviews_block {
+  /*@media only screen and (max-width: 600px) {
+    max-width: 327px;
+  }*/
   margin-top: 30px; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1366px) {
     #SupplementFacts_description_reviews_block {
-      max-width: 803px; } }
-  @media only screen and (max-width: 800px) {
+      max-width: 862px; } }
+  @media only screen and (max-width: 992px) {
     #SupplementFacts_description_reviews_block {
-      max-width: 610px; } }
-  @media only screen and (max-width: 600px) {
-    #SupplementFacts_description_reviews_block {
-      max-width: 327px; } }
+      width: 483px; } }
   #SupplementFacts_description_reviews_block .nav-pills .nav-link {
     padding: 25px 17px;
     padding-bottom: 15px;
@@ -921,7 +924,7 @@ input#number {
     font-size: 18px;
     color: #919091;
     text-transform: uppercase; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 992px) {
       #SupplementFacts_description_reviews_block .nav-pills .nav-link {
         font-size: 16px; } }
   #SupplementFacts_description_reviews_block .nav-pills .nav-link.active, #SupplementFacts_description_reviews_block .nav-pills .show > .nav-link {
@@ -936,26 +939,28 @@ input#number {
   width: 41%;
   margin-left: auto;
   margin-right: auto; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1366px) {
     #ul_tab_menu {
       width: 54%; } }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 992px) {
     #ul_tab_menu {
-      width: 71%; } }
+      width: 92%; } }
   @media only screen and (max-width: 600px) {
     #ul_tab_menu {
       width: 100%; } }
 
 /*............................ slider Bottom .............................*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1366px) {
   #slider_bottom_block {
-    max-width: 803px; } }
-@media only screen and (max-width: 800px) {
+    max-width: 852px; } }
+@media only screen and (max-width: 992px) {
   #slider_bottom_block {
-    max-width: 610px; } }
-@media only screen and (max-width: 600px) {
+    max-width: 483px; } }
+/*@media only screen and (max-width: 600px){
   #slider_bottom_block {
-    max-width: 327px; } }
+    max-width: 327px;
+  }
+}*/
 .content_slider_buttom {
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 34px; }
@@ -990,19 +995,14 @@ input#number {
   margin-top: 118px; }
   #demo_for_slid > a:hover {
     background: #5ca06d; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1366px) {
     #demo_for_slid > a {
       width: 30px;
       height: 30px;
-      margin-top: 82px; } }
-  @media only screen and (max-width: 800px) {
+      margin-top: 88px; } }
+  @media only screen and (max-width: 992px) {
     #demo_for_slid > a {
-      margin-top: 56px; } }
-  @media only screen and (max-width: 800px) {
-    #demo_for_slid > a {
-      width: 20px;
-      height: 20px;
-      margin-top: 30px; } }
+      margin-top: 34px; } }
 
 /*.............subscribe_block....................*/
 #subscribe_section {

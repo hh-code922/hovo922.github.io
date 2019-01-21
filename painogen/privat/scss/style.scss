@@ -40,6 +40,11 @@ body{
 
 /*class for  texts*/
 
+.text_decoration_line_through{
+  text-decoration: line-through;
+}
+
+
 .text_style_1 {
   @include fontsStyle($font_1,$size_7,#8c8c8c);
   text-decoration: none;
@@ -319,15 +324,17 @@ z-index: 99999;
   
   }
 
+  
 
-
-  @media only screen and (max-width: 992px){
-    grid-template-columns: 1fr;
-    width: 493px;
-
+  @media only screen and (max-width: 991px){
+    margin-top: 47px;
+    grid-template-columns: auto;
+    width: 451px;
+    
+    
   }
-/*
-  @media only screen and (max-width: 600px){
+
+ /* @media only screen and (max-width: 600px){
     max-width: 300px;
     display: block;
   }*/
@@ -470,12 +477,6 @@ z-index: 99999;
   }
 
   
-  @media only screen and (max-width: 992px) {
-
-    grid-template-columns: 90px 380px;
-  }
-
-  
 }
 
 .topSlider_header_link {
@@ -498,13 +499,6 @@ z-index: 99999;
     
   grid-template-columns: 80px 350px;
   
-  }
-
-
-  
-  @media only screen and (max-width: 992px) {
-
-    grid-template-columns: 90px 380px;
   }
 /*
   @media only screen and (max-width: 800px) {
@@ -554,12 +548,6 @@ z-index: 99999;
   @media only screen and (max-width: 1366px) {
     
     height: 80px;
-
-  }
-
-  @media only screen and (max-width: 992px) {
-    
-    height: 90px;
 
   }
 /*
@@ -791,7 +779,11 @@ z-index: 99999;
   width: 100%;
 
   padding-top: 118px;
-
+  @media only screen and (max-width: 992px) {
+    
+    padding-top: 70px;
+  
+    }
 
   .top_infoPart_add_to_cart {
     p{
@@ -1278,6 +1270,10 @@ input#number {
   p{
     @include fontsStyle($font_1,12px,#a8a8a8);
     line-height: 14px;
+    @media only screen and (max-width: 1366px) {
+      font-size: 11px;
+      margin-top:5px;
+    }
   }
 }
 
@@ -1299,24 +1295,26 @@ input#number {
 /*........... product_content ...........*/
 
 #feature {
-  margin-top: 140px;
-  @media only screen and (max-width: 1200px){
-    max-width: 803px;
+  margin-top: 40px;
+  @media only screen and (max-width: 1366px){
+    max-width: 862px;
   }
 
-  @media only screen and (max-width: 800px){
-    max-width: 610px;
+  @media only screen and (max-width: 992px){
+    width: 483px;
   }
-
+/*
   @media only screen and (max-width: 600px){
     max-width: 327px;
-  }
+  }*/
   
 
 }
 
 .product_content{
   border: solid 1px #e2e2e2;
+  
+  
   h2{
     width: 100%;
     height: 60px;
@@ -1324,12 +1322,18 @@ input#number {
     @include fontsStyle($font_1, 18px,#919091);
     padding: 18px 35px;
   }
-
-  @media only screen and (max-width: 767px){
-    margin-top: 30px;
+  @media only screen and (max-width: 991px){
+    margin-bottom: 30px;
   }
 
+
 }
+
+
+
+ 
+
+
 
 .img_product {
   @extend .grid;
@@ -1340,7 +1344,9 @@ input#number {
   padding-right: 35px;
   img{
     display: block;
-    
+    @media only screen and (max-width: 1366px){
+      width: 50%;
+    }
   }
 }
 
@@ -1352,7 +1358,7 @@ input#number {
   line-height: 28px;
   margin:0;
   padding: 0;
-  @media only screen and (max-width: 1200px){
+  @media only screen and (max-width: 1366px){
     font-size: 12px;
     line-height: 23px;
   }
@@ -1361,7 +1367,7 @@ input#number {
     color: #2c9146;
     font-size: 19.63px;
 
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1366px){
       font-size: 16px;
      
     }
@@ -1371,20 +1377,18 @@ input#number {
   top: 0;
   left: 44%;
 
-  @media only screen and (max-width: 1200px){
-    top: 1%;
-    left: 54%;
+  @media only screen and (max-width: 1366px){
+    position: static;
+    padding-top:0px;
+  }
+
+  @media only screen and (max-width: 992px){
+    position: absolute;
+    top: 105px;
   }
 }
 
-#relarid_products {
-  .text_product{
-    left: 34%;
-    @media only screen and (max-width: 1200px){
-      left: 54%;
-    }
-  }
-}
+
 
 
 
@@ -1408,6 +1412,7 @@ input#number {
 
 
 
+  
 
 
 
@@ -1416,18 +1421,18 @@ input#number {
 
 #SupplementFacts_description_reviews_block{
 
-  @media only screen and (max-width: 1200px) {
-    max-width: 803px;
+  @media only screen and (max-width: 1366px) {
+    max-width: 862px;
   }
 
-  @media only screen and (max-width: 800px) {
-    max-width: 610px;
+  @media only screen and (max-width: 992px) {
+    width: 483px;
   }
 
 
-  @media only screen and (max-width: 600px) {
+  /*@media only screen and (max-width: 600px) {
     max-width: 327px;
-  }
+  }*/
 
 margin-top: 30px;
   .nav-pills .nav-link{
@@ -1437,7 +1442,7 @@ margin-top: 30px;
     @include fontsStyle($font_1,18px, #919091);
     text-transform: uppercase;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 992px) {
       font-size: 16px;
     }
   }
@@ -1467,12 +1472,12 @@ margin-top: 30px;
   margin-right: auto;
 
   
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1366px) {
     width:54%;
   }
 
-  @media only screen and (max-width: 800px) {
-    width:71%;
+  @media only screen and (max-width: 992px) {
+    width:92%;
   }
 
   @media only screen and (max-width: 600px) {
@@ -1485,24 +1490,24 @@ margin-top: 30px;
 
 
 /*............................ slider Bottom .............................*/
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1366px){
     #slider_bottom_block {
-      max-width: 803px;
+      max-width: 852px;
     }
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 992px){
   #slider_bottom_block {
-    max-width: 610px;
+    max-width: 483px;
   }
 }
 
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
   #slider_bottom_block {
     max-width: 327px;
   }
-}
+}*/
 
 .content_slider_buttom{
   @extend .grid;
@@ -1559,23 +1564,18 @@ margin-top: 30px;
   &:hover{
     background: #5ca06d;
   }
-  @media only screen and (max-width: 1200px){
+  @media only screen and (max-width: 1366px){
     width: 30px;
     height:30px;
-    margin-top: 82px;
+    margin-top: 88px;
   }
 
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 992px){
     
-    margin-top: 56px;
+    margin-top: 34px;
   }
 
-  @media only screen and (max-width: 800px){
-    width: 20px;
-    height:20px;
-    margin-top: 30px;
-
-  }
+ 
 
 }
 
