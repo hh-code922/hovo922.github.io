@@ -782,7 +782,7 @@ input#number {
 
 /*.................soc ions ..............*/
 #soc_icons_form {
-  margin-top: 33px;
+  margin-top: 40px;
   grid-template-columns: 20px 20px 20px 20px 20px 20px;
   grid-column-gap: 3%; }
   #soc_icons_form a {
@@ -1368,5 +1368,4 @@ footer {
     @media only screen and (max-width: 767px) {
       #bankCarts a {
         text-align: left; } }
-
 /*# sourceMappingURL=style.css.map */
