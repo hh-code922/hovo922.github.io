@@ -65,12 +65,13 @@ body {
   color: #8c8c8c;
   text-decoration: none;
   -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
   transform: rotate(-135deg); }
   .text_style_1:hover {
     color: #2b9100;
     text-decoration: none; }
+  @media only screen and (max-width: 1366px) {
+    .text_style_1 {
+      font-size: 12px; } }
 
 /*..........header............*/
 * {
@@ -85,12 +86,8 @@ body {
   height: 25px;
   /* margin: 50px auto;*/
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer; }
 
@@ -104,12 +101,8 @@ body {
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out; }
 
 #nav-icon1 span:nth-child(1) {
@@ -124,8 +117,6 @@ body {
 #nav-icon1.open span:nth-child(1) {
   top: 18px;
   -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
   transform: rotate(135deg); }
 
 #nav-icon1.open span:nth-child(2) {
@@ -135,8 +126,6 @@ body {
 #nav-icon1.open span:nth-child(3) {
   top: 18px;
   -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
   transform: rotate(-135deg); }
 
 .nav-icon_1 {
@@ -155,6 +144,7 @@ header {
 #headNav {
   padding-bottom: 25px;
   padding-top: 25px;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s; }
   @media only screen and (max-width: 991px) {
     #headNav {
@@ -210,8 +200,6 @@ header {
   height: 40px;
   border-radius: 50%;
   overflow: auto;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear; }
   .headerIconeDiv img {
@@ -220,7 +208,8 @@ header {
     margin-top: 30%; }
   .headerIconeDiv:hover {
     background: #ffffff;
-    box-shadow: 0px 0px 11px -2px #686161; }
+    -webkit-box-shadow: 0px 0px 11px -2px #686161;
+            box-shadow: 0px 0px 11px -2px #686161; }
 
 /*.........Slider top...........*/
 #slider_top {
@@ -232,11 +221,6 @@ header {
   grid-column-gap: 3%;
   margin-top: 90px;
   /*
-    @media only screen and (max-width: 1200px){
-      max-width: 768px;
-      display: block;
-    }
-  
     @media only screen and (max-width: 800px){
       max-width: 568px;
       display: block;
@@ -246,6 +230,10 @@ header {
       max-width: 300px;
       display: block;
     }*/ }
+  @media only screen and (max-width: 1366px) {
+    #slider_top {
+      width: 856px;
+      grid-template-columns: 453px 375px; } }
 
 .part_left {
   position: relative; }
@@ -257,10 +245,7 @@ header {
       height: 75px;
       background-color: #ababab;
       top: 249px;
-   /* @media only screen and (max-width: 1440px) {
-      top: 244px;
-    }
-    
+    /*
   @media only screen and (max-width: 1200px){
       width: 31px;
       height: 55px;
@@ -272,6 +257,11 @@ header {
     height: 35px;
     top: 116px;
 }*/ }
+      @media only screen and (max-width: 1366px) {
+        .part_left #last_next_img div {
+          width: 30px;
+          height: 57px;
+          top: 147px; } }
       .part_left #last_next_img div p {
         font-size: 20px;
         color: #f8f8f8;
@@ -283,11 +273,9 @@ header {
          }*/ }
     .part_left #last_next_img #lastImg {
       right: 0%;
-      -moz-transition: all .3s linear;
-      -o-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear;
-      /*@media only screen and (max-width: 1440px) {
+      /*@media only screen and (max-width: 1366px) {
         left:88.5%
       }
 
@@ -308,15 +296,9 @@ header {
         cursor: pointer; }
     .part_left #last_next_img #nextImg {
       left: 25%;
-      -moz-transition: all .3s linear;
-      -o-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear;
-     /* @media only screen and (max-width: 1440px) {
-        left:21.5%
-      }
-
-        
+      /*  
       @media only screen and (max-width: 1200px){
         left: 20.7%;
       }
@@ -332,15 +314,15 @@ header {
       .part_left #last_next_img #nextImg:hover {
         background: #2c9146;
         cursor: pointer; }
+      @media only screen and (max-width: 1366px) {
+        .part_left #last_next_img #nextImg {
+          left: 23%; } }
 
 .main_content_top_slider {
-  grid-template-columns: 22.35772357723577% 75.20325203252033%;
-  /*@media only screen and (max-width: 1200px) {
-
-    grid-template-columns: 13% 70%;
-    grid-column-gap: 2%;
-  }
-*/ }
+  grid-template-columns: 22.35772357723577% 75.20325203252033%; }
+  @media only screen and (max-width: 1366px) {
+    .main_content_top_slider {
+      grid-template-columns: 80px 350px; } }
 
 .topSlider_header_link {
   padding-top: 66px;
@@ -353,11 +335,6 @@ header {
   grid-template-columns: 130px 490px;
   grid-column-gap: 5%;
   /*
-    @media only screen and (max-width: 1440px) {
-      grid-template-columns: 120px 555px;
-  
-    }
-  
     @media only screen and (max-width: 800px) {
       grid-template-columns: 120px 430px;
   
@@ -368,6 +345,9 @@ header {
   
     }
   */ }
+  @media only screen and (max-width: 1366px) {
+    .main_content_top_slider {
+      grid-template-columns: 80px 350px; } }
 
 #buttons_img_sliderTop {
   display: grid;
@@ -398,29 +378,27 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-  /*@media only screen and (max-width: 1440px) {
-    width: 120px;
-    height: 120px;
-
-  }
-
-  @media only screen and (max-width: 1200px) {
-    width: 100px;
-    height: 100px;
-
-  }
-
-  @media only screen and (max-width: 600px) {
-    width: 50px;
-    height: 50px;
-
-  }*/
+    /*
+      @media only screen and (max-width: 1200px) {
+        width: 100px;
+        height: 100px;
+    
+      }
+    
+      @media only screen and (max-width: 600px) {
+        width: 50px;
+        height: 50px;
+    
+      }*/
     /* img{
        max-width: 34px;
        display: block;
        margin-left: auto;
        margin-right: auto;
      }*/ }
+    @media only screen and (max-width: 1366px) {
+      #buttons_img_sliderTop .btn_img_sliderTop {
+        height: 80px; } }
 
 #img_sliderTop_block {
   grid-template-columns: 1fr; }
@@ -432,8 +410,6 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
     /*img{
       width: 55%;
@@ -460,17 +436,12 @@ header {
 @keyframes animationFrames {
   0% {
     opacity: 0;
-    transform: translate(0px, 0px); }
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
   100% {
     opacity: 1;
-    transform: translate(1px, 0px); } }
-@-moz-keyframes animationFrames {
-  0% {
-    opacity: 0;
-    -moz-transform: translate(0px, 0px); }
-  100% {
-    opacity: 1;
-    -moz-transform: translate(1px, 0px); } }
+    -webkit-transform: translate(1px, 0px);
+            transform: translate(1px, 0px); } }
 @-webkit-keyframes animationFrames {
   0% {
     opacity: 0;
@@ -478,20 +449,6 @@ header {
   100% {
     opacity: 1;
     -webkit-transform: translate(1px, 0px); } }
-@-o-keyframes animationFrames {
-  0% {
-    opacity: 0;
-    -o-transform: translate(0px, 0px); }
-  100% {
-    opacity: 1;
-    -o-transform: translate(1px, 0px); } }
-@-ms-keyframes animationFrames {
-  0% {
-    opacity: 0;
-    -ms-transform: translate(0px, 0px); }
-  100% {
-    opacity: 1;
-    -ms-transform: translate(1px, 0px); } }
 .active_slide_top {
   border: solid 3px #99cea7; }
 
@@ -523,6 +480,9 @@ header {
 .style_1 {
   font-family: "kariaReguliar";
   font-size: 16px; }
+  @media only screen and (max-width: 1366px) {
+    .style_1 {
+      font-size: 12px; } }
 
 .style_2 {
   font-family: "kariaReguliar";
@@ -561,8 +521,18 @@ header {
   #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(3) {
     margin-top: 7px;
     font-size: 18px; }
+    @media only screen and (max-width: 1366px) {
+      #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(3) {
+        margin-top: 0; } }
+    @media only screen and (max-width: 1366px) {
+      #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(3) {
+        font-size: 12px;
+        margin-top: 0; } }
   #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(4) {
     margin-top: 6px; }
+    @media only screen and (max-width: 1366px) {
+      #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(4) {
+        margin-top: -4px; } }
     #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(4) .spanPrice {
       margin-left: 7%;
       margin-right: 7%; }
@@ -578,6 +548,12 @@ header {
       padding-top: 5px;
       border: solid 1px #d0d0d0;
       margin-right: 2%; }
+      @media only screen and (max-width: 1366px) {
+        #add_to_cart_block .top_infoPart_add_to_cart p:nth-child(5) button {
+          width: 72px;
+          height: 25px;
+          padding-top: 3px;
+          font-size: 11px; } }
 
 .sizes_part {
   grid-template-columns: 44px 44px 1fr;
@@ -611,6 +587,9 @@ header {
 /*part for  radio input */
 #sizesForm {
   margin-top: 8px; }
+  @media only screen and (max-width: 1366px) {
+    #sizesForm {
+      margin-top: 3px; } }
 
 .radio_container {
   display: inline-block;
@@ -619,7 +598,10 @@ header {
   font-family: "montserratRegular";
   font-size: 13px;
   color: #575153;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding-left: 30px; }
 
 .radio_container input {
@@ -653,7 +635,8 @@ header {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 /*................. QTY and Delivery Every block ............*/
 #qty_delivery_block {
@@ -681,7 +664,6 @@ header {
   background: #f8f8f8;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -712,17 +694,26 @@ input#number {
   margin-bottom: 11px; }
 
 /*...... purchase ......*/
-@media only screen and (max-width: 1200px) {
+/*@media only screen and (max-width: 1366px) {
   #purchase_block {
-    width: 70%; } }
+    width: 70%;
+  }
+
+}*/
 #purchase_block {
   margin-top: 20px; }
+  @media only screen and (max-width: 1366px) {
+    #purchase_block {
+      margin-top: 10px; } }
 
 .purchase_input {
   padding-top: 0; }
 
 #One-time_purchase, #Subscription_purchase {
   grid-template-columns: 68% 43px; }
+  @media only screen and (max-width: 1366px) {
+    #One-time_purchase, #Subscription_purchase {
+      grid-template-columns: 62% 77px; } }
 
 .percent_conent {
   width: 100%;
@@ -738,6 +729,9 @@ input#number {
   margin-left: 22%; }
   .percent_conent p {
     margin-top: 5%; }
+  @media only screen and (max-width: 1366px) {
+    .percent_conent {
+      width: 56px; } }
 
 /* .............wishList_pricedrop_block...............*/
 #wishList_pricedrop_block {
@@ -754,8 +748,6 @@ input#number {
     width: 100%;
     border-width: 1px;
     -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out; }
     #wishList_pricedrop_block button:hover {
       background: #41b115;
@@ -766,7 +758,7 @@ input#number {
 #Add_to_cart_block {
   padding: 0;
   height: 5px;
-  margin-top: 26px; }
+  margin-top: 14px; }
   #Add_to_cart_block p {
     padding: 0;
     margin: 0; }
@@ -777,12 +769,16 @@ input#number {
     width: 167px;
     border-width: 1px;
     -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     background: #41b115;
     color: #ffffff;
     border-color: #8dd079; }
+    @media only screen and (max-width: 1366px) {
+      #Add_to_cart_block button {
+        width: 34%; } }
+  @media only screen and (max-width: 1366px) {
+    #Add_to_cart_block {
+      margin-top: 17px; } }
 
 /*.................soc ions ..............*/
 #soc_icons_form {
@@ -794,9 +790,10 @@ input#number {
     font-size: 20px;
     color: #c6c6c6;
     -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
+    @media only screen and (max-width: 1366px) {
+      #soc_icons_form a {
+        font-size: 15px; } }
     #soc_icons_form a:hover {
       color: #41b115; }
 
@@ -808,7 +805,7 @@ input#number {
     font-family: "kariaReguliar";
     font-size: 12px;
     color: #a8a8a8;
-    line-height: 8px; }
+    line-height: 14px; }
 
 /*........... product_content ...........*/
 #feature {
@@ -980,8 +977,6 @@ input#number {
   height: 50px;
   border-radius: 50%;
   -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   background-color: #c3c4c3;
   margin-top: 118px; }
@@ -1077,7 +1072,6 @@ input#number {
       font-size: 25px;
       color: #ffffff;
       moz-transition: all .3s linear;
-      -o-transition: all .3s linear;
       -webkit-transition: all .3s linear;
       transition: all .3s linear; }
       @media only screen and (max-width: 1300px) {
@@ -1138,7 +1132,8 @@ input#number {
   border-radius: .50rem;
   position: absolute;
   right: 0%;
-  box-shadow: 0px 0px 13px 0px #1b1919;
+  -webkit-box-shadow: 0px 0px 13px 0px #1b1919;
+          box-shadow: 0px 0px 13px 0px #1b1919;
   font-family: "kariaitali";
   font-size: 24.11px;
   color: #ffffff;
@@ -1283,6 +1278,7 @@ footer {
       font-family: "kariaReguliar";
       font-size: 20px;
       color: #9ca9b1;
+      -webkit-transition: all .3s linear;
       transition: all .3s linear;
       padding: .5rem 1rem;
       padding-left: 0.1rem; }
@@ -1321,8 +1317,6 @@ footer {
     font-family: "kariaReguliar";
     font-size: 16px;
     color: #727f88;
-    -moz-transition: all .3s linear;
-    -o-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     text-decoration: none; }
@@ -1362,6 +1356,7 @@ footer {
     font-size: 2rem;
     color: #727f88;
     margin: 0 2%;
+    -webkit-transition: all .3s linear;
     transition: all .3s linear;
     display: block;
     text-align: right; }
