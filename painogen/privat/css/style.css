@@ -221,11 +221,6 @@ header {
   grid-column-gap: 3%;
   margin-top: 90px;
   /*
-    @media only screen and (max-width: 800px){
-      max-width: 568px;
-      display: block;
-    }
-  
     @media only screen and (max-width: 600px){
       max-width: 300px;
       display: block;
@@ -234,6 +229,10 @@ header {
     #slider_top {
       width: 856px;
       grid-template-columns: 453px 375px; } }
+  @media only screen and (max-width: 992px) {
+    #slider_top {
+      grid-template-columns: 1fr;
+      width: 493px; } }
 
 .part_left {
   position: relative; }
@@ -323,6 +322,9 @@ header {
   @media only screen and (max-width: 1366px) {
     .main_content_top_slider {
       grid-template-columns: 80px 350px; } }
+  @media only screen and (max-width: 992px) {
+    .main_content_top_slider {
+      grid-template-columns: 90px 380px; } }
 
 .topSlider_header_link {
   padding-top: 66px;
@@ -348,6 +350,9 @@ header {
   @media only screen and (max-width: 1366px) {
     .main_content_top_slider {
       grid-template-columns: 80px 350px; } }
+  @media only screen and (max-width: 992px) {
+    .main_content_top_slider {
+      grid-template-columns: 90px 380px; } }
 
 #buttons_img_sliderTop {
   display: grid;
@@ -399,6 +404,9 @@ header {
     @media only screen and (max-width: 1366px) {
       #buttons_img_sliderTop .btn_img_sliderTop {
         height: 80px; } }
+    @media only screen and (max-width: 992px) {
+      #buttons_img_sliderTop .btn_img_sliderTop {
+        height: 90px; } }
 
 #img_sliderTop_block {
   grid-template-columns: 1fr; }
@@ -1368,4 +1376,5 @@ footer {
     @media only screen and (max-width: 767px) {
       #bankCarts a {
         text-align: left; } }
+
 /*# sourceMappingURL=style.css.map */
