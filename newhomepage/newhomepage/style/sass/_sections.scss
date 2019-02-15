@@ -1117,9 +1117,15 @@ section{
 	}
 
 	@media only screen and (max-width: 767px) {
-		grid-template-columns: 1fr;
+		/*grid-template-columns: 1fr;
 		max-width: 300px;
-		grid-row-gap: 1%;
+		grid-row-gap: 1%;*/
+		display: block;
+		.pricing_box_2{
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
 	}
 
 	
@@ -1548,8 +1554,14 @@ section{
 
 	
 	@media only screen and (max-width: 767px) {
-		grid-template-columns: auto;
-  		
+		//grid-template-columns: auto;
+		  display: block;
+		  #mobile_block_additional_2 {
+			  margin-top: 30px;
+			  margin-bottom: 30px;
+		  }
+
+		 
 	}
 
 }
