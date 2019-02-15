@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?mto9c6");
+  src: url("../fonts/icomoon.eot?mto9c6#iefix") format("embedded-opentype"),
+       url("../fonts/icomoon.ttf?mto9c6") format("truetype"), url("../fonts/icomoon.woff?mto9c6") format("woff"), 
+       url("../fonts/icomoon.svg?mto9c6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon-bitcoin-cap:before {
+  content: "\e900";
+}
+.icon-bitcoin-ico:before{
+  content: "\e901";
+}
+.icon-bitcoin-sun:before{
+  content: "\e902";
+}
+.icon-calendar:before{
+  content: "\e903";
+}
+.icon-contract:before{
+  content: "\e904";
+}
+.icon-crypto:before{
+  content: "\e905";
+}
+.icon-fees:before{
+  content: "\e906";
+}
+.icon-lock:before{
+  content: "\e907";
+}
+.icon-men:before{
+  content: "\e908";
+}
+.icon-minus:before{
+  content: "\e909";
+}
+.icon-network:before{
+  content: "\e90a";
+}
+.icon-planet:before{
+  content: "\e90b";
+}
+.icon-plus:before{
+  content: "\e90c";
+}
+.icon-recovery:before{
+  content: "\e90d";
+}
+.icon-regulatory:before{
+  content: "\e90e";
+}
+.icon-transferable:before{
+  content: "\e90f";
+}
+.icon-upgrade:before{
+  content: "\e910";
+}
+.icon-sale:before{
+  content: "\e911";
+}
+.icon-play:before{
+  content: "\e912";
+}
+.icon-arrow-left:before{
+  content: "\e913";
+}
+.icon-arrow-right:before{
+  content: "\e914";
+}
+.icon-cancel:before{
+  content: "\e915";
+}
+.icon-menu:before{
+  content: "\e916"
+}
+
+
+// fonts lato 
+
+@font-face {
+  font-family: "latoBold";
+  src: url("../fonts/Lato-Bold.ttf");
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "latoLight";
+  src: url("../fonts/Lato-Light.ttf");
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoRegular";
+  src: url("../fonts/Lato-Regular.ttf");
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoMedum";
+  src: url("../fonts/Lato-Medium.ttf");
+  
+  font-weight: normal;
+  font-style: normal;
+}
+
