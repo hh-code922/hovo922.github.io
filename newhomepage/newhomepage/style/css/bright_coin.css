@@ -2932,7 +2932,8 @@ section.bc_section {
       /*grid-template-columns: 1fr;
       max-width: 300px;
       grid-row-gap: 1%;*/
-      display: block; }
+      display: block;
+      width: 300px; }
       .row_pricing .pricing_box_2 {
         margin-top: 30px;
         margin-bottom: 30px; } }
@@ -3862,4 +3863,5 @@ section.bc_section {
     position: absolute; }
     .bc_modal_video_play .bc_wrapper iframe {
       max-width: calc(100% - 30px); }
+
 /*# sourceMappingURL=bright_coin.css.map */
