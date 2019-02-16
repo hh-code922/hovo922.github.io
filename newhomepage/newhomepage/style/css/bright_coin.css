@@ -2273,8 +2273,12 @@ section.bc_section {
       border-radius: 4px;
       background: -webkit-gradient(linear, left top, right top, from(#1d61b3), to(#0453b3));
       background: linear-gradient(90deg, #1d61b3 0%, #0453b3 100%);
+      display: flex;
       display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -2949,7 +2953,7 @@ section.bc_section {
   /* Track */
   /* Handle */
   /* Handle on hover */ }
-  @media only screen and (max-width: 587px) {
+  @media only screen and (max-width: 767px) {
     #sc_fees {
       padding-bottom: 70px; } }
   #sc_fees ::-webkit-scrollbar {
@@ -3199,7 +3203,7 @@ section.bc_section {
       width: 80%; } }
   @media only screen and (max-width: 767px) {
     .investro_text {
-      margin-top: 140px; } }
+      margin-top: 70px; } }
   @media only screen and (max-width: 587px) {
     .investro_text {
       font-size: 17px; } }

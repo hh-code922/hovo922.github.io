@@ -2872,9 +2872,14 @@ section.bc_section {
       grid-row-gap: 1%; } }
   @media only screen and (max-width: 767px) {
     .row_pricing {
-      grid-template-columns: 1fr;
+      /*grid-template-columns: 1fr;
       max-width: 300px;
-      grid-row-gap: 1%; } }
+      grid-row-gap: 1%;*/
+      display: block;
+      max-width: 300px; }
+      .row_pricing .pricing_box_2 {
+        margin-top: 30px;
+        margin-bottom: 30px; } }
 
 .bc_pricing_section_title_1 {
   padding-top: 75px;
@@ -3157,7 +3162,10 @@ section.bc_section {
       display: grid; } }
   @media only screen and (max-width: 767px) {
     .row_additional_mobile {
-      grid-template-columns: auto; } }
+      display: block; }
+      .row_additional_mobile #mobile_block_additional_2 {
+        margin-top: 30px;
+        margin-bottom: 30px; } }
 
 .mobile_block_additional {
   width: 286px;
