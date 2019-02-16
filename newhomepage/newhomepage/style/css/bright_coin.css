@@ -2288,10 +2288,6 @@ section.bc_section {
       @media (min-width: 992px) {
         .sc_first .token_start_box .token_start_form .form-label {
           padding: 30px 0; } }
-      @media (max-width: 500px) {
-        .sc_first .token_start_box .token_start_form .form-label {
-          display: grid;
-          grid-template-columns: auto auto; } }
       .sc_first .token_start_box .token_start_form .form-label .bc_input_text {
         width: 250px;
         padding: 0 20px;
@@ -2306,9 +2302,6 @@ section.bc_section {
         @media (min-width: 992px) {
           .sc_first .token_start_box .token_start_form .form-label .bc_input_text {
             padding: 0 40px; } }
-        @media (max-width: 500px) {
-          .sc_first .token_start_box .token_start_form .form-label .bc_input_text {
-            width: 200px; } }
       .sc_first .token_start_box .token_start_form .form-label .bc_submit {
         width: 200px;
         text-align: center;
@@ -2323,9 +2316,6 @@ section.bc_section {
         -webkit-transition: 0.25s ease-in-out;
         transition: 0.25s ease-in-out;
         cursor: pointer; }
-        @media (max-width: 500px) {
-          .sc_first .token_start_box .token_start_form .form-label .bc_submit {
-            width: 71px; } }
         .sc_first .token_start_box .token_start_form .form-label .bc_submit:hover {
           background-color: #f8c54d; }
 
