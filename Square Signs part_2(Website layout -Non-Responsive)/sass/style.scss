@@ -1,0 +1,393 @@
+@import "settings";
+
+#container {
+  max-width: 1440px;
+  min-width: 1326px;
+
+  @extend .margin_center;
+  background-color: $bgColor_1;
+  a{
+    text-decoration: none;
+  }
+}
+
+.block {
+  width: 83.33333333333333%;
+  @include padding(0,20px,0,20px);
+  @extend .margin_center;
+}
+
+
+
+/*...........Header ...........*/
+header{
+  @include divSize(100%,96px);
+  background-color: $bgColor_1;
+  box-shadow: 1px -13px 56px 5px #585656;
+}
+
+
+
+
+#nav {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+
+}
+#navBar{
+  i{
+    font-size: 14px;
+
+      -moz-transition: all 0.5s ease-in;
+      /* WebKit */
+      -webkit-transition: all 0.5s ease-in;
+      /* Opera */
+      -o-transition: all 0.5s ease-in;
+      /* Standard */
+      transition: all 0.5s ease-in;
+
+
+  }
+  i:hover {
+    color: $color_3;
+  }
+}
+
+#navBar:hover {
+  cursor: pointer;
+}
+
+#dropDown_1,#dropDown_2 {
+  padding-left: 22.5px;
+  @include fontStyles($raleway_reg,14px,$color_2);
+  p{
+
+      -moz-transition: all 0.5s ease-in;
+      /* WebKit */
+      -webkit-transition: all 0.5s ease-in;
+      /* Opera */
+      -o-transition: all 0.5s ease-in;
+      /* Standard */
+      transition: all 0.5s ease-in;
+
+  }
+}
+
+#dropDown_1:hover,#dropDown_2:hover{
+  cursor: pointer;
+  p{
+    color: $color_3;
+  }
+}
+
+#block_header {
+  @extend .grid_setting;
+  grid-template-columns: auto 2fr auto;
+  @include fontStyles($capton_light,$size_7/2,$color_2);
+}
+
+
+#logo_1 {
+  @extend .position_relative;
+  a{
+    display: block;
+    text-align: center;
+    @include margin(22px,auto,0,auto);
+    width: 230px;
+  }
+  img{
+    @extend .imgResponsive;
+  }
+}
+
+#languages {
+  float: right;
+  @include padding(11px,0,0,0);
+  ul li{
+    @include fontStyles($raleway_reg,12px,#666666);
+  }
+}
+
+#login {
+  address{
+    padding-top: 40px;
+  }
+  ul {
+    li  {
+      display: inline-block;
+      margin-right: 18px;
+
+    }
+    li a{
+      @include fontStyles($raleway_reg,$size_4,#666666);
+      font-size: 16px;
+      -moz-transition: all 0.5s ease-in;
+      /* WebKit */
+      -webkit-transition: all 0.5s ease-in;
+      /* Opera */
+      -o-transition: all 0.5s ease-in;
+      /* Standard */
+      transition: all 0.5s ease-in;
+    }
+    
+    li a:hover {
+      color:$color_3;
+    }
+
+
+  }
+}
+/*............  Content ..........*/
+
+#content{
+  @include padding(8px,0,95px,0);
+}
+
+#navigation {
+  background-color: $bgColor_3;
+  height: 90px;
+}
+
+#navigation_block {
+  @extend .grid_setting;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  @extend .text_center;
+  @include fontStyles($raleway_reg,$size_8/2,$color_2);
+  height: 100%;
+}
+
+.navigation {
+  @include padding(15px,0,0,0);
+  @extend .position_relative;
+
+  img{
+    @include divSize(33px,33px);
+    @include margin(0,0,15px,0);
+  }
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
+
+.navigation i {
+
+    @extend .position_absalute;
+  font-size: 30px;
+  top: 78.75px;
+  left: 46%;
+  color: #10101000;
+
+}
+
+.navigation:hover {
+  cursor:pointer;
+  background-color: $bgColor_2;
+}
+
+
+/* navigations functions */
+ .active {
+  background-color: pink;
+}
+
+.navsigations_div{
+  display: none;
+}
+
+#signs {
+  display: block;
+}
+
+#navigatorSubmit {
+  background-color:#0096d7;
+}
+
+
+
+
+/* .................. Signs ..............*/
+
+#signs {
+  @include fontStyles($raleway_reg,14px,$color_2);
+  h1{
+    font-size: $size_3/2;
+  }
+  line-height: $size_3/2;
+}
+
+#text_signs{
+  width: 38.33333333333333%;
+  margin-top: 42px;
+  h1{
+    margin-bottom: 19px;
+  }
+}
+
+ /*...................... signs_grid .........................*/
+
+#signs_grid{
+  @extend .grid_setting;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 67px;
+  @include  padding(41.5px,0,0,0);
+  figcaption {
+    @include margin(7px,0,0,0);
+  }
+}
+
+.signs_grid {
+  img {
+    @extend .border_radius;
+    @extend .imgResponsive;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  .............footer...........*/
+
+
+footer{
+  background-color: $color_2;
+  @include padding(75px,0,75px,0);
+  @include fontStyles($raleway_reg,$size_7/2,$color_5);
+  h2{
+    font-family: $raleway_bold;
+  }
+  ul{
+    li a{
+      @include fontStyles($raleway_reg,$size_7/2,$color_5);
+      -moz-transition: all 1s ease-in;
+      /* WebKit */
+      -webkit-transition: all 1s ease-in;
+      /* Opera */
+      -o-transition: all 1s ease-in;
+      /* Standard */
+      transition: all 1s ease-in;
+    }
+    li a:hover {
+      color: $color_1;
+    }
+  }
+}
+
+#footer_block {
+  @extend .grid_setting;
+  grid-template-columns: auto 2fr 1fr;
+}
+
+#left_corner {
+  div:nth-child(1){
+    @include divSize(140px,auto);
+    margin-top: 220px;
+  }
+}
+
+#text_logo_2 {
+  margin-top: 16px;
+  color: $color_1;
+  line-height: 17.5px;
+}
+
+#main_foot {
+  @include padding(0,0,0,50px);
+}
+
+#square_signs {
+  @include divSize(68.65671641791045%,auto);
+  line-height: 17.5px;
+  h2{
+    margin-bottom: 7.5px;
+  }
+}
+
+#products,#templates {
+  @include padding(62.5px,0,0,0);
+}
+
+.products,.templates {
+  @include padding(17.5px,0,0,0);
+}
+
+
+ .for_grid{
+    @extend .grid_setting;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   ul li {
+     margin-bottom: 13.5px;
+   }
+  }
+
+
+/*....... FOR  CONTACTS.......... */
+
+.my-form {
+  select {
+    width: 220px;
+    height: 42.5px;
+    @extend .outlineOff;
+    border-radius: 50px;
+    background-color: #484848;
+    option:checked {
+      @include fontStyles($raleway_reg,$size_7/2,$color_1);
+    }
+
+  }
+  padding-top: 10px;
+}
+#laguages_2 {
+  @include fontStyles($raleway_reg,$size_7/2,$color_1);
+  text-indent: 15px;
+}
+
+
+ /* ............. subscribe_part_2...........*/
+
+#subscribe_part_2 {
+  @extend .grid_setting;
+  grid-template-columns: 1fr 1fr;
+  @include padding(114px,0,0,0);
+  h2{
+    margin-bottom: 14px;
+  }
+  ul li {
+    margin-bottom: 13.5px;
+  }
+}
+
+#social_foot {
+  a{
+    font-size: $size_2/2;
+    color: #b3b3b3;
+    margin-left:15%;
+    margin-bottom: 21px;
+    display: inline-block;
+  }
+  a:nth-child(2),a:nth-child(6){
+    margin-left:0;
+  }
+}
+
+
+/*...........subscribe_part_3 .........*/
+
+#subscribe_part_3 {
+  address{
+    @include margin(17.5px,0,0,0);
+    p{
+      margin-bottom: 18.5px;
+    }
+  }
+}
+

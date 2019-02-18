@@ -1,0 +1,1937 @@
+@import "setings";
+body{
+    margin: 0;
+    padding: 0;
+    a{text-decoration: none;}
+}
+ 
+#container {
+    width: 100%;
+    @extend .marginAuto;
+}
+
+/*.................. h e a d e r ...................*/
+
+header{
+    width: 100%;
+    background-color:#000000;
+   
+   
+}
+
+#bloch_header{
+    @extend .maxwidth;
+    @extend .grid;
+    grid-template-columns: minmax(auto, 179px) 2fr 1fr;
+    @extend .marginAuto;
+}
+
+#bloch_header> div:nth-child(1){
+   /* background: red;*/
+    
+    @extend .grid;
+    grid-template-columns: 126px 50px;
+    img{margin-left:28px;}
+    i{margin-left: 61%;@extend .font-size_4; @extend .color_1;}
+    i:hover{
+        @extend.pointer;
+    }
+
+    #logo{
+        border-right: solid 1px #707070;
+        img:hover{ @extend.pointer;}
+        padding-top: $size_2;
+        padding-bottom: $size_9;
+    }
+    
+      
+}
+
+#menuIcon {
+    padding-top: 18px;
+}
+
+#bloch_header> div:nth-child(2){
+   /* background: yellow;*/
+    border-right: solid 1px #707070;
+    padding-top:25px;
+    @extend .grid;
+    grid-template-columns: 5.982905982905983% auto; 
+    p{@include fontSeting($font_3,$size_2,$color_1);margin-left:23px;}
+
+    #category{
+        margin-left:67px;
+        li{
+            display: inline-block;
+            text-decoration: none;
+            margin-left:10px;;
+        }
+        @include fontSeting($font_1,$size_2,$color_1);
+        a{@extend .color_1; font-size:$size_2;}
+    }
+}
+
+#bloch_header> div:nth-child(3){
+   /* background: green;*/
+    @extend .grid;
+    grid-template-columns:auto auto auto;   
+     
+}
+
+#serch{
+    padding-top: 14px;
+    form{
+        margin-left:32px;
+        position: relative;
+        div{
+            
+            position: absolute;
+            i{font-size: 15px;color: #ffffff}
+            top: 11px;
+            left:9px;
+        }
+    }
+    input{
+        width:211px;
+        height: 30px;
+        background: #2c2c2c;
+        @extend .font-size_1;
+        color: $color_1;
+       text-indent: 40px;
+       outline: none;
+       border:none;
+       border-radius: 3px;
+       
+    }
+
+    
+
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #707070;
+        font-family: $font_2;
+        font-size:$size_1;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        text-indent: 43px;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        text-indent: 43px;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        text-indent: 43px;
+      }
+}
+
+#share {
+    padding-top: 14px;
+ i{
+     font-size: 15px;
+    margin-top: 8px;
+    color: $color_1;
+ }
+ i:hover{ @extend.pointer;}
+}
+
+
+#singIn {
+    width: 85px;
+    height: 32px;
+    background: $color_2;
+    border-radius: 3px;
+    @include fontSeting($font_5,$size_1,$color_1);
+    @extend .centerText;
+    overflow: auto;
+    p{
+        margin-top: 9px;
+    }
+    margin-top: 14px;
+   
+}
+
+#singIn:hover{
+    @extend.pointer;
+}
+
+
+
+
+
+
+/*............  c o n t e n t ............*/
+
+
+#content {
+    max-width: 1600px;
+    @extend .marginAuto;
+    padding-top: 25px;
+  
+}
+
+#block_content{
+    width: 69.375%;
+    @extend .marginAuto;
+    margin: 0 auto;
+}
+
+#section_1 {
+    div:nth-child(1){
+        @include fontSeting($font_1,$size_1,$color_3);
+        a{ 
+            @include fontSeting($font_1,$size_1,$color_3);
+            padding-bottom: 2px;
+            border-bottom: solid 1px;
+        }
+    }
+
+    div:nth-child(2){
+        margin-top: 20px
+    }
+   
+    h1{
+        @include fontSeting($font_5,$size_3,$color_4);
+    }
+
+    
+
+    .spanSimbol {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+}
+  
+  /*   ............Section 2 main contetn part .........*/
+
+  #section_2 {
+    width: 69.375%;
+    margin: 0 auto;
+  }
+
+#section_2_content_block {
+    @extend .grid;
+    grid-template-columns: 74.32432432432432% 22.97297297297297%;
+    grid-column-gap: 30px;
+    
+   
+    
+}
+
+#block_main_game {
+    width: 100%;    background: $color_5;
+    
+}
+
+#main_game {
+    width: 91.63636363636364%;
+    margin: 0 auto;
+    @extend .grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: $color_1;
+   
+}
+
+#team_1,#team_2{
+    width: 70.5%;
+    margin: 0 auto;
+    padding-bottom: 26px;
+   
+}
+
+#team_1>div:nth-child(1),#team_2>div:nth-child(1){
+    width: 39%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#team_1>div:nth-child(2),#team_2>div:nth-child(2){
+    text-align: center;
+    width: 100%;
+}
+
+#team_1>div:nth-child(3),#team_2>div:nth-child(3){
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+#team_1>div:nth-child(3),#team_2>div:nth-child(3){
+    @extend .grid;
+    grid-template-columns: 30px 30px 30px 30px 30px;
+    grid-column-gap: 2px;
+    @extend .centerText;
+    @include fontSeting($font_3,$size_9,$color_1);
+    overflow: auto;
+}
+
+.box{
+    
+    height: 30px;
+    background: $color_6;
+    
+}
+
+.box:hover{
+    @extend .pointer;
+}
+
+.box>p {
+    margin-top:7px;
+}
+
+
+#data_time_game {
+    @extend .grid;
+    grid-template-columns: 1fr 1fr;
+    @extend .centerText;
+    @extend .font-size_6;
+    color:$color_2;
+    div:nth-child(1){
+        font-family: $font_2;
+    }
+    div:nth-child(2){
+        border-left:solid 1px $color_3;
+        font-family: $font_3;
+        font-size: 20px;
+    }
+    margin-top:26px;
+}
+
+#tournament_location {
+    margin-top: 61px;
+    font-size: 15px;
+}
+
+
+ul.leaders {
+    li{
+        font-family: $font_2;
+        span:nth-child(1){color:$color_2;}
+        span:nth-child(2){color:$color_4;}
+        span{@extend .font-size_6;i{margin-right: 19px;}}
+    }
+    li:nth-child(2){
+        margin-top: 10px;
+    }
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white
+}
+
+#leaders{
+    li{
+        font-size: 10px;
+    }
+   span{
+       font-size: 15px;
+   }
+}
+
+
+#autor_static{
+    width: 91.63636363636364%;
+    @extend .grid;
+    grid-template-columns: 1fr 1fr;;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info_autor{
+   li{
+    position: relative;
+    list-style-type: none;
+    margin-left: 15%;
+   word-spacing: 2px;
+   letter-spacing: 1px;
+    @include fontSeting($font_2,$size_1,$color_4);
+   }
+   li:before {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: -16%;
+    width: 35px;
+    height: 35px;
+    background-image: url('../img/person_1.png');
+}
+}
+
+#btn_static{
+    width: 129px;
+    p{
+        margin-top:11px;
+        @include fontSeting($font_3,$size_1,$color_1);
+    }
+    padding-bottom: 12px;
+    background: url("../img/btn_gradiens.png");
+    background-repeat: no-repeat;
+    overflow: auto;
+    @extend .centerText;
+    float: right;
+}
+
+#btn_static:hover {
+    @extend .pointer;
+}
+
+
+/* winlinw*/
+
+#winline{
+    @extend .grid;
+    grid-template-columns: 1fr 2fr;
+    border-top: solid 1px $color_3;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    margin-top: 12px;
+}
+
+#logo_winline{
+    img{margin-left: 10%;}
+}
+
+#btns_winline{
+    @extend .grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-column-gap: 6%;
+}
+
+.btn_winl{
+    float: right;
+    overflow: auto;
+    p{
+        margin-top: 17px;
+        margin-bottom: 16px;
+    }
+    
+
+    @extend .grid;
+    grid-template-columns: 1fr 3fr;
+    @extend .centerText;
+    @include fontSeting($font_2,$size_10,$color_4);
+}
+
+.btn_winl:hover{
+    @extend .pointer;
+}
+
+.winl_1{
+    div:nth-child(1)
+    {
+    background: #c7c7c7;
+    }
+    background: $color_1;
+}
+
+.winl_2{
+    div:nth-child(1){
+
+      background:#f26c23;
+    }
+    background: #f9da48;
+}
+
+
+.winl_3{
+    div:nth-child(1){
+        background: #c7c7c7;
+    }
+    background: $color_1;
+}
+
+
+
+
+
+
+/*...... section e part 2 ......*/
+
+#anons{
+    h2{
+        @include fontSeting($font_5,$size_3,$color_4);
+    }
+    margin-top:42px;
+}
+
+#text_anons{
+    border-top: 4px solid #ff2053;
+    border-bottom: 1px solid $color_3;
+    border-left: 1px solid $color_3;
+    border-right: 1px solid $color_3;
+    margin-top:27px;
+    padding-bottom: 28px;
+   
+    p{
+        @include fontSeting($font_2,$size_7,$color_4);
+        width: 91.51515151515152%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 25px;
+        margin-top: 31px;
+    }
+    a{
+        display: block;
+        margin-left: 4.5%;
+        @include fontSeting($font_2,$size_1,$color_2);  
+        margin-top: 33px;
+        i{
+            margin-left: 1.5
+        }
+      }
+    
+}
+
+
+
+/* .......... section 3 tab........*/
+
+
+#tab_1 {
+    margin-top: 50px;
+    border-bottom: solid 1px $color_3;
+}
+
+.tab,.last_games{
+    overflow: hidden;
+    
+}
+
+/* Style the buttons inside the tab */
+.tab_1_BTN{
+    background-color: inherit;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    transition: 0.3s;
+    @include fontSeting($font_3,$size_2,$color_4);
+    
+}
+
+
+
+/* Create an active/current tablink class */
+.tab_1_BTN>div.active {
+   /* border-bottom: #58b094 solid 4px;*/
+   
+   color:#58b094;
+  
+  p{
+      
+     padding-bottom: 25px;
+     border-bottom: 4px solid #58b094;
+     display: inline;
+  }
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent,.lastGame_content {
+    display: none;
+    
+}
+
+
+.btN {
+    @extend .grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 3%;
+    padding-bottom: 30px;
+    p{
+        text-transform: uppercase;
+    }
+}
+
+
+
+.last_games {
+    padding-bottom: 30px;
+    h2{
+        @include fontSeting($font_5,$size_3,$color_4);
+    }
+    border-bottom: 1px solid $color_3;
+}
+
+/* ............ Info  Taq 1......*/
+
+#info_tab_1 {
+    margin-top: 38px;
+}
+
+
+/* last games */
+
+#BtN_las_games {
+    @extend .grid;
+    grid-template-columns: 16% 16% 16%;
+    @include fontSeting($font_3,$size_2,$color_4);
+    margin-top: 30px;
+    p{
+        text-transform: uppercase;
+    }
+    
+}
+
+.lastGame_btn:hover{
+    p{
+        @extend .pointer;
+    }
+}
+
+.lastGame_btn.active {
+    color:#58b094;
+  
+    p{
+        
+       padding-bottom: 25px;
+       border-bottom: 4px solid #58b094;
+       display: inline;
+
+    }
+}
+
+/*   Last games team  table */
+
+#info_last_game {
+    h3{
+        @include fontSeting($font_2,$size_2,$color_2);
+        padding-top: 16px;
+        padding-left: 2%;
+        padding-bottom: 15px;
+        background: #f6f6f6;
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
+
+/*  last  games info */
+
+
+
+
+.header_table_lastgames{
+    @extend .grid;
+   /* grid-template-columns: 175px 263px 263px 90px 27px;*/
+   grid-template-columns: 22.21212121212121% 29.6969696969697% 31.87878787878788% 10.90909090909091% 3.272727272727273%;
+    
+}
+
+
+.header_table_lastgames>div{
+    @include fontSeting($font_2,$size_2,$color_4);
+    
+    span{
+        font-size: 14px;
+    }
+   
+    border-bottom: solid 1px $color_3;
+    p{
+        margin-top: 19px;
+       
+    }
+    
+}
+.header_table_lastgames>div:nth-child(1){
+    padding-top: 19px;
+    padding-left: 8px;
+    span:nth-child(1){
+         color: $color_3;   
+    }
+    img{
+        margin-right: 24px;
+        margin-left: 24px;
+       
+    }
+}
+
+
+/* class setings style  for tha team who is win */
+
+.setings_win{
+    
+    
+    background: #f3ffbc;
+   p{
+    @include fontSeting($font_3,$size_2,$color_4);
+    text-indent: 15%;
+   }
+}
+
+.the_game_score{
+    p{
+        @include fontSeting($font_3,$size_2,$color_4);
+        text-indent: 23%;
+    }
+}
+
+
+.header_table_lastgames{
+    div:nth-child(2), div:nth-child(3){
+        text-indent: 15%;
+    }
+    div:nth-child(5){
+        img{
+            margin-top: 12px;
+            margin-bottom: 7px;
+        }
+    }
+    
+}
+
+
+/*BTN show more matuches*/
+.showMoreMtches{
+    display:block;
+    @include fontSeting($font_2,$size_1,$color_2);
+    @extend .centerText;
+    margin-top: 23px;
+    margin-bottom:23px;
+}
+
+
+
+
+
+                        /*............Probability of events ...........*/
+
+#block_probability_of_events>h2{
+    @include fontSeting($font_3,$size_4,$color_4);
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    @include fontSeting($font_2,$size_7,$color_1);
+  }
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  .select-selected {
+    background-color: #58b094;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  #setting__probability_of_events {
+      @extend .grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+  }
+
+
+  /*..........Progres..................*/
+
+
+  #progres_block {
+      height: 254px;
+      @extend .grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-column-gap: 3.627569528415961%;
+        background: #f5f5f5;
+        margin-top: 30px;
+       
+  }
+
+  .prog_col{
+     height: 100%;
+      p{
+      color: #000000;
+      font-family: $font_2;
+      font-size: 15px;
+      color:$color_3;
+      margin-left: 11.67315175097276%;
+      margin-top: 30px;
+      }
+      position: relative;
+      b{
+          position: absolute;
+          top: 78%;
+          left: 63%;
+          font-family: $font_5;
+          font-size: 26px;
+      }
+     
+  }
+
+
+  .at_porgres{
+      width: 40.85603112840467%;
+      margin-left: 11.67315175097276%;
+      height: 1px;
+      top:80%;
+      position: relative;
+  }
+  .at_progres_1{
+
+      background:#3994ee;
+  }
+
+  .prog_1{
+    b{
+        color: #3994ee;
+    }
+  }
+
+  .at_progres_2{
+    
+    background: #ec5f20;
+  }
+
+  .prog_2{
+    b{
+        color:  #ec5f20;
+    }
+  }
+
+  
+  .at_progres_3{
+    
+    background: #58b094;
+  }
+
+  .prog_3{
+    b{
+        color:  #58b094;
+    }
+  }
+
+
+
+  /*,,,,,,,,,,,,,,,,,,,,,,,,,,.........Info  coefficents,,,,,,,............-->*/
+
+#coefficients__block {
+    margin-top: 54px;
+    h2{
+        @include fontSeting($font_5,$size_3,$color_4);
+        margin-bottom: 40px;
+    }
+   
+}
+
+
+/* Style the tab */
+.tab_Coefficients {
+    overflow: hidden;
+   
+    @extend .grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 4%;
+    border-bottom: solid 1px #eeeeee;
+}
+
+/* Style the buttons inside the tab_Coefficients */
+.tab_Coefficients div {
+    p{
+        @include fontSeting($font_3,$size_2,$color_4);
+        text-transform: uppercase;
+    }
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+/* Change background color of buttons on hover */
+.tab_Coefficients div:hover {
+    color: #376e5d;
+}
+
+/* Create an hover/current tab_Coefficientslink class */
+
+.tab_Coefficients div:hover{
+    p{
+        color: #4e4c4c;
+    }
+}
+
+/* Create an active/current tab_Coefficientslink class */
+.tab_Coefficients div.active {
+   p{ 
+       color: $color_2;
+       padding-bottom: 25px;
+    border-bottom: 4px solid #58b094;
+    }
+}
+
+/* Style the tab_Coefficients content */
+.content_tab_Coefficient {
+    display: none;
+}
+
+/* Style the close button */
+.topright {
+    
+    cursor: pointer;
+    font-size: 28px;
+}
+.topright:hover {color: red;}
+
+
+/*........bets tale style ....... */
+
+
+
+.table_list_bet{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    
+   
+
+    th, td {
+        text-align: center;
+        
+        
+    }
+
+
+
+    th{
+        padding-top: 28px;
+        padding-bottom: 28px;
+        font-size: 16px;
+        font-family: $font_2;
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            left: 5.848485%;
+        }
+        border-bottom: 1px solid #eeeeee;;
+    }
+    
+    th:first-child, td:first-child {
+        text-align: left;
+    }
+
+    th:nth-child(1){
+        text-align: center;
+    }
+    
+    th:nth-child(2){
+        width: 32.72727272727273%;
+      
+        text-align: left;
+        padding-left: 4.848484848484848%;
+    }
+    
+    
+}
+
+.img_bet_1{
+    top: 0;
+    left: 0;
+}
+
+#table_list_bet_header{
+    background: #f6f6f6;
+    color: #b7b7b7;
+    
+}
+
+.caffecante_BG {
+    background: #3793ee;
+    position: absolute;
+    width: 53px;
+    top: 20px;
+    left: 26px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: $color_1;
+    border-radius: 5px;
+}
+
+
+
+/*.................prognosis...............*/
+
+#prognosis {
+
+    h2{
+        @include fontSeting($font_5,$size_3,$color_4);
+        margin-top: 40px;
+        margin-bottom:30px;
+    }
+}
+
+/* Style the tab */
+.tab_prognosis_btn_block {
+   
+    @extend .grid;
+    grid-template-columns: 270px 190px;
+    grid-column-gap: 15px;
+}
+
+/* Style the buttons inside the tab_prognosis_btn_block */
+.tab_prognosis_btn_block div {
+    p{
+        @include fontSeting($font_3,$size_2,$color_4);
+        text-transform: uppercase;
+        display: inline;
+    }
+    cursor: pointer;
+    transition: 0.3s;
+    @include fontSeting($font_2,$size_2,$color_4);
+}
+
+/* Change background color of buttons on hover */
+.tab_prognosis_btn_block div:hover {
+    color: #376e5d;
+}
+
+/* Create an active/current tab_prognosis_btn_blocklink class */
+.tab_prognosis_btn_block div.active {
+    p{ 
+        color: $color_2;
+        padding-bottom: 25px;
+        border-bottom: 4px solid #58b094;
+     }
+}
+
+/* Style the tab content */
+.content_prognosis {
+    display: none;
+    
+}
+
+/* Style the close button */
+.topright {
+    
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+
+
+/*....................Table prgnosis................*/
+
+.table_teams_prognosis {
+    margin-top: 32px;
+    
+    .headerPrognos_table{
+        background: #f6f6f6;
+        @extend.grid;
+        grid-template-columns:  1fr 1fr 1fr 2fr;
+        grid-column-gap: 1%;
+        @include fontSeting($font_2,$size_2,$color_3);
+        border-top: solid 1px #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+        p{
+            margin-top:17px;
+            margin-bottom:15px;
+            text-align: center;
+        }
+        div:nth-child(1){
+            p{
+                text-align: left;
+                text-indent: 20px;
+            }
+        }
+
+        div:nth-child(4){
+           p{ text-align: left;}
+        }
+        
+    }
+}
+
+.contentTable_prognosis{
+    @extend.grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-column-gap: 1%;
+        line-height: 22px;
+        border-bottom: solid 1px #e2e2e2;
+        padding-top: 30px;
+
+       div> p{
+            font-family:$font_2;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        div>span{
+            font-size: 13px;
+            color:$color_3;
+            display: block;
+            text-align: center;
+        }
+        div{
+            height: 100px;
+        }
+        div:nth-child(1){
+            line-height: 16px;
+            padding-left:45%;
+            position: relative;
+            img{
+                position: absolute;
+                top:0;
+                left:0;
+                
+            }
+            p{
+                text-align: left;
+            }
+
+            span{
+                text-align: left;
+            }
+        }
+
+        div:nth-child(2){
+            
+          span:nth-child(3){ 
+           margin-top: 10px;
+          }
+        }
+
+        div:nth-child(3){
+            position: relative;
+            img{
+                position: absolute;
+                top: 9%;
+                left: 18%;
+            max-width: 100px;
+            }
+        }
+
+        div:nth-child(4){
+            p{
+                text-align: left;
+                line-height: 22px;
+                font-size: 13px;
+                font-family: $font_2;
+            }
+        }
+
+    }
+        
+
+
+/* ................insie ..............*/ 
+
+#inside_block{
+    margin-top: 40px;
+    
+    h2{
+        font-family: $font_5;
+        font-size: 24px;
+    }
+    
+    
+}
+
+.inside_cont{
+    border-top: solid 4px $color_2;
+    margin-top: 16px;
+    border-left: solid 1px #aaa6a6;
+    border-right: solid 1px #aaa6a6;
+    
+}
+.inside {
+    padding-left:4%;
+    padding-right: 3%;
+    margin-top: 14px;
+    padding-top:22px;
+    padding-bottom: 25px;
+    @extend .grid;
+    grid-template-columns: 6% 1fr;
+    grid-column-gap: 5%;
+    border-bottom: solid 1px #aaa6a6;
+    
+    div:nth-child(2){
+        p{
+            font-family: $font_3;
+            color:$color_4;
+            font-size: 16px;
+            margin-bottom:12px;
+
+        }
+        span, span>a{
+            font-family: $font_2;
+            font-size: 13px;
+            color:#aaa6a6;
+
+        }
+        span:nth-child(2){
+            text-align: right;
+            display: inline-block;
+        }
+        span>a{
+            color:$color_2;
+            float: right;
+            
+        }
+        span>i{
+            margin-right: 13px;
+        }
+    }
+
+    
+}
+
+.data_inside{
+    background: $color_2;
+    
+        b{
+            font-family: $font_3;
+            font-size:$size_8;
+            color:$color_1;
+            margin-top: 10px;
+            display: block;
+            margin-bottom: 2px;
+        }
+        p{
+            font-family: $font_2;
+            font-size:10px;
+            color:$color_1;
+        }
+        @extend .centerText;
+        height: 46px;
+}
+
+
+
+/*.................. C O M E N T.....................*/
+
+#coments {
+    margin-top: 55px;
+    form{
+        margin-top: 16px;
+    }
+    h2{
+        @include fontSeting($font_5,$size_3,$color_4);
+    }
+}
+
+#inputComent {
+    width: 100%;
+    background: #eeeeee;
+    border:none;
+    @include fontSeting($font_2,$size_2,$color_4);
+    padding-left: 3%;
+    padding-top: 22px;
+    padding-bottom: 57px;
+}
+
+#inputComent::placeholder {
+    color:red;
+    @include fontSeting($font_2,$size_2,$color_3);
+    
+}
+.button_coment {
+    span{
+        @include fontSeting($font_2,$size_1,$color_4);   
+        margin-top: 30px;
+        display:inline-block
+    }
+    button{
+        @include fontSeting($font_3,$size_1,$color_1); 
+        padding-top: 9px;
+        padding-bottom:9px;
+        padding-left:11px;
+        padding-right: 18px;
+        border:none;
+        background-color: $color_2;
+        i{
+            margin-right: 10px;
+        }  
+        border-radius: 3px;
+        float: right;
+        margin-top: 18px;
+    }
+
+    button:hover{@extend .pointer;}
+
+}
+
+
+
+
+/*............... filtr coments.............. */
+#filtr_block {
+    margin-top:40px;
+}
+
+#filtrComents_BTN {
+    padding-top:12px;
+    padding-bottom: 10px;
+   
+    @extend .grid;
+    grid-template-columns: 12.12121212121212% 1fr;
+    background: #eeeeee;
+    font-family: $font_2;
+    font-size:$size_1;
+    color: $color_3;
+   
+}
+
+.filtre_categoria {
+    p{
+        float: left;
+    }
+    p:hover{
+
+        @extend .pointer;
+        color: rgb(39, 38, 38);
+    }
+    p:nth-child(1){
+        margin-left: 30px;
+    }
+    p:nth-child(2){
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+
+.filtr_btn_data {
+    position: relative;
+    div:nth-child(1){
+        @extend .centerText;
+        
+    }
+
+    div:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 96%;
+    }
+
+   
+}
+
+.filtr_btn_data:hover {
+    p{
+        @extend .pointer;
+        color: rgb(39, 38, 38);
+    }
+}
+
+.filtr_btn>div:nth-child(2){
+
+    p:nth-child(2){
+        margin-top: -10px;
+    } 
+}
+
+
+/* testimonial coments wit photo users*/
+
+
+.filterDiv{
+    padding-top: 20px;
+   
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 19px;
+    padding-left: 1.3%
+}
+.filterDiv >div:nth-child(1) {
+    @extend .grid;
+    grid-template-columns: 1fr 1fr auto;
+    position: relative;
+}
+
+.testimonil_user {
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    p{
+
+        margin-left: 26%;
+        
+    }
+
+    p:nth-child(2){
+        font-family: $font_3;
+        font-size: $size_9;
+        color:$color_2;
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+
+    p:nth-child(3){
+        font-family: $font_2;
+        font-size: $size_1;
+        color:$color_3;
+    }
+}
+
+ /* testimonial  starts*/
+.testimonial_stars {
+    font-family: $font_2;
+    font-size: 19px;
+    i{
+        color: #e8e8e8;
+        margin-top: 23px;
+    }
+
+    span{
+        color:$color_2;
+        margin-left: 3%;
+    }
+}
+
+#star_BG_color_1{
+   color: #58b094;
+}
+
+#star_BG_color_2{
+    color: #58b094;
+ }
+
+ #star_BG_color_3{
+    color: #58b094;
+ }
+
+ #star_BG_color_4{
+    color: #58b094;
+ }
+
+ #star_BG_color_5{
+    color: #58b094;
+ }
+
+
+/* Textimonial  button */
+
+.textimonial_button {
+    @extend .grid;
+    grid-template-columns: 31px 31px 51px;
+    grid-column-gap: 1px;
+
+    padding-right: 11px;
+    div:nth-child(3){
+       
+        font-family: $font_3;
+        font-size: 15px;
+        color: $color_2;
+        @extend.centerText;
+        /*padding-top: 11px;*/
+        position: relative;
+        div{
+            background:#f6f6f6;
+            height: 31px;
+            overflow: auto;
+            p{margin-top: 10px;
+            }
+        }
+    }
+}
+
+.textimonial_button>div{
+    @extend .pointer;
+
+}
+
+
+/*testimonial  text */
+
+.testimonial_text {
+    margin-top: 22px;
+    p{
+    @include fontSeting($font_2,$size_2,$color_4);
+    line-height: 26px;
+    }
+}
+
+.filterDiv >div:nth-child(3){
+    button{
+        margin-top: 13px;
+        width: 99px;
+        p{
+            margin-top: 3px;
+            margin-bottom: 3px;
+            @include fontSeting($font_2,$size_2,$color_2);
+            
+        }
+        border: 2px solid #eeeeee;
+        outline: none;
+        
+        background: #ffffff;
+    }
+
+    button:hover {
+        @extend .pointer;
+    }
+
+    
+}
+
+
+/*btn_showMore_testomonial*/
+
+
+.btn_showMore_testomonial {
+    a{
+    @include fontSeting($font_3,$size_2,$color_2);
+    }
+
+    @extend .centerText;
+    margin-top: 20px;
+    border-bottom: solid 1px #eeeeee;
+    padding-bottom: 26px;
+    margin-bottom: 85px;
+    
+}
+
+
+
+
+
+/*..............FO O T E R .......................*/
+
+
+footer{
+    background: #000000;
+    padding-top: 40px;
+    padding-bottom: 47px;
+}
+
+#block_footer{
+    width: 69.375%;
+    margin: 0 auto;
+}
+/* ............section 1..............*/
+#section_1_footer {
+   @extend .grid;
+    grid-template-columns: auto 1fr;
+    
+}
+
+#footerNav {
+    display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+        padding-left: 3.5%;
+        margin-left: 4%;
+        border-left: 1px solid #2c2c2c;
+        li {
+       
+            a{
+                @include fontSeting($font_2,$size_7,$color_1);
+            }
+            a:hover {
+                color: $color_3;
+            }
+            
+        }
+}
+
+/*..........section 2..............*/
+
+#section_2_footer {
+    @extend .grid;
+    grid-template-columns: auto auto 1fr;
+    grid-column-gap: 10%;
+    margin-top: 40px;
+}
+
+.contact_us_BTN {
+    background: #58b094;
+    padding: 10px 15px 10px 11px;
+    border-radius: 3px;
+    margin-top: 28px;
+
+}
+.contact_us_BTN:hover {
+    @extend .pointer;
+    
+}
+.tylText_1_footer{
+    @include fontSeting($font_3,$size_1,$color_1);
+}
+
+.stylText_2_footer {
+    @include fontSeting($font_2,$size_1,#747474);
+    margin-bottom: 13px;
+}
+
+/* buttons appStor and playMarket*/
+
+.btn_footStor {
+    width: 112px;
+    height: 36px;
+    border: none;
+    outline: none;
+}
+
+.btn_footStor:hover {
+    @extend .pointer;
+}
+
+#appStore {
+    background-image: url('../img/futter_BTN_1.png');
+    background-repeat: no-repeat;
+   
+}
+
+#googlePlay {
+    background-image: url('../img/futter_BTN_2.png');
+    background-repeat: no-repeat;
+    margin-left: 12px;
+}
+
+#afishFppter {
+    @extend .grid;
+    grid-template-columns: 30px 140px 140px;
+    grid-column-gap: 16px;
+}
+
+
+/*......section_3_footer........*/
+
+#section_3_footer {
+    @extend .grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 30%;
+    margin-top: 65px;
+}
+
+.socIcon_foot{
+    i{
+        font-size: 20px;
+        margin-left: 6%;
+        color:$color_2;
+    }
+
+    i:hover{
+        color:$color_1;
+        @extend .pointer;
+    }
+}
+
+.stylText_3_footer {
+    @include fontSeting($font_2,$size_1,#747474);
+}
+
+
+
+/* ................. Site bar...............*/
+
+/*   ............ SideBar part............*/
+
+#sieBar {
+   
+    
+}
+
+.styleButton_valu {
+    width: 100%;
+    @include fontSeting($font_2,$size_7,$color_1);
+   text-align: left;
+   margin:0;
+   padding:0;
+   padding: 18px 13px 18px 20px;
+    border: none;
+    outline: 0;
+    i{
+        float: right;
+        font-size: 15px;
+    }
+    border-bottom: solid 1px #e5e4e4;
+    
+}
+
+.styleButton_valu:hover {
+    @extend .pointer;
+}
+
+.BG_nav_button_1 {
+    background: #58b094;
+}
+
+.BG_nav_button_2{
+    background: #65c7a8;
+}
+
+.BG_nav_button_3{
+    background: #6fd9b7;
+}
+
+.BG_nav_button_4{
+    background: #f5f5f5;
+    color:$color_4;
+}
+
+.BG_nav_button_4:hover{
+    background: $color_1;
+    color: $color_2;
+    border-right: solid 4px $color_2;
+}
+
+
+
+#poVidamsport{
+    display: none;
+}
+
+#xokey {
+    display: none;
+}
+
+
+.sidenav {
+    button {
+        display: block;
+    }
+}
+
+
+/* ........Baner......... */
+
+#baner_block{
+    margin-top: 23px;
+    display: grid;
+    grid-row-gap: 10px
+}
+
+
+
+
+/*...............Mediz query ....................*/
+
+
+
+/*...............Content..............*/
+
+/*........1600............*/
+
+@media only screen and (max-width: 1600px) {
+    #block_content,#section_2, #block_footer{
+        width: 1110px;
+      }
+
+
+}
+
+
+/*........1235.............*/
+
+@media only screen and (max-width: 1235px) {
+    nav{
+        display: none;
+    }
+
+    #bloch_header {
+        grid-template-columns: auto 2fr 370px;
+      }
+
+    #content {
+        width: 768px;
+       
+       
+      }    
+
+    #block_content,#section_2, #block_footer{
+        width: 92.578125%;
+      }
+
+      #section_2_content_block {
+          grid-template-columns: 1fr;
+      }
+
+
+     
+
+      #sieBar {
+          display: none;
+      }
+
+      
+#team_1>div:nth-child(3),#team_2>div:nth-child(3){
+
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+#winline {
+    grid-template-columns: auto auto;
+    
+  }
+
+  #btns_winline {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3%;
+    padding-right: 5%;
+  }
+
+
+    #text_anons p {
+    height: 104px;
+    overflow-y: hidden;
+    }
+
+
+/*table*/
+
+.caffecante_BG {
+    left: 43px;
+}
+
+#table_list_bet_header>th:nth-child(6),#table_list_bet_header>th:nth-child(7)  {
+    display: none;
+}
+
+.mediaStyle {
+   display: none;
+   }
+
+
+
+
+   
+
+/*......FOOTER......*/
+footer{
+    min-width: 737px;
+}
+
+    #footerNav{
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 15px;
+    }
+
+   /* #section_2_footer {
+        grid-template-columns: 164px 1fr;
+        div:nth-child(1){
+           
+            div{
+                margin-top: 0px;
+            }
+        }
+        div:nth-child(2){
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+           
+        }
+    }
+    #googlePlay{
+        margin-left: 0;
+    }*/
+
+    #section_2_footer {
+        display: block;
+    }
+
+    #section_2_footer>div:nth-child(1){
+        div{
+            float: left;
+            margin-top:0;
+            margin-right: 13%;
+        }
+    }
+
+    #section_2_footer>div:nth-child(2){
+        p{
+            float: left;
+            margin-right: 1.5%;
+            margin-top: 10px;
+        }
+    }
+
+    #section_2_footer>div:nth-child(3){
+        margin-top: 50px;
+        p{
+            float: left;
+            width: 36.5%;
+            margin-right: 10%;
+            line-height: 18px;
+        }
+    }
+
+    #section_3_footer {
+        display: block;
+
+    }
+
+    #section_3_footer >div:nth-child(1){
+        float: left;
+        width: 32%;
+        margin-right:129px;
+        p{
+            line-height: 18px;
+        }
+    }
+
+    .socIcon_foot i{
+        margin-left: 3%;
+    }
+
+
+
+    
+}
+
+
+@media only screen and (max-width: 768px){
+    
+}

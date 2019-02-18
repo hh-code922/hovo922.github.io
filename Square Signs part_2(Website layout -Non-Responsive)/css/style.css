@@ -1,0 +1,368 @@
+@font-face {
+  font-family: capton_light;
+  src: url("../fonts/capton/Campton-LightDEMO.otf"); }
+@font-face {
+  font-family: capton_Bold;
+  src: url("../fonts/capton/Campton-BoldDEMO.otf"); }
+@font-face {
+  font-family: muller_Ext;
+  src: url("../fonts/myrder/MyriadPro-Bold.otf"); }
+@font-face {
+  font-family: muller_regular;
+  src: url("../fonts/myrder/MyriadPro-Regular.otf"); }
+@font-face {
+  font-family: raleway_regular;
+  src: url("../fonts/releway/Raleway-Regular.ttf"); }
+@font-face {
+  font-family: raleway_bold;
+  src: url("../fonts/releway/Raleway-Bold.ttf"); }
+@font-face {
+  font-family: raleway_italic;
+  src: url("../fonts/releway/Raleway-Italic.ttf"); }
+@font-face {
+  font-family: raleway_medium;
+  src: url("../fonts/releway/Raleway-Medium.ttf"); }
+@font-face {
+  font-family: raleway_smiBold;
+  src: url("../fonts/releway/Raleway-SemiBold.ttf"); }
+/* font colors */
+/*footer*/
+/* Background-colors */
+.bg_color {
+  background-color: #e6e6e6; }
+
+/* font names*/
+/* font size */
+.font_styles {
+  font-family: muller_regular;
+  font-size: 24px;
+  color: #808080; }
+
+/*grid style*/
+.grid_setting, #block_header, #navigation_block, #signs_grid, #footer_block, .for_grid, #subscribe_part_2 {
+  display: grid; }
+
+/*  div size*/
+/* margin, padding*/
+.margin_center, #container, .block {
+  margin: 0 auto; }
+
+/*position absolute*/
+.position_absalute, .navigation i {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.position_relative, #logo_1, .navigation {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+/* border-radius*/
+.border_radius, .signs_grid img {
+  border-radius: 15px; }
+
+/* img settings*/
+.imgResponsive, #logo_1 img, .signs_grid img {
+  width: 100%; }
+
+/* text settings*/
+.text_center, #navigation_block {
+  text-align: center; }
+
+/* forma settings */
+.input_border {
+  border: none;
+  outline: none; }
+
+/* .............other styles............. */
+/* custom style*/
+.custom_style {
+  width: 203px;
+  height: 90px; }
+
+.outlineOff, .my-form select {
+  outline: none;
+  border: none; }
+
+#container {
+  max-width: 1440px;
+  min-width: 1326px;
+  background-color: #ffffff; }
+  #container a {
+    text-decoration: none; }
+
+.block {
+  width: 83.33333333333333%;
+  padding: 0 20px 0 20px; }
+
+/*...........Header ...........*/
+header {
+  width: 100%;
+  height: 96px;
+  background-color: #ffffff;
+  box-shadow: 1px -13px 56px 5px #585656; }
+
+#nav {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr; }
+
+#navBar i {
+  font-size: 14px;
+  -moz-transition: all 0.5s ease-in;
+  /* WebKit */
+  -webkit-transition: all 0.5s ease-in;
+  /* Opera */
+  -o-transition: all 0.5s ease-in;
+  /* Standard */
+  transition: all 0.5s ease-in; }
+#navBar i:hover {
+  color: #808080; }
+
+#navBar:hover {
+  cursor: pointer; }
+
+#dropDown_1, #dropDown_2 {
+  padding-left: 22.5px;
+  font-family: raleway_regular;
+  font-size: 14px;
+  color: #333333; }
+  #dropDown_1 p, #dropDown_2 p {
+    -moz-transition: all 0.5s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.5s ease-in;
+    /* Opera */
+    -o-transition: all 0.5s ease-in;
+    /* Standard */
+    transition: all 0.5s ease-in; }
+
+#dropDown_1:hover, #dropDown_2:hover {
+  cursor: pointer; }
+  #dropDown_1:hover p, #dropDown_2:hover p {
+    color: #808080; }
+
+#block_header {
+  grid-template-columns: auto 2fr auto;
+  font-family: capton_light;
+  font-size: 12px;
+  color: #333333; }
+
+#logo_1 a {
+  display: block;
+  text-align: center;
+  margin-top: 22px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  width: 230px; }
+
+#languages {
+  float: right;
+  padding: 11px 0 0 0; }
+  #languages ul li {
+    font-family: raleway_regular;
+    font-size: 12px;
+    color: #666666; }
+
+#login address {
+  padding-top: 40px; }
+#login ul li {
+  display: inline-block;
+  margin-right: 18px; }
+#login ul li a {
+  font-family: raleway_regular;
+  font-size: 32px;
+  color: #666666;
+  font-size: 16px;
+  -moz-transition: all 0.5s ease-in;
+  /* WebKit */
+  -webkit-transition: all 0.5s ease-in;
+  /* Opera */
+  -o-transition: all 0.5s ease-in;
+  /* Standard */
+  transition: all 0.5s ease-in; }
+#login ul li a:hover {
+  color: #808080; }
+
+/*............  Content ..........*/
+#content {
+  padding: 8px 0 95px 0; }
+
+#navigation {
+  background-color: #f2f2f2;
+  height: 90px; }
+
+#navigation_block {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: raleway_regular;
+  font-size: 11px;
+  color: #333333;
+  height: 100%; }
+
+.navigation {
+  padding: 15px 0 0 0;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s; }
+  .navigation img {
+    width: 33px;
+    height: 33px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0; }
+
+.navigation i {
+  font-size: 30px;
+  top: 78.75px;
+  left: 46%;
+  color: #10101000; }
+
+.navigation:hover {
+  cursor: pointer;
+  background-color: #e6e6e6; }
+
+/* navigations functions */
+.active {
+  background-color: pink; }
+
+.navsigations_div {
+  display: none; }
+
+#signs {
+  display: block; }
+
+#navigatorSubmit {
+  background-color: #0096d7; }
+
+/* .................. Signs ..............*/
+#signs {
+  font-family: raleway_regular;
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px; }
+  #signs h1 {
+    font-size: 18px; }
+
+#text_signs {
+  width: 38.33333333333333%;
+  margin-top: 42px; }
+  #text_signs h1 {
+    margin-bottom: 19px; }
+
+/*...................... signs_grid .........................*/
+#signs_grid {
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 67px;
+  padding: 41.5px 0 0 0; }
+  #signs_grid figcaption {
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; }
+
+/*  .............footer...........*/
+footer {
+  background-color: #333333;
+  padding: 75px 0 75px 0;
+  font-family: raleway_regular;
+  font-size: 12px;
+  color: #cccccc; }
+  footer h2 {
+    font-family: raleway_bold; }
+  footer ul li a {
+    font-family: raleway_regular;
+    font-size: 12px;
+    color: #cccccc;
+    -moz-transition: all 1s ease-in;
+    /* WebKit */
+    -webkit-transition: all 1s ease-in;
+    /* Opera */
+    -o-transition: all 1s ease-in;
+    /* Standard */
+    transition: all 1s ease-in; }
+  footer ul li a:hover {
+    color: #ffffff; }
+
+#footer_block {
+  grid-template-columns: auto 2fr 1fr; }
+
+#left_corner div:nth-child(1) {
+  width: 140px;
+  height: auto;
+  margin-top: 220px; }
+
+#text_logo_2 {
+  margin-top: 16px;
+  color: #ffffff;
+  line-height: 17.5px; }
+
+#main_foot {
+  padding: 0 0 0 50px; }
+
+#square_signs {
+  width: 68.6567164179%;
+  height: auto;
+  line-height: 17.5px; }
+  #square_signs h2 {
+    margin-bottom: 7.5px; }
+
+#products, #templates {
+  padding: 62.5px 0 0 0; }
+
+.products, .templates {
+  padding: 17.5px 0 0 0; }
+
+.for_grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .for_grid ul li {
+    margin-bottom: 13.5px; }
+
+/*....... FOR  CONTACTS.......... */
+.my-form {
+  padding-top: 10px; }
+  .my-form select {
+    width: 220px;
+    height: 42.5px;
+    border-radius: 50px;
+    background-color: #484848; }
+    .my-form select option:checked {
+      font-family: raleway_regular;
+      font-size: 12px;
+      color: #ffffff; }
+
+#laguages_2 {
+  font-family: raleway_regular;
+  font-size: 12px;
+  color: #ffffff;
+  text-indent: 15px; }
+
+/* ............. subscribe_part_2...........*/
+#subscribe_part_2 {
+  grid-template-columns: 1fr 1fr;
+  padding: 114px 0 0 0; }
+  #subscribe_part_2 h2 {
+    margin-bottom: 14px; }
+  #subscribe_part_2 ul li {
+    margin-bottom: 13.5px; }
+
+#social_foot a {
+  font-size: 20px;
+  color: #b3b3b3;
+  margin-left: 15%;
+  margin-bottom: 21px;
+  display: inline-block; }
+#social_foot a:nth-child(2), #social_foot a:nth-child(6) {
+  margin-left: 0; }
+
+/*...........subscribe_part_3 .........*/
+#subscribe_part_3 address {
+  margin-top: 17.5px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+  #subscribe_part_3 address p {
+    margin-bottom: 18.5px; }

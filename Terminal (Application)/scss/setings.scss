@@ -1,0 +1,58 @@
+@import "media";
+
+body {
+  a{
+    text-decoration: none;
+  }
+}
+
+.margin_center {
+  margin: 0 auto;
+}
+
+/* font family */
+
+@font-face {
+  font-family:Roboro_Black;
+  src: url("../fonts/roboro/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family:Roboro_regular;
+  src: url("../fonts/roboro/Roboto-Regular.ttf");
+}
+
+$font_1: Roboro_regular;
+$font_2: Roboro_Black;
+
+
+
+/* COLOR */
+
+
+$color_1: #ffffff;
+$color_2:#3f3f3f;
+
+
+/*font-size*/
+
+
+$size_1: 31.95px;
+$size_2: 28.67px;
+
+$size_3: 40px;
+
+/* mixin font style grup*/
+
+@mixin fontStyles($family,$size,$color){
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+
+/* padding top & bottom */
+
+@mixin  paddingSet($top,$bottom){
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

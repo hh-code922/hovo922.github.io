@@ -1,0 +1,842 @@
+@import "settings";
+
+#container {
+  max-width: 1440px;
+  min-width: 1440px;
+  @extend .margin_center;
+  background-color: $bgColor_1;
+  a{
+    text-decoration: none;
+  }
+
+}
+
+.block {
+  width: 83.33333333333333%;
+  @include padding(0,20px,0,20px);
+  @extend .margin_center;
+}
+
+
+
+/*...........Header ...........*/
+header{
+  height: 96px;
+  background-color: $bgColor_1;
+  box-shadow: 1px -13px 56px 5px #585656;
+}
+
+#nav {
+  padding-top: 40px;
+  i{
+    -moz-transition: all 0.5s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.5s ease-in;
+    /* Opera */
+    -o-transition: all 0.5s ease-in;
+    /* Standard */
+    transition: all 0.5s ease-in;
+    font-size: 14px;
+  }
+  a{
+    font-size: 14px;
+  }
+}
+#nav:hover {
+  cursor: pointer;
+
+  i{
+    color: #808080;
+
+  }
+}
+
+#block_header {
+  @extend .grid_setting;
+  grid-template-columns: auto 2fr auto;
+  @include fontStyles($capton_light,$size_7/2,$color_2);
+}
+
+#logo_1 {
+  @extend .position_relative;
+  a{
+    display: block;
+    text-align: center;
+    @include margin(22px,auto,0,auto);
+    width: 23%;
+  }
+  img{width: 100%}
+}
+
+#timeOffer {
+  @include divSize(120px,61px);
+  float:left;
+  @include border_styles(dotted,2px,#a83838,0,0,5px,5px);
+  margin-left: 20%;
+  img{
+    width: 100%;
+  }
+
+
+}
+
+#login {
+  address{
+    padding-top: 40px;
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 12px;
+      a{
+        font-size: 14px;
+        font-family: $raleway_reg;
+        color:$color_2;
+        -moz-transition: all 0.5s ease-in;
+        /* WebKit */
+        -webkit-transition: all 0.5s ease-in;
+        /* Opera */
+        -o-transition: all 0.5s ease-in;
+        /* Standard */
+        transition: all 0.5s ease-in;
+      }
+    }
+    a:hover{
+      color:$color_3;
+    }
+  }
+}
+/*............  Content ..........*/
+
+#content{
+  @include padding(57.5px,0,47.5px,0);
+}
+
+#section_1 {
+  @extend .grid_setting;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+
+}
+
+/*........ slider part ........*/
+
+#slider_1 {
+  @extend .position_relative;
+}
+.slider_img {
+  img{
+    @extend .imgResponsive;
+  }
+}
+
+.slider_text_block {
+  @include padding(0,0,0,45px);
+  @include fot_style($raleway_med,$size_2/2,$color_1,0);
+  @extend .position_absalute;
+  top: 39.5%;
+  @include divSize(339px,auto);
+  .text_slider{
+    p{
+      @include fot_style($capton_light,$size_2/2,$color_1,0);
+    ;
+    }
+    h2{
+      @include fot_style($capton_bold,$size_1/2,$color_1,42px);
+      @include margin(17.5px,0,0,0);
+    }
+  }
+  .button_slider {
+    @include margin(32.5px,0,0,0);
+    @include divSize(166px,43px);
+    @include border_styles(solid,$color_1,1px,$radius_size,$radius_size,$radius_size,$radius_size);
+    a{
+      @include fot_style($raleway_med,12px,$color_1,0);
+      @extend .text_center;
+      display: block;
+      margin-top: 20.5px;
+    }
+    -moz-transition: all 0.5s ease-in;
+    /* WebKit */
+    -webkit-transition: all 0.5s ease-in;
+    /* Opera */
+    -o-transition: all 0.5s ease-in;
+    /* Standard */
+    transition: all 0.5s ease-in;
+  }
+}
+
+.button_slider:hover {
+  background-color: #1e98cd;
+}
+
+#sl_imgBlock img {
+  display: none;
+  cursor: pointer;
+  animation: formFade 0.7s ease-in-out;
+  -moz-animation: formFade 0.7s ease-in-out; /* Firefox */
+  -webkit-animation: formFade 0.7s ease-in-out; /* Safari and Chrome */
+  -o-animation: formFade 0.7s ease-in-out; /* Opera */
+}
+@keyframes formFade {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes formFade { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes formFade { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes formFade { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+#slider_radio {
+  width: 58px;
+  @extend .position_absalute;
+  left: 89%;
+  top: 85%;
+  @extend .grid_setting;
+  grid-template-columns: 7.5px 7.5px 7.5px 7.5px;
+  grid-column-gap: 10px;
+}
+
+.slid-radio {
+  height: 7.5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.41);
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.slid-radio:hover {
+  cursor: pointer;
+  background-color: $bgColor_1;
+
+}
+
+/*........... Choose_size ........*/
+
+
+#top_choose_size {
+  @include border_radius(5px,5px,0,0);
+  background-color: $bgColor_2;
+  font-family: $raleway_med;
+  font-size: $size_7;
+  @include padding(20px,0,20px,0);
+
+}
+
+#block_top_choose_size {
+  width: 89.47368421052632%;
+  @extend .margin_center;
+  @extend .grid_setting;
+  grid-template-columns: auto auto 1fr;
+}
+
+#banner_img {
+  img{
+    @extend .imgResponsive;
+  }
+}
+
+#baner_text {
+  p{
+    @include margin(0,0,0,17.5px);
+  }
+  p:nth-child(1){
+    color:  $color_6;
+    font-size: 11px;
+  }
+  p:nth-child(2){
+    color: $color_2;
+    font-size: $size_7/2;
+  }
+
+}
+
+#banner_change {
+  a{
+    display: inline-block;
+    @include margin(0,0,0,99px);
+    color: #1e98cd;
+    font-size: 12px;
+
+  }
+}
+
+
+/*........ choose_size........*/
+
+#content_choose_size {
+  background-color: $bgColor_3;
+  @include padding(11.5px,0,20px,0);
+}
+
+
+#block_choose_size {
+  @include divSize(73.68421052631579%,auto);
+  @extend .margin_center;
+}
+
+#standart_size {
+  @extend .text_center;
+
+  ul{
+    li{
+      text-decoration: none;
+      display: inline-block;
+      vertical-align: middle;
+      @include fontStyles($muller_reg,$size_7/2,$color_3);
+    }
+    li:nth-child(2){
+      margin-left: 14.86842105263158%;
+    }
+    li:nth-child(3){
+      margin-left: 2.368421052631579%;
+    }
+    input[type="radio"]{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/* sellect_stadart_Size */
+
+#sellect_stadart_Size{
+  select{
+    @include divSize(280px,auto);
+    height: 43px;
+    @extend .border_radius;
+    @include fontStyles($muller_reg,$size_7/2,$color_3);
+    @extend .outlineOff;
+    /*@include margin(17px,0,0,0);*/
+    text-indent: 21px;
+
+  }
+  @include padding(8.5px,0,0,0);
+}
+
+
+/*....... Custom  size ....*/
+
+#custom_size {
+  @include margin(17px,0,0,0);
+  @include padding(0,0,25px,0);
+  @extend .grid_setting;
+  grid-template-columns: 100px 100px 75.5px;
+  @include fontStyles($muller_reg,$size_7/2,$color_3);
+  /*@include padding(0,100px,$radius_size,100px);*/
+  select{
+    @extend .outlineOff;
+  }
+}
+
+.block_info_select {
+  @extend .grid_setting;
+  @extend .border_radius;
+  grid-template-columns: 35px 65px;
+  @include margin(16px,0,0,0);
+  height: 43px;
+  div,select{
+    height: 100%;
+    @include fontStyles($muller_reg,$size_7/2,$color_3);
+  }
+  select{
+    padding-left: 12px;
+    @include border_radius(0,50px,50px,0)
+  }
+  div p{
+    margin-top: 15px;
+    @extend .text_center;
+  }
+}
+
+#typeSize_2 {
+  margin-top: $size_7/2;
+}
+
+#typeSize_3 {
+  margin-left: 15px;
+}
+.type_size {
+  h3{
+    @extend .text_center;
+  }
+}
+
+.info_customSize {
+  background-color: $bgColor_2;
+  @include border_styles(none,none,none,$radius_size,0,0,$radius_size);
+}
+
+#select_Numb {
+  select{
+    @extend .border_radius;
+    width: 60.5px;
+  }
+}
+
+
+/* ........... Price part ............*/
+
+#price {
+  font-size: 12px;
+  @extend .grid_setting;
+  /*@include padding(0,107px,38px,107px);*/
+  /*text-align: center;*/
+  @include padding(20px,0,0,0);
+  grid-template-columns: auto auto;
+  /*grid-column-gap: 280px;*/
+  @extend .font_styles;
+  border-top: solid 2px $bgColor_2;
+  p:nth-child(2){
+    font-size: $size_2/2;
+    color: $color_2;
+    /*@include margin(36px,0,38px,0);*/
+  }
+  p:nth-child(3){
+    text-decoration: line-through;
+  }
+}
+
+#price_2 {
+  text-align: right;
+}
+
+
+
+/*......... Submit design now.......*/
+
+
+#button_design_block {
+  background-color: $bgColor_4;
+  height: 73.5px;
+  @include border_radius(0, 0, 5px,5px);
+  /*@include padding(64px, 0,60px,0);*/
+  button{
+    @extend .outlineOff;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    @include fontStyles($raleway_bold,$size_4/2,$color_1);
+    background: none;
+  }
+  p{
+    text-align: center;
+   @include padding(27.5px,0,0,0);
+  }
+  button:hover{
+    cursor: pointer;
+    color: $color_5
+  }
+}
+
+/* section 2 */
+
+#section_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 47.5px;
+  @include margin(20px,0,0,0);
+  img{
+    width: 100%;
+  }
+
+  article {
+    @include fontStyles($raleway_med,$size_7,$color_2);
+    @include padding(11.5px,0,0,10px);
+    h3{
+      font-size: $size_3/2;
+      @include margin(0,0,18.5px,0);
+    }
+    p{
+      line-height: 17.5px;
+      font-size: 12px;
+    }
+
+  }
+}
+
+
+                        /* ............Section 3 ........... */
+
+
+#section_3 {
+  @extend .position_relative;
+  @include margin(25px,0,0,0);
+  @include padding(30px,0,30px,0);
+}
+#logo_section_3 {
+  @extend  .position_absalute;
+  left: 85.7%;
+  width: 64px;
+  img{
+    width: 100%;
+  }
+}
+
+#info_slider {
+  @extend .grid_setting;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#content_infoSlider{
+  div:nth-child(1){
+    width: 30px;
+    @extend .margin_center;
+    img{
+      width:100%;
+    }
+  }
+  article {
+    max-width: 700px;
+    @include fontStyles($raleway_reg,$size_5/2,$color_2);
+    @extend .text_center;
+    line-height: 17.5px;
+    @include margin(27.5px,0,0,0);
+  }
+}
+
+#left_infoSlider p,#right_infoSlider p{
+  font-size: 30px;
+  margin-top: 57.5px;
+}
+#left_infoSlider p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+#right_infoSlider{
+  text-align: right;
+  margin-right: 30px;
+}
+
+#shoppier {
+  @include divSize(223px,auto);
+  @extend .margin_center;
+  @include padding(15px,0,0,0);
+  div:nth-child(1){
+    @include padding(0,0,12px,0);
+    @include divSize(95px,auto);
+    @extend .margin_center;
+  }
+  div:nth-child(3){
+    width: 91.5px;
+    margin-top: 4px;
+    p{
+      text-align: center;
+      @include fontStyles($muller_reg,$size_5/2,$bgColor_5);
+      margin-top: 19px;
+    }
+    @extend .margin_center;
+    img{
+      @extend .imgResponsive;
+    }
+  }
+  i{
+    font-size:$size_5/2-3;
+    color: #f0bb35;
+  }
+  p:nth-child(2){
+    @include fontStyles($raleway_italic,$size_6/2,$color_3);
+  }
+}
+
+/* .......... Reviews ........*/
+
+#reviews{
+  @include padding(20px,0,38.5px,0);
+}
+
+#reviewsBlock {
+  @include divSize(85%,auto);
+  @extend .margin_center;
+  @extend .grid_setting;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 120px;
+
+}
+
+.text_reviews {
+  @include fontStyles($raleway_reg,$size_7,$color_2);
+  @extend .text_center;
+  @include margin(27.5px,0,0,0);
+  line-height: $size_9/2;
+  h3{
+    font-size: $size_5/2;
+  }
+  p{font-size: 12px;
+  }
+}
+
+.icon_reviews {
+  width: 61px;
+  @extend .margin_center;
+  img{
+    @extend .imgResponsive;
+  }
+}
+
+
+/*  Slider 2 settings */
+
+#slider_article_2,#slider_article_3{
+ display: none;
+}
+
+.slider_article{
+  -webkit-animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transition:animationFrames linear 1s;
+  -moz-animation-iteration-count:1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames linear 1s;
+  -o-animation-iteration-count:1;
+  -o-transform-origin: 1;
+
+}
+
+/*
+*/
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#left_infoSlider,#right_infoSlider{
+  p {
+    i{
+      color: #bdb6b6;
+      -webkit-transition: color 0.5s ease-out;
+      -moz-transition: color 0.5s ease-out;
+      -o-transition: color 0.5s ease-out;
+      transition: color 0.5s ease-out;
+    }
+    i:hover {
+      color: $color_2;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+/*  .............footer...........*/
+
+
+footer{
+  background-color: $color_2/2;
+  @include padding(75px,0,75px,0);
+  @include fontStyles($raleway_reg,$size_7/2,$color_5);
+  h2{
+    font-family: $raleway_bold;
+    color: $color_1;
+    font-size: 16px;
+  }
+  p{
+    color: $color_1;
+  }
+  ul{
+    li a{
+      @include fontStyles($raleway_reg,$size_7/2,$color_5);
+      color: #cccccc;
+      -moz-transition: all 0.2s ease-in;
+      /* WebKit */
+      -webkit-transition: all 0.2s ease-in;
+      /* Opera */
+      -o-transition: all 0.2s ease-in;
+      /* Standard */
+      transition: all 0.2s ease-in;
+    }
+    li a:hover {
+      color: $color_1;
+    }
+  }
+}
+
+#footer_block {
+  @extend .grid_setting;
+  grid-template-columns: auto 2fr 1fr;
+}
+
+#left_corner {
+  div:nth-child(1){
+    @include divSize(140px,auto);
+    margin-top: 220px;
+  }
+}
+
+#text_logo_2 {
+  margin-top: 16px;
+  color: $color_1;
+  line-height: 17.5px;
+}
+
+#main_foot {
+  @include padding(0,0,0,50px);
+}
+
+#square_signs {
+  @include divSize(68.65671641791045%,auto);
+  line-height: 17.5px;
+  h2{
+    margin-bottom: 7.5px;
+  }
+}
+
+#products,#templates {
+  @include padding(62.5px,0,0,0);
+}
+
+.products,.templates {
+  @include padding(17.5px,0,0,0);
+}
+
+
+
+
+ .for_grid{
+    @extend .grid_setting;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+   ul li {
+     margin-bottom: 13.5px;
+   }
+  }
+
+
+/*....... FOR  CONTACTS.......... */
+
+#subscribe_block{
+  h2 {
+    color: $color_1;
+  }
+  form{
+    @include padding(14px,0,0,0);
+    @extend .position_relative;
+    input[type="submit"]:hover {
+      cursor: pointer;
+    }
+  }
+  input[type="submit"]{
+    width: 60px;
+    @extend .position_absalute;
+    top: 25%;
+    left: 157px;
+    background-color: #0096d7;
+    @include border_radius(38px,38px,38px,38px);
+    @include fontStyles($raleway_med,$size_7/2,$color_1);
+  }
+  input{
+    @extend .outlineOff;
+    height: 43px;
+    display: block;
+  }
+}
+
+#subscribe {
+  width: 177px;
+  @include fontStyles($raleway_reg,$size_7/2,$color_5);
+  text-indent: 14px;
+  @include border_radius(38px, 0,0,38px);
+  background-color: #484848;
+  color: $color_1;
+}
+
+#subscribe::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color_1;
+  opacity: 1; /* Firefox */
+}
+
+#subscribe:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color_1;
+}
+
+#subscribe::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color_1;
+}
+
+
+
+ /* ............. subscribe_part_2...........*/
+
+#subscribe_part_2 {
+  @extend .grid_setting;
+  grid-template-columns: 1fr 1fr;
+  @include padding(57px,0,0,0);
+  h2{
+    margin-bottom: 14px;
+  }
+  ul li {
+    margin-bottom: 13.5px;
+  }
+}
+
+#social_foot {
+  a{
+    font-size: $size_2/2;
+    color: $color_1;
+    margin-left:15%;
+    margin-bottom: 21px;
+    display: inline-block;
+  }
+  a:nth-child(2),a:nth-child(6){
+    margin-left:0;
+  }
+}
+
+
+/*...........subscribe_part_3 .........*/
+
+#subscribe_part_3 {
+  address{
+    @include margin(17.5px,0,0,0);
+    p{
+      margin-bottom: 19.5px;
+    }
+  }
+}
+
+#secure {
+  width: 88.5px;
+  img{
+    @extend .imgResponsive
+  }
+}

@@ -1,0 +1,90 @@
+@import "fonts";
+
+/*...Fonts...*/
+
+$font_1:"myiradPro";
+
+$font_2:"NotoSansRegular";
+$font_3:"NotoSansBold";
+
+$font_4:"RobotoRegular";
+$font_5:"RobotoBold";
+
+
+/*...Size...*/
+
+$size_1: 13px;
+$size_2: 14px;
+$size_3: 24px;
+$size_4:25px;
+$size_5: 12px;
+$size_6: 20px;
+$size_7:15px;
+$size_8: 18px;
+$size_9: 16px;
+$size_10:17px;
+$size_11:26px;
+
+/*.... Color ...*/
+
+$color_1: #ffffff;
+$color_2: #58b094;
+$color_3: #b7b7b7;
+$color_4:#000000;
+$color_6: #ff2053;
+$color_5:#f5f5f5;
+
+/* ...Extends... */
+
+.marginAuto {
+    margin: 0 auto;
+}
+.centerText {text-align: center;}
+
+.maxwidth {
+    max-width: 1600px;
+}
+
+.grid {
+    display: grid;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+
+ /*... extend font size...*/
+
+.font-size_1{font-size: $size_1}
+.font-size_2{font-size: $size_2}
+.font-size_3{font-size: $size_3}
+.font-size_4{font-size: $size_4}
+.font-size_5{font-size: $size_5}
+.font-size_6{font-size: $size_6}
+.font-size_7{font-size: $size_7}
+.font-size_8{font-size: $size_8}
+.font-size_9{font-size: $size_9}
+.font-size_10{font-size: $size_10}
+.font-size_11{font-size: $size_11}
+
+
+/*extend colors*/
+
+.color_1{
+    color: $color_1;
+}
+
+
+/*...extend font famely...*/
+
+
+
+/*...mioxin...*/
+
+@mixin fontSeting($family,$size,$color) {
+    font-family: $family;
+    font-size:$size;
+    color:$color;
+}
+

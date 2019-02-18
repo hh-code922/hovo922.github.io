@@ -1,0 +1,11 @@
+/* font-family: "opensanns"; */
+@font-face {
+    font-family: "Activ";
+    src: url("../font/aktiv-grotesk-regular-5a9ef788692c7.otf");
+}
+
+/* font-family: "Raleway-Medium.ttf"; */
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/Raleway-Medium.ttf");
+}

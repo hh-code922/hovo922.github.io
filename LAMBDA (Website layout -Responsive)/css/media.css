@@ -1,0 +1,232 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px) {
+    #container {
+        max-width: 1024px;
+    }
+
+    #head_block {
+        width: 92.1255%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 69% auto;
+    }
+
+    #logo {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 71px;
+    }
+    #menu li {
+        font-size: 18px;
+        margin-left: 3%;
+    }
+    /*Section 1*/
+    /*#text_section_1 {
+        grid-area: text_sec_1;
+    }
+    #img_firstfood {
+        grid-area: first_img;
+    }
+    */
+    #justRightFood {
+        grid-template-columns: 1fr;
+    }
+    #img_firstFood {
+        width: 54%;
+        margin: 0 auto;
+    }
+    #img_firstFood img{
+        width: 100%;
+        height: auto;
+    }
+    #img_firstFood {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    /* section 2*/
+    #block_fine_ingred {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    #ingred_img {
+        padding-top: 25px;
+    }
+
+    #main_ingred img {
+        width: 100%;
+    }
+
+    #ingred_img img {
+        width: 15%;
+        height: auto;
+    }
+
+    /* section 5*/
+    #section_5 {
+        background-size: cover;
+    }
+    #block_section_5 {
+       display: block;
+    }
+
+
+    #section_5_img img {
+        width: 30%;
+        height: auto;
+    }
+
+    #right_food{
+        width: 100%;
+    }
+    #text_section_5 {
+        margin-top: 30px;
+    }
+
+    #right_food form {
+        margin-left: 0;
+        margin-top: 46px;
+        text-align: center;
+    }
+
+    /* footer */
+    #block_foot {
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 30px;
+        margin: 0 auto;
+    }
+    #block_foot article img {
+        width: 90%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 930px) {
+
+    h1 {
+        font-size: 33px;
+        line-height: 46px;
+    }
+    #head_block {
+        grid-template-columns: 132px auto;
+    }
+    #soc {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #block_nav_2 {
+        display: block;
+    }
+
+    #bookTabl, #seeMenu {
+        width:  36%;
+    }
+
+    #section_4 {
+        background-size: cover;
+    }
+    #text_guest-rev {
+        width: 80%;
+    }
+    #text_guest-rev article p {
+        color: #dde0df;
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #section_3_part_1, #section_3_part_2 {
+        width: 100%;
+    }
+
+    /* section 5 forma*/
+
+    #info_your {
+        display: block;
+    }
+
+    /*footer */
+    #block_foot {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #text_guest-rev {
+        width: 100%;
+    }
+    #text_guest-rev article p {
+        color: #dde0df;
+        line-height: 24px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width : 375px) {
+    #main_ingred h2 {
+        font-size: 30px;
+    }
+    #main_ingred img {
+        width: 100%;
+    }
+	/* nav menu*/
+	#all_nav_2 {
+		left: 0%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+

@@ -1,0 +1,164 @@
+@import "fonts";
+/* font colors */
+$color_1: #ffffff;
+$color_2: #333333;
+$color_3: #808080;
+$color_5: #00bdcc;/*footer*/
+$color_6:#999999;
+
+
+/* Background-colors */
+$bgColor_1: $color_1;
+$bgColor_2: #e6e6e6;
+$bgColor_3: #f2f2f2;
+$bgColor_4: #00a78e;
+$bgColor_5: #363636;
+
+ .bg_color{
+  background-color: $bgColor_2;
+}
+
+
+/* font names*/
+
+$capton_light: capton_light;
+$capton_bold: capton_Bold;
+
+$muller_ext: muller_Ext;
+$muller_reg: muller_regular;
+
+$raleway_reg: raleway_regular;
+$raleway_bold: raleway_bold;
+$raleway_italic:raleway_italic;
+$raleway_med:raleway_medium;
+$raleway_smbold:raleway_medium;
+
+
+/* font size */
+
+$size_1:70px;
+$size_2:40px;
+$size_3:36px;
+$size_4: 32px;
+$size_5: 30px;
+$size_6: 26px;
+$size_7: 24px;
+$size_8: 22px;
+$size_9: 35px;
+
+@mixin fot_style($family,$size,$color,$line_height){
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+  line-height: $line_height;
+}
+
+.font_styles {
+  font-family: $muller_reg;
+  font-size: $size_7;
+  color: $color_3;
+}
+@mixin fontStyles($family,$size,$color){
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+
+/*grid style*/
+
+.grid_setting {
+  display: grid;
+}
+
+
+
+/*  div size*/
+@mixin divSize($width,$height){
+  width: $width;
+  height:$height;
+}
+
+
+/* margin, padding*/
+
+  .margin_center {
+    margin: 0 auto;
+  }
+  @mixin margin($top,$right,$bottom,$left){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom:$bottom;
+    margin-left: $left;
+  }
+
+@mixin padding($top,$right,$bottom,$left){
+  padding: $top $right $bottom $left;
+}
+
+
+/*position absolute*/
+
+.position_absalute{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.position_relative {
+  position: relative;
+  top:0;
+  left:0;
+}
+
+
+
+/* border-radius*/
+
+@mixin border_styles($type,$size,$color,$radius_1,$radius_2,$radius_3,$radius_4){
+  border: $type $size  $color;
+  border-radius: $radius_1 $radius_2 $radius_3 $radius_4;
+}
+.border_radius {
+  border-radius: 38px;
+}
+
+@mixin border_radius($a,$b,$c,$d){
+  border-radius: $a $b $c $d;
+}
+$radius_size :50px;
+
+
+
+/* img settings*/
+
+  .imgResponsive{
+    width: 100%;
+  }
+
+  /* text settings*/
+  .text_center{
+    text-align: center;
+  }
+  @mixin text_indent($size){
+    text-indent: $size;
+  }
+
+/* forma settings */
+
+.input_border{
+  border:none;
+  outline: none;
+}
+
+
+/* .............other styles............. */
+
+/* custom style*/
+
+.custom_style {
+  @include divSize(203px,90px);
+}
+
+.outlineOff{
+  outline:none;
+  border:none;
+}

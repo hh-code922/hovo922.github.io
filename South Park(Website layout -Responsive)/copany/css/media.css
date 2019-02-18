@@ -1,0 +1,127 @@
+/*==========  Desktop First Method  ==========*/
+
+
+@media only screen and (max-width : 1224px) {
+
+	.img_a_person {
+		float: none;
+		padding-left: 28%;
+	}
+
+	text_a_person {
+		padding-left: 0;
+	}
+	#button_close {
+		top: 27px;
+		left: 82%;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1215px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	#menuNav {
+		display: none;
+	}
+	#burger {
+		display:inline;
+		float: right;
+		margin-right: 1%;
+		font-size: 45px;
+	}
+
+	#section_1 {
+		width: 90%;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	#burger {
+		display:inline;
+		float: right;
+		margin-right: 18%;
+		font-size: 45px;
+	}
+	#logo {
+		padding-left: 10%;
+	}
+
+	.text_testimonilas {
+		width: 100%;
+	}
+
+	.img_a_person,.text_a_person {
+		padding-left: 10%;
+	}
+
+
+	#a_person_article {
+		width: 100%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#article_1 p,.text_testimonilas p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.text_testimonilas {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.text_testimonials_info article p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	#a_person_article p {
+		font-size: 15px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.text_testimonials_info article p {
+
+		line-height: 20px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1215px) {
+
+}

@@ -1,0 +1,19 @@
+body a {
+  text-decoration: none; }
+
+.margin_center {
+  margin: 0 auto; }
+
+/* font family */
+@font-face {
+  font-family: Roboro_Black;
+  src: url("../fonts/roboro/Roboto-Black.ttf"); }
+@font-face {
+  font-family: Roboro_regular;
+  src: url("../fonts/roboro/Roboto-Regular.ttf"); }
+/* COLOR */
+/*font-size*/
+/* mixin font style grup*/
+/* padding top & bottom */
+
+/*# sourceMappingURL=setings.css.map */
